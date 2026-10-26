@@ -1,0 +1,1414 @@
+{
+  "schema_version": "1.0",
+  "id": "lena-voss",
+  "name": "Lena Voss",
+  "partner_type": "solo artist",
+  "fictional": true,
+  "variant": "base",
+  "relationship": "New",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Lena is a fictional independent automotive 3D artist who also teaches her process.",
+      "source_url": "fixture://lena-voss/persona#E1",
+      "source_title": "Fictional persona brief: Lena Voss",
+      "date": "2026-10-26",
+      "kind": "work",
+      "origin": "fixture"
+    },
+    {
+      "id": "E2",
+      "claim": "Her stated priority is reducing back-and-forth during client reviews.",
+      "source_url": "fixture://lena-voss/persona#E2",
+      "source_title": "Fictional persona brief: Lena Voss",
+      "date": "2026-10-26",
+      "kind": "business",
+      "origin": "fixture"
+    },
+    {
+      "id": "E3",
+      "claim": "Craftsmanship and process transparency guide her teaching.",
+      "source_url": "fixture://lena-voss/persona#E3",
+      "source_title": "Fictional persona brief: Lena Voss",
+      "date": "2026-10-26",
+      "kind": "values",
+      "origin": "fixture"
+    },
+    {
+      "id": "E4",
+      "claim": "Client NDAs restrict which reference images and work-in-progress assets can be used.",
+      "source_url": "fixture://lena-voss/persona#E4",
+      "source_title": "Fictional persona brief: Lena Voss",
+      "date": "2026-10-26",
+      "kind": "risk",
+      "origin": "fixture"
+    },
+    {
+      "id": "E5",
+      "claim": "She wants to keep final modeling, material and lighting decisions in her own hands.",
+      "source_url": "fixture://lena-voss/persona#E5",
+      "source_title": "Fictional persona brief: Lena Voss",
+      "date": "2026-10-26",
+      "kind": "audience",
+      "origin": "fixture"
+    }
+  ],
+  "profile": {
+    "summary": {
+      "statement": "Lena is a fictional independent automotive 3D artist who also teaches her process.",
+      "evidence_ids": [
+        "E1"
+      ],
+      "assumptions": [],
+      "confidence": "medium"
+    },
+    "creative_goals": [
+      {
+        "statement": "Reduce client review iterations",
+        "evidence_ids": [
+          "E2"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      },
+      {
+        "statement": "Teach her community through process breakdowns",
+        "evidence_ids": [
+          "E1"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      },
+      {
+        "statement": "Protect craft authorship",
+        "evidence_ids": [
+          "E5"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      }
+    ],
+    "audience": {
+      "who": {
+        "statement": "3D artists learning automotive visualization and clients reviewing proposed directions",
+        "evidence_ids": [
+          "E1"
+        ],
+        "assumptions": [
+          "Learner audience follows from the educator role; client audience from the review goal. Confirm both."
+        ],
+        "confidence": "medium"
+      },
+      "platforms": [
+        "Portfolio",
+        "Teaching channel (fictional; platform unspecified)"
+      ],
+      "size_signals": {
+        "statement": "Audience size unknown; ask which audience matters for the pilot.",
+        "evidence_ids": [],
+        "assumptions": [
+          "No audience count supplied."
+        ],
+        "confidence": "low"
+      }
+    },
+    "values": [
+      {
+        "statement": "Craftsmanship and process transparency guide her teaching.",
+        "evidence_ids": [
+          "E3"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      }
+    ],
+    "style_signature": {
+      "statement": "Precise automotive form, materials and lighting; direction hypothesis to verify with the artist.",
+      "evidence_ids": [],
+      "assumptions": [
+        "Working hypothesis; confirm with the partner."
+      ],
+      "confidence": "low"
+    },
+    "workflow_signals": [
+      {
+        "statement": "Ambiguous client direction",
+        "evidence_ids": [],
+        "assumptions": [
+          "Working hypothesis; confirm with the partner."
+        ],
+        "confidence": "low"
+      }
+    ],
+    "constraints": [
+      {
+        "statement": "Client NDAs restrict which reference images and work-in-progress assets can be used.",
+        "evidence_ids": [
+          "E4"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      }
+    ],
+    "sensitivity_level": "confidential",
+    "what_matters_most": [
+      {
+        "statement": "Clearer review decisions",
+        "evidence_ids": [
+          "E2"
+        ],
+        "assumptions": [],
+        "confidence": "medium",
+        "why_it_matters_for_onboarding": "Prepare three directions with explicit differences so a client can respond to a decision."
+      },
+      {
+        "statement": "Control of authorship",
+        "evidence_ids": [
+          "E5"
+        ],
+        "assumptions": [],
+        "confidence": "medium",
+        "why_it_matters_for_onboarding": "Keep final geometry, materials and lighting decisions with Lena."
+      },
+      {
+        "statement": "Confidential client assets",
+        "evidence_ids": [
+          "E4"
+        ],
+        "assumptions": [],
+        "confidence": "medium",
+        "why_it_matters_for_onboarding": "Use only a self-owned practice scene until permission is confirmed."
+      },
+      {
+        "statement": "Visible process",
+        "evidence_ids": [
+          "E3"
+        ],
+        "assumptions": [],
+        "confidence": "medium",
+        "why_it_matters_for_onboarding": "Show intermediate steps and label machine-assisted drafts."
+      },
+      {
+        "statement": "A useful teaching format",
+        "evidence_ids": [
+          "E1"
+        ],
+        "assumptions": [],
+        "confidence": "medium",
+        "why_it_matters_for_onboarding": "Test whether an annotated comparison is clear enough for learners."
+      }
+    ],
+    "key_indicators": {
+      "fit_scorecard": {
+        "familiarity_with_technology": {
+          "score": 2,
+          "rationale": "No direct baseline assessment; ask before choosing the session level.",
+          "evidence_ids": [],
+          "assumptions": [
+            "Selection hypothesis; qualification remains open."
+          ]
+        },
+        "core_target_fit": {
+          "score": 4,
+          "rationale": "The stated creative goals provide a concrete workflow to explore.",
+          "evidence_ids": [
+            "E1",
+            "E2"
+          ],
+          "assumptions": []
+        },
+        "relationship_strength": {
+          "score": 1,
+          "rationale": "New relationship in the fictional brief; no real contact history.",
+          "evidence_ids": [],
+          "assumptions": [
+            "Selection hypothesis; qualification remains open."
+          ]
+        },
+        "potential": {
+          "score": 3,
+          "rationale": "Potential depends on the partner choosing a repeatable use after a safe pilot.",
+          "evidence_ids": [
+            "E2"
+          ],
+          "assumptions": []
+        }
+      },
+      "why_now_signals": [
+        {
+          "statement": "Timing is unconfirmed. Ask whether this is the right project window.",
+          "evidence_ids": [],
+          "assumptions": [
+            "No current deadline supplied."
+          ],
+          "confidence": "low"
+        }
+      ],
+      "audience_signals": [
+        {
+          "statement": "3D artists learning automotive visualization and clients reviewing proposed directions",
+          "evidence_ids": [
+            "E1"
+          ],
+          "assumptions": [
+            "Learner audience follows from the educator role; client audience from the review goal. Confirm both."
+          ],
+          "confidence": "medium"
+        }
+      ],
+      "business_signals": [
+        {
+          "statement": "Reduce client review iterations",
+          "evidence_ids": [
+            "E2"
+          ],
+          "assumptions": [],
+          "confidence": "medium"
+        }
+      ]
+    },
+    "unknowns": [
+      "No real-world research was performed.",
+      "Available assets, permissions, tools and timing are not confirmed.",
+      "No measured baseline or ROI is supplied."
+    ],
+    "questions_to_ask": [
+      "Which review handoff produces the most rework?",
+      "Which practice scene is yours to share?",
+      "What would you never delegate in a client image?"
+    ]
+  },
+  "workflow": [
+    {
+      "id": "W1",
+      "name": "Brief and references",
+      "owner_role": "Lena",
+      "tools": [
+        "Reference board"
+      ],
+      "pain_points": [
+        "Ambiguous client direction"
+      ],
+      "time_cost_signal": "Not measured; establish a baseline with the partner.",
+      "opportunity": "Turn a permitted brief into a decision checklist",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "human_judgment_to_protect": "Client intent and reference permissions",
+      "origin": "assumption"
+    },
+    {
+      "id": "W2",
+      "name": "Model and look development",
+      "owner_role": "Lena",
+      "tools": [
+        "3D authoring tool (not confirmed)"
+      ],
+      "pain_points": [
+        "Expensive direction changes"
+      ],
+      "time_cost_signal": "Not measured; establish a baseline with the partner.",
+      "opportunity": "Draft annotated visual alternatives before detailed modeling",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "human_judgment_to_protect": "Final geometry, materials and lighting",
+      "origin": "assumption"
+    },
+    {
+      "id": "W3",
+      "name": "Client review",
+      "owner_role": "Lena and client",
+      "tools": [
+        "Review deck (assumed)"
+      ],
+      "pain_points": [
+        "Unclear feedback and repeated revisions"
+      ],
+      "time_cost_signal": "Not measured; establish a baseline with the partner.",
+      "opportunity": "Group feedback into decisions and unanswered questions",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "human_judgment_to_protect": "Accepting or rejecting a client revision",
+      "origin": "assumption"
+    },
+    {
+      "id": "W4",
+      "name": "Teach the process",
+      "owner_role": "Lena",
+      "tools": [
+        "Tutorial editor (not confirmed)"
+      ],
+      "pain_points": [
+        "Preparing explanatory annotations"
+      ],
+      "time_cost_signal": "Not measured; establish a baseline with the partner.",
+      "opportunity": "Draft a breakdown from Lena’s own notes",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "human_judgment_to_protect": "Her teaching voice and attribution",
+      "origin": "assumption"
+    }
+  ],
+  "use_cases": [
+    {
+      "id": "UC1",
+      "title": "Review-ready direction board",
+      "one_line": "Compare three treatments of a self-owned practice scene before detailed look development.",
+      "capability_ids": [
+        "image_generation_editing"
+      ],
+      "workflow_step_ids": [
+        "W2"
+      ],
+      "goal_link": "Reduce client review iterations",
+      "audience_link": "3D artists learning automotive visualization and clients reviewing proposed directions",
+      "values_link": "Craftsmanship and process transparency guide her teaching.",
+      "scores": {
+        "goal_fit": {
+          "score": 5,
+          "rationale": "E2 supports exploring this task: Compare three treatments of a self-owned practice scene before detailed look development. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 5,
+          "rationale": "The proposed recipient is 3d artists learning automotive visualization and clients reviewing proposed directions. Test whether “Review-ready direction board” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3: Craftsmanship and process transparency guide her teaching. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 4,
+          "rationale": "A 2-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 4,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 5,
+          "rationale": "“Review-ready direction board” targets model and look development, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 3,
+          "rationale": "Risk score assumes this control is followed: Use only the artist’s self-owned practice scene and record permission."
+        }
+      },
+      "rationale": "Because E2 states “Her stated priority is reducing back-and-forth during client reviews.”, prepare this bounded test: Compare three treatments of a self-owned practice scene before detailed look development. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Client reference leakage",
+          "severity": "high",
+          "mitigation": "Use only the artist’s self-owned practice scene and record permission."
+        }
+      ],
+      "time_to_first_value_days": 2,
+      "effort": "medium",
+      "evidence_ids": [
+        "E2",
+        "E4",
+        "E5"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Review three directions and ask which differences support a client decision."
+    },
+    {
+      "id": "UC2",
+      "title": "Client feedback decision sheet",
+      "one_line": "Turn fictional client comments into accept, clarify and defer decisions.",
+      "capability_ids": [
+        "research_synthesis"
+      ],
+      "workflow_step_ids": [
+        "W3"
+      ],
+      "goal_link": "Reduce client review iterations",
+      "audience_link": "3D artists learning automotive visualization and clients reviewing proposed directions",
+      "values_link": "Craftsmanship and process transparency guide her teaching.",
+      "scores": {
+        "goal_fit": {
+          "score": 5,
+          "rationale": "E2 supports exploring this task: Turn fictional client comments into accept, clarify and defer decisions. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 3,
+          "rationale": "The proposed recipient is 3d artists learning automotive visualization and clients reviewing proposed directions. Test whether “Client feedback decision sheet” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3: Craftsmanship and process transparency guide her teaching. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 5,
+          "rationale": "A 1-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 5,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "“Client feedback decision sheet” targets client review, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Use invented client comments; never paste an NDA brief."
+        }
+      },
+      "rationale": "Because E2 states “Her stated priority is reducing back-and-forth during client reviews.”, prepare this bounded test: Turn fictional client comments into accept, clarify and defer decisions. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Confidential feedback",
+          "severity": "medium",
+          "mitigation": "Use invented client comments; never paste an NDA brief."
+        }
+      ],
+      "time_to_first_value_days": 1,
+      "effort": "low",
+      "evidence_ids": [
+        "E2",
+        "E4"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Compare a manual decision sheet with an assisted one using the same mock feedback."
+    },
+    {
+      "id": "UC3",
+      "title": "Annotated process lesson",
+      "one_line": "Draft a teaching outline around Lena’s own before-and-after renders.",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "workflow_step_ids": [
+        "W4"
+      ],
+      "goal_link": "Protect craft authorship",
+      "audience_link": "3D artists learning automotive visualization and clients reviewing proposed directions",
+      "values_link": "Craftsmanship and process transparency guide her teaching.",
+      "scores": {
+        "goal_fit": {
+          "score": 4,
+          "rationale": "E1 supports exploring this task: Draft a teaching outline around Lena’s own before-and-after renders. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 5,
+          "rationale": "The proposed recipient is 3d artists learning automotive visualization and clients reviewing proposed directions. Test whether “Annotated process lesson” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3: Craftsmanship and process transparency guide her teaching. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 5,
+          "rationale": "A 1-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 5,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 4,
+          "rationale": "“Annotated process lesson” targets teach the process, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Label draft assistance and preserve Lena’s actual methods."
+        }
+      },
+      "rationale": "Because E1 states “Lena is a fictional independent automotive 3D artist who also teaches her process.”, prepare this bounded test: Draft a teaching outline around Lena’s own before-and-after renders. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Authorship confusion",
+          "severity": "medium",
+          "mitigation": "Label draft assistance and preserve Lena’s actual methods."
+        }
+      ],
+      "time_to_first_value_days": 1,
+      "effort": "low",
+      "evidence_ids": [
+        "E1",
+        "E3",
+        "E5"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Have Lena correct the outline before sharing it with a learner."
+    },
+    {
+      "id": "UC4",
+      "title": "Brief ambiguity checklist",
+      "one_line": "Identify missing camera, material and approval details in a mock automotive brief.",
+      "capability_ids": [
+        "research_synthesis"
+      ],
+      "workflow_step_ids": [
+        "W1"
+      ],
+      "goal_link": "Reduce client review iterations",
+      "audience_link": "3D artists learning automotive visualization and clients reviewing proposed directions",
+      "values_link": "Craftsmanship and process transparency guide her teaching.",
+      "scores": {
+        "goal_fit": {
+          "score": 5,
+          "rationale": "E2 supports exploring this task: Identify missing camera, material and approval details in a mock automotive brief. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 3,
+          "rationale": "The proposed recipient is 3d artists learning automotive visualization and clients reviewing proposed directions. Test whether “Brief ambiguity checklist” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3: Craftsmanship and process transparency guide her teaching. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 5,
+          "rationale": "A 1-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 5,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "“Brief ambiguity checklist” targets brief and references, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Keep each missing requirement as a question, never a fact."
+        }
+      },
+      "rationale": "Because E2 states “Her stated priority is reducing back-and-forth during client reviews.”, prepare this bounded test: Identify missing camera, material and approval details in a mock automotive brief. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Invented requirements",
+          "severity": "medium",
+          "mitigation": "Keep each missing requirement as a question, never a fact."
+        }
+      ],
+      "time_to_first_value_days": 1,
+      "effort": "low",
+      "evidence_ids": [
+        "E2",
+        "E4"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Ask a colleague whether the checklist catches the same ambiguities they find."
+    },
+    {
+      "id": "UC5",
+      "title": "Review deck outline",
+      "one_line": "Arrange approved renders into a sequence that makes client choices explicit.",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "workflow_step_ids": [
+        "W3"
+      ],
+      "goal_link": "Teach her community through process breakdowns",
+      "audience_link": "3D artists learning automotive visualization and clients reviewing proposed directions",
+      "values_link": "Craftsmanship and process transparency guide her teaching.",
+      "scores": {
+        "goal_fit": {
+          "score": 4,
+          "rationale": "E2 supports exploring this task: Arrange approved renders into a sequence that makes client choices explicit. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 4,
+          "rationale": "The proposed recipient is 3d artists learning automotive visualization and clients reviewing proposed directions. Test whether “Review deck outline” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 4,
+          "rationale": "E3: Craftsmanship and process transparency guide her teaching. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 5,
+          "rationale": "A 1-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 5,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "“Review deck outline” targets client review, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Keep the original brief beside every choice."
+        }
+      },
+      "rationale": "Because E2 states “Her stated priority is reducing back-and-forth during client reviews.”, prepare this bounded test: Arrange approved renders into a sequence that makes client choices explicit. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Lost context",
+          "severity": "medium",
+          "mitigation": "Keep the original brief beside every choice."
+        }
+      ],
+      "time_to_first_value_days": 1,
+      "effort": "low",
+      "evidence_ids": [
+        "E2"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Build five slides with one decision per slide."
+    },
+    {
+      "id": "UC6",
+      "title": "Material direction descriptions",
+      "one_line": "Translate Lena’s material notes into consistent review labels.",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "workflow_step_ids": [
+        "W2"
+      ],
+      "goal_link": "Protect craft authorship",
+      "audience_link": "3D artists learning automotive visualization and clients reviewing proposed directions",
+      "values_link": "Craftsmanship and process transparency guide her teaching.",
+      "scores": {
+        "goal_fit": {
+          "score": 4,
+          "rationale": "E2 supports exploring this task: Translate Lena’s material notes into consistent review labels. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 4,
+          "rationale": "The proposed recipient is 3d artists learning automotive visualization and clients reviewing proposed directions. Test whether “Material direction descriptions” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 4,
+          "rationale": "E3: Craftsmanship and process transparency guide her teaching. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 5,
+          "rationale": "A 1-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 5,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "“Material direction descriptions” targets model and look development, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 4,
+          "rationale": "Risk score assumes this control is followed: Lena verifies every description against the actual render."
+        }
+      },
+      "rationale": "Because E2 states “Her stated priority is reducing back-and-forth during client reviews.”, prepare this bounded test: Translate Lena’s material notes into consistent review labels. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "False material claims",
+          "severity": "medium",
+          "mitigation": "Lena verifies every description against the actual render."
+        }
+      ],
+      "time_to_first_value_days": 1,
+      "effort": "low",
+      "evidence_ids": [
+        "E2",
+        "E5"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Label three self-owned material studies."
+    },
+    {
+      "id": "UC7",
+      "title": "Tutorial caption draft",
+      "one_line": "Draft accessible captions for a self-owned workflow recording.",
+      "capability_ids": [
+        "translation_localization"
+      ],
+      "workflow_step_ids": [
+        "W4"
+      ],
+      "goal_link": "Reduce client review iterations",
+      "audience_link": "3D artists learning automotive visualization and clients reviewing proposed directions",
+      "values_link": "Craftsmanship and process transparency guide her teaching.",
+      "scores": {
+        "goal_fit": {
+          "score": 3,
+          "rationale": "E1 supports exploring this task: Draft accessible captions for a self-owned workflow recording. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 5,
+          "rationale": "The proposed recipient is 3d artists learning automotive visualization and clients reviewing proposed directions. Test whether “Tutorial caption draft” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 4,
+          "rationale": "E3: Craftsmanship and process transparency guide her teaching. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 4,
+          "rationale": "A 2-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 4,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "“Tutorial caption draft” targets teach the process, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 4,
+          "rationale": "Risk score assumes this control is followed: Review captions and tool names before release."
+        }
+      },
+      "rationale": "Because E1 states “Lena is a fictional independent automotive 3D artist who also teaches her process.”, prepare this bounded test: Draft accessible captions for a self-owned workflow recording. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Incorrect tool terminology",
+          "severity": "medium",
+          "mitigation": "Review captions and tool names before release."
+        }
+      ],
+      "time_to_first_value_days": 2,
+      "effort": "medium",
+      "evidence_ids": [
+        "E1",
+        "E3"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Correct a two-minute excerpt and log terminology errors."
+    },
+    {
+      "id": "UC8",
+      "title": "Reference comparison notes",
+      "one_line": "Describe visible differences between approved reference images.",
+      "capability_ids": [
+        "visual_reference_analysis"
+      ],
+      "workflow_step_ids": [
+        "W1"
+      ],
+      "goal_link": "Teach her community through process breakdowns",
+      "audience_link": "3D artists learning automotive visualization and clients reviewing proposed directions",
+      "values_link": "Craftsmanship and process transparency guide her teaching.",
+      "scores": {
+        "goal_fit": {
+          "score": 4,
+          "rationale": "E4 supports exploring this task: Describe visible differences between approved reference images. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 3,
+          "rationale": "The proposed recipient is 3d artists learning automotive visualization and clients reviewing proposed directions. Test whether “Reference comparison notes” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 4,
+          "rationale": "E3: Craftsmanship and process transparency guide her teaching. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 4,
+          "rationale": "A 2-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 4,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 4,
+          "rationale": "“Reference comparison notes” targets brief and references, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 3,
+          "rationale": "Risk score assumes this control is followed: Use only references with documented permission."
+        }
+      },
+      "rationale": "Because E4 states “Client NDAs restrict which reference images and work-in-progress assets can be used.”, prepare this bounded test: Describe visible differences between approved reference images. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Unlicensed imagery",
+          "severity": "high",
+          "mitigation": "Use only references with documented permission."
+        }
+      ],
+      "time_to_first_value_days": 2,
+      "effort": "medium",
+      "evidence_ids": [
+        "E4",
+        "E5"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Check the descriptions against Lena’s own observations."
+    },
+    {
+      "id": "UC9",
+      "title": "Review cycle tracker",
+      "one_line": "Summarize review categories from synthetic project rows.",
+      "capability_ids": [
+        "data_analysis"
+      ],
+      "workflow_step_ids": [
+        "W3"
+      ],
+      "goal_link": "Protect craft authorship",
+      "audience_link": "3D artists learning automotive visualization and clients reviewing proposed directions",
+      "values_link": "Craftsmanship and process transparency guide her teaching.",
+      "scores": {
+        "goal_fit": {
+          "score": 4,
+          "rationale": "E2 supports exploring this task: Summarize review categories from synthetic project rows. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 3,
+          "rationale": "The proposed recipient is 3d artists learning automotive visualization and clients reviewing proposed directions. Test whether “Review cycle tracker” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 4,
+          "rationale": "E3: Craftsmanship and process transparency guide her teaching. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 3,
+          "rationale": "A 3-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 4,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "“Review cycle tracker” targets client review, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Do not infer time savings from synthetic data."
+        }
+      },
+      "rationale": "Because E2 states “Her stated priority is reducing back-and-forth during client reviews.”, prepare this bounded test: Summarize review categories from synthetic project rows. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "False precision",
+          "severity": "medium",
+          "mitigation": "Do not infer time savings from synthetic data."
+        }
+      ],
+      "time_to_first_value_days": 3,
+      "effort": "medium",
+      "evidence_ids": [
+        "E2"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Choose review categories before using any real project data."
+    },
+    {
+      "id": "UC10",
+      "title": "Portfolio case-study draft",
+      "one_line": "Structure an approved project story around Lena’s decisions.",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "workflow_step_ids": [
+        "W4"
+      ],
+      "goal_link": "Reduce client review iterations",
+      "audience_link": "3D artists learning automotive visualization and clients reviewing proposed directions",
+      "values_link": "Craftsmanship and process transparency guide her teaching.",
+      "scores": {
+        "goal_fit": {
+          "score": 3,
+          "rationale": "E1 supports exploring this task: Structure an approved project story around Lena’s decisions. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 4,
+          "rationale": "The proposed recipient is 3d artists learning automotive visualization and clients reviewing proposed directions. Test whether “Portfolio case-study draft” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 4,
+          "rationale": "E3: Craftsmanship and process transparency guide her teaching. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 3,
+          "rationale": "A 3-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 4,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "“Portfolio case-study draft” targets teach the process, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 3,
+          "rationale": "Risk score assumes this control is followed: Require written client approval before including project details."
+        }
+      },
+      "rationale": "Because E1 states “Lena is a fictional independent automotive 3D artist who also teaches her process.”, prepare this bounded test: Structure an approved project story around Lena’s decisions. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "NDA breach",
+          "severity": "high",
+          "mitigation": "Require written client approval before including project details."
+        }
+      ],
+      "time_to_first_value_days": 3,
+      "effort": "medium",
+      "evidence_ids": [
+        "E1",
+        "E4"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Use a fictional practice project for the first draft."
+    }
+  ],
+  "not_recommended": [
+    {
+      "title": "Generate final client renders unattended",
+      "reason": "Conflicts with E5: the final craft decisions must remain Lena’s.",
+      "risk": {
+        "type": "Authorship",
+        "severity": "high",
+        "mitigation": "Keep automation at the review-preparation stage."
+      }
+    },
+    {
+      "title": "Train on client project archives",
+      "reason": "E4 gives no permission to repurpose client assets.",
+      "risk": {
+        "type": "Client NDA",
+        "severity": "high",
+        "mitigation": "Do not upload or reuse client archives."
+      }
+    }
+  ],
+  "demo": {
+    "use_case_id": "UC1",
+    "concept": "Compare directions before a client review",
+    "why_this_demo": "Because E2 identifies review iterations and E4 restricts client assets, use a self-owned practice scene and keep Lena in control of the selection.",
+    "versions": {
+      "five_min": "Confirm the goal, one boundary and whether a follow-up is wanted.",
+      "twenty_min": "A quiet 1:1. Ask for her current review process first, then offer a short comparison. Leave half the time for hands-on changes.",
+      "sixty_min_hands_on": "Only after explicit agreement: establish a baseline, try one approved input, compare the output, and record a keep/change/stop decision."
+    },
+    "script_beats": [
+      {
+        "time": "0–5 min",
+        "action": "Ask the partner to describe the handoff and boundaries.",
+        "intended_feeling": "Heard and in control",
+        "talking_point": "Which review handoff produces the most rework?"
+      },
+      {
+        "time": "5–12 min",
+        "action": "Self-owned practice scene: compact electric coupe, neutral background. Draft three direction descriptions: clean studio, dawn road, detail study. State what client decision each would resolve.",
+        "intended_feeling": "Able to correct the working draft",
+        "talking_point": "This is a private draft from fictional or approved inputs; please challenge the assumptions."
+      },
+      {
+        "time": "12–20 min",
+        "action": "Ask the partner to keep, change or reject the output and choose the next step.",
+        "intended_feeling": "Free to decline",
+        "talking_point": "Which direction made the client decision clearer, and which parts still need your manual process? If none did, we should change the experiment rather than expand it."
+      }
+    ],
+    "sample_inputs": [
+      "Self-owned practice scene: compact electric coupe, neutral background. Draft three direction descriptions: clean studio, dawn road, detail study. State what client decision each would resolve."
+    ],
+    "assets_needed": [
+      "Fictional practice input or partner-owned material with explicit permission",
+      "A host to capture corrections and unknowns"
+    ],
+    "wow_moment": "The partner can point to a useful decision or correction; there is no requirement to be impressed.",
+    "fallback_plan": "Use a prepared text example or a blank decision sheet. If the partner declines, keep the session to listening.",
+    "what_not_to_show": [
+      "Generate final client renders unattended",
+      "Train on client project archives"
+    ],
+    "success_signal": "Lena can name the client decision each of three directions would resolve."
+  },
+  "experience": {
+    "tone_and_voice": "Practical and craft-specific. Ask how she makes decisions before suggesting changes.",
+    "host_and_channel": "One partner lead with a visual-workflow specialist available; use a channel Lena chooses.",
+    "invitation_draft": "Could we spend 20 minutes on the client review handoff you want to improve? We can use a practice scene you own, compare three directions, and leave final craft decisions with you. Please bring no confidential client assets.",
+    "setting_and_pacing": "A quiet 1:1. Ask for her current review process first, then offer a short comparison. Leave half the time for hands-on changes.",
+    "discretion": {
+      "level": "confidential",
+      "rules": [
+        "No recording without explicit agreement.",
+        "Use fictional or cleared inputs only.",
+        "Share notes only with confirmed participants."
+      ]
+    },
+    "accessibility_notes": [
+      "Ask for preferred format, language and access requirements.",
+      "Provide a readable text copy; do not rely on color or sound alone."
+    ],
+    "day_brief": {
+      "who": "Lena Voss — fictional solo artist; new relationship.",
+      "why_them": "The stated goal is to reduce client review iterations; fit remains a qualification hypothesis.",
+      "what_they_care_about": [
+        "Reduce client review iterations",
+        "Teach her community through process breakdowns",
+        "Protect craft authorship"
+      ],
+      "do": [
+        "Practical and craft-specific. Ask how she makes decisions before suggesting changes.",
+        "Confirm permissions and a useful next step."
+      ],
+      "avoid": [
+        "Generate final client renders unattended",
+        "Train on client project archives"
+      ],
+      "open_questions": [
+        "Which review handoff produces the most rework?",
+        "Which practice scene is yours to share?",
+        "What would you never delegate in a client image?"
+      ],
+      "next_step": "Ask the partner to correct the brief and choose one pilot or decline."
+    },
+    "event_plan": null,
+    "what_to_avoid": [
+      "Generate final client renders unattended",
+      "Train on client project archives"
+    ]
+  },
+  "stakeholders": [
+    {
+      "name_or_role": "Artist / educator",
+      "role_in_decision": "champion",
+      "what_they_care_about": "Authorship and review clarity",
+      "engagement_approach": "Ask Lena to define what must stay human.",
+      "risk": "Role is fictional; confirm actual participation and decision rights.",
+      "origin": "fixture"
+    },
+    {
+      "name_or_role": "Client reviewer role — confirm participation",
+      "role_in_decision": "evaluator",
+      "what_they_care_about": "A clear choice between directions",
+      "engagement_approach": "Use fictional feedback until participation and permissions are confirmed.",
+      "risk": "Role is fictional; confirm actual participation and decision rights.",
+      "origin": "fixture"
+    }
+  ],
+  "journey": [
+    {
+      "name": "Introduction",
+      "goal": "Understand how to reduce client review iterations.",
+      "activities": [
+        "Confirm goals, boundaries and relationship context.",
+        "Which review handoff produces the most rework?"
+      ],
+      "owner_roles": [
+        "Partner lead",
+        "Artist / educator"
+      ],
+      "partner_signal": "Corrects the brief",
+      "exit_criteria": "Partner confirms the problem and chooses whether to continue.",
+      "week_range": "1"
+    },
+    {
+      "name": "Education",
+      "goal": "Agree what is useful and appropriate.",
+      "activities": [
+        "Explain the relevant capability and its limits using approved inputs.",
+        "Because E2 identifies review iterations and E4 restricts client assets, use a self-owned practice scene and keep Lena in control of the selection."
+      ],
+      "owner_roles": [
+        "Partner lead",
+        "Artist / educator"
+      ],
+      "partner_signal": "Explains a boundary",
+      "exit_criteria": "Partner can explain the limits and approves one safe test.",
+      "week_range": "2"
+    },
+    {
+      "name": "Experimentation",
+      "goal": "A decision board makes review choices clearer without changing final craft ownership.",
+      "activities": [
+        "Run one agreed pilot.",
+        "Review three directions and ask which differences support a client decision."
+      ],
+      "owner_roles": [
+        "Partner lead",
+        "Artist / educator"
+      ],
+      "partner_signal": "Chooses a pilot outcome",
+      "exit_criteria": "Lena can name the client decision each of three directions would resolve.",
+      "week_range": "3–4"
+    },
+    {
+      "name": "Adoption",
+      "goal": "Make the chosen task repeatable.",
+      "activities": [
+        "Support one repeat use in the real workflow after approval.",
+        "Confirm a single contact and document the handover."
+      ],
+      "owner_roles": [
+        "Partner lead",
+        "Artist / educator"
+      ],
+      "partner_signal": "Repeats an approved task",
+      "exit_criteria": "Partner repeats the agreed task independently with approved inputs.",
+      "week_range": "5–8"
+    },
+    {
+      "name": "Long-term engagement",
+      "goal": "Keep the relationship and feedback loop useful.",
+      "activities": [
+        "Review whether the workflow still helps the stated goal.",
+        "Close feedback items and agree whether to continue."
+      ],
+      "owner_roles": [
+        "Partner lead",
+        "Artist / educator"
+      ],
+      "partner_signal": "Requests a useful next step",
+      "exit_criteria": "Partner and owner agree to continue, adjust or stop based on actual use.",
+      "week_range": "9–13"
+    }
+  ],
+  "experiments": [
+    {
+      "hypothesis": "A decision board makes review choices clearer without changing final craft ownership.",
+      "setup": "Use a fictional practice input or explicitly cleared partner material; record a manual baseline first.",
+      "steps": [
+        "Ask for agreement and confirm boundaries.",
+        "Review three directions and ask which differences support a client decision.",
+        "Compare against the baseline and record corrections."
+      ],
+      "metric": "Partner acceptance and number of unsupported or corrected statements; collect actual observations.",
+      "success_threshold": "Lena can name the client decision each of three directions would resolve. Proposed threshold; agree with the partner before testing.",
+      "timebox_days": 7,
+      "decision_gate": "Keep only if the partner accepts the result and all review requirements are met; otherwise change or stop.",
+      "risk": {
+        "type": "Client reference leakage",
+        "severity": "high",
+        "mitigation": "Use only the artist’s self-owned practice scene and record permission."
+      }
+    },
+    {
+      "hypothesis": "A feedback sheet separates actionable changes from questions.",
+      "setup": "Use a fictional practice input or explicitly cleared partner material; record a manual baseline first.",
+      "steps": [
+        "Ask for agreement and confirm boundaries.",
+        "Compare a manual decision sheet with an assisted one using the same mock feedback.",
+        "Compare against the baseline and record corrections."
+      ],
+      "metric": "Partner acceptance and number of unsupported or corrected statements; collect actual observations.",
+      "success_threshold": "Every comment maps to a decision or a clearly labeled question. Proposed threshold; agree with the partner before testing.",
+      "timebox_days": 7,
+      "decision_gate": "Keep only if the partner accepts the result and all review requirements are met; otherwise change or stop.",
+      "risk": {
+        "type": "Confidential feedback",
+        "severity": "medium",
+        "mitigation": "Use invented client comments; never paste an NDA brief."
+      }
+    },
+    {
+      "hypothesis": "An annotated lesson preserves Lena’s process in a teachable format.",
+      "setup": "Use a fictional practice input or explicitly cleared partner material; record a manual baseline first.",
+      "steps": [
+        "Ask for agreement and confirm boundaries.",
+        "Have Lena correct the outline before sharing it with a learner.",
+        "Compare against the baseline and record corrections."
+      ],
+      "metric": "Partner acceptance and number of unsupported or corrected statements; collect actual observations.",
+      "success_threshold": "Lena approves the outline without correcting a misattributed craft decision. Proposed threshold; agree with the partner before testing.",
+      "timebox_days": 14,
+      "decision_gate": "Keep only if the partner accepts the result and all review requirements are met; otherwise change or stop.",
+      "risk": {
+        "type": "Authorship confusion",
+        "severity": "medium",
+        "mitigation": "Label draft assistance and preserve Lena’s actual methods."
+      }
+    }
+  ],
+  "cadence": {
+    "weekly_standup_agenda": [
+      "What was tried and what stayed human?",
+      "What changed in the partner’s stated goal?",
+      "Which risks, questions or feedback need an owner?",
+      "Choose one next action or explicitly pause."
+    ],
+    "channel_setup": "One partner lead owns a private shared channel chosen by the partner. Ask before adding teammates.",
+    "touchpoints_90_days": [
+      {
+        "day": 1,
+        "purpose": "Confirm the brief",
+        "owner": "Partner lead",
+        "output": "Partner confirms the problem and chooses whether to continue."
+      },
+      {
+        "day": 7,
+        "purpose": "Review boundaries and learning needs",
+        "owner": "Partner lead",
+        "output": "Partner can explain the limits and approves one safe test."
+      },
+      {
+        "day": 14,
+        "purpose": "Agree inputs, permissions and a test for compare directions before a client review",
+        "owner": "Partner lead",
+        "output": "Partner can explain the limits and approves one safe test."
+      },
+      {
+        "day": 21,
+        "purpose": "Review the pilot: A decision board makes review choices clearer without changing final craft ownership.",
+        "owner": "Partner lead",
+        "output": "Lena can name the client decision each of three directions would resolve."
+      },
+      {
+        "day": 28,
+        "purpose": "Review the pilot: A decision board makes review choices clearer without changing final craft ownership.",
+        "owner": "Partner lead",
+        "output": "Lena can name the client decision each of three directions would resolve."
+      },
+      {
+        "day": 35,
+        "purpose": "Support an independent repeat use of review-ready direction board",
+        "owner": "Partner lead",
+        "output": "Partner repeats the agreed task independently with approved inputs."
+      },
+      {
+        "day": 42,
+        "purpose": "Support an independent repeat use of review-ready direction board",
+        "owner": "Partner lead",
+        "output": "Partner repeats the agreed task independently with approved inputs."
+      },
+      {
+        "day": 49,
+        "purpose": "Support an independent repeat use of review-ready direction board",
+        "owner": "Partner lead",
+        "output": "Partner repeats the agreed task independently with approved inputs."
+      },
+      {
+        "day": 56,
+        "purpose": "Support an independent repeat use of review-ready direction board",
+        "owner": "Partner lead",
+        "output": "Partner repeats the agreed task independently with approved inputs."
+      },
+      {
+        "day": 63,
+        "purpose": "Review ongoing usefulness for reduce client review iterations and close open feedback",
+        "owner": "Partner lead",
+        "output": "Partner and owner agree to continue, adjust or stop based on actual use."
+      },
+      {
+        "day": 70,
+        "purpose": "Review ongoing usefulness for reduce client review iterations and close open feedback",
+        "owner": "Partner lead",
+        "output": "Partner and owner agree to continue, adjust or stop based on actual use."
+      },
+      {
+        "day": 77,
+        "purpose": "Review ongoing usefulness for reduce client review iterations and close open feedback",
+        "owner": "Partner lead",
+        "output": "Partner and owner agree to continue, adjust or stop based on actual use."
+      },
+      {
+        "day": 84,
+        "purpose": "Review ongoing usefulness for reduce client review iterations and close open feedback",
+        "owner": "Partner lead",
+        "output": "Partner and owner agree to continue, adjust or stop based on actual use."
+      },
+      {
+        "day": 90,
+        "purpose": "Review ongoing usefulness for reduce client review iterations and close open feedback",
+        "owner": "Partner lead",
+        "output": "90-day continue/change/stop decision and documented handover"
+      }
+    ],
+    "follow_up_messages": [
+      {
+        "when": "Within one working day of the session",
+        "channel": "Partner-approved private channel",
+        "draft": "Which direction made the client decision clearer, and which parts still need your manual process? If none did, we should change the experiment rather than expand it."
+      },
+      {
+        "when": "After a feedback item is reviewed",
+        "channel": "Same private channel",
+        "draft": "You raised an issue in the pilot. We recorded it, assigned an owner, and will share the outcome or a clear explanation if it cannot be addressed. Is our description accurate?"
+      }
+    ],
+    "handover_checklist": [
+      "Partner-approved goals and boundaries",
+      "One named point of contact and backup",
+      "Approved assets and confidentiality rules",
+      "Observed activation baseline and next review date",
+      "Open feedback with owners and response dates"
+    ]
+  },
+  "feedback": {
+    "capture_template": [
+      "Task and permitted input",
+      "Expected versus observed result",
+      "Partner’s own words, with permission",
+      "Severity and reproducibility",
+      "Owner, review date and partner update"
+    ],
+    "routing": "Partner lead checks for confidential material, then routes workflow defects to solutions and product defects to product. Record an owner and response date; no automatic sending.",
+    "close_the_loop_message": "We reviewed the issue you raised. Here is what changed, what remains open, and the next review date. Please tell us whether this addresses the problem in your workflow."
+  },
+  "metrics": {
+    "stage_definitions": {
+      "Introduction": "Partner confirms the problem and chooses whether to continue.",
+      "Education": "Partner can explain the limits and approves one safe test.",
+      "Experimentation": "Lena can name the client decision each of three directions would resolve.",
+      "Adoption": "Partner repeats the agreed task independently with approved inputs.",
+      "Long-term engagement": "Partner and owner agree to continue, adjust or stop based on actual use."
+    },
+    "leading_indicators": [
+      "Time from session to first approved trial",
+      "Whether the partner independently repeats the task",
+      "Unsupported claims and review corrections",
+      "Feedback items closed with a partner response"
+    ],
+    "time_to_activation_target": "Planning assumption: 1–3 months to independent repeat use; agree a baseline and target with the partner. Attendance does not count as activation."
+  },
+  "flags": [
+    {
+      "section": "All sections",
+      "severity": "medium",
+      "issue": "Fictional fixture evidence is not verified public research.",
+      "suggested_fix": "Confirm every fact and boundary before real outreach."
+    },
+    {
+      "section": "Use cases",
+      "severity": "medium",
+      "issue": "Scores, time estimates and thresholds are planning judgments, not measured outcomes.",
+      "suggested_fix": "Review weights and agree thresholds before a test."
+    }
+  ],
+  "claims_audit": [
+    "All source references point to labeled fictional persona briefs.",
+    "No real quotes, follower counts or measured outcomes are claimed.",
+    "Workflow steps and time-to-value are labeled hypotheses.",
+    "IP, disclosure and sustainability items are review prompts, not legal conclusions."
+  ],
+  "context_conflicts": [],
+  "context": {
+    "company": {},
+    "role_department": {},
+    "people": [],
+    "event": {},
+    "workflow": {},
+    "history_goals": {},
+    "notes": "",
+    "provenance": {},
+    "layer_enabled": {},
+    "version": 0
+  },
+  "changes": []
+}

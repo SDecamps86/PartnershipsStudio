@@ -1,0 +1,1418 @@
+{
+  "schema_version": "1.0",
+  "id": "maison-aurelle",
+  "name": "Maison Aurelle",
+  "partner_type": "brand",
+  "fictional": true,
+  "variant": "base",
+  "relationship": "Warm",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Maison Aurelle is a fictional mid-size luxury fashion house.",
+      "source_url": "fixture://maison-aurelle/persona#E1",
+      "source_title": "Fictional persona brief: Maison Aurelle",
+      "date": "2026-10-26",
+      "kind": "work",
+      "origin": "fixture"
+    },
+    {
+      "id": "E2",
+      "claim": "Its stated goal is seasonal collection storytelling with consistent regional localization.",
+      "source_url": "fixture://maison-aurelle/persona#E2",
+      "source_title": "Fictional persona brief: Maison Aurelle",
+      "date": "2026-10-26",
+      "kind": "business",
+      "origin": "fixture"
+    },
+    {
+      "id": "E3",
+      "claim": "Heritage and craftsmanship are stated brand values.",
+      "source_url": "fixture://maison-aurelle/persona#E3",
+      "source_title": "Fictional persona brief: Maison Aurelle",
+      "date": "2026-10-26",
+      "kind": "values",
+      "origin": "fixture"
+    },
+    {
+      "id": "E4",
+      "claim": "Brand governance and legal review are required before external use.",
+      "source_url": "fixture://maison-aurelle/persona#E4",
+      "source_title": "Fictional persona brief: Maison Aurelle",
+      "date": "2026-10-26",
+      "kind": "risk",
+      "origin": "fixture"
+    },
+    {
+      "id": "E5",
+      "claim": "Sustainability language must remain tied to approved claims; no environmental benefit is assumed.",
+      "source_url": "fixture://maison-aurelle/persona#E5",
+      "source_title": "Fictional persona brief: Maison Aurelle",
+      "date": "2026-10-26",
+      "kind": "audience",
+      "origin": "fixture"
+    }
+  ],
+  "profile": {
+    "summary": {
+      "statement": "Maison Aurelle is a fictional mid-size luxury fashion house.",
+      "evidence_ids": [
+        "E1"
+      ],
+      "assumptions": [],
+      "confidence": "medium"
+    },
+    "creative_goals": [
+      {
+        "statement": "Maintain a consistent seasonal story",
+        "evidence_ids": [
+          "E2"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      },
+      {
+        "statement": "Localize approved collection materials",
+        "evidence_ids": [
+          "E3"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      },
+      {
+        "statement": "Keep brand and legal review visible",
+        "evidence_ids": [
+          "E4"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      }
+    ],
+    "audience": {
+      "who": {
+        "statement": "Regional brand teams, retail storytellers and customers reading collection materials",
+        "evidence_ids": [],
+        "assumptions": [
+          "Regional team and customer roles are a working audience hypothesis, not confirmed research."
+        ],
+        "confidence": "low"
+      },
+      "platforms": [
+        "Owned editorial channels (unspecified)",
+        "Regional retail materials"
+      ],
+      "size_signals": {
+        "statement": "Audience size unknown; ask which audience matters for the pilot.",
+        "evidence_ids": [],
+        "assumptions": [
+          "No audience count supplied."
+        ],
+        "confidence": "low"
+      }
+    },
+    "values": [
+      {
+        "statement": "Heritage and craftsmanship are stated brand values.",
+        "evidence_ids": [
+          "E3"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      }
+    ],
+    "style_signature": {
+      "statement": "Brand-owned language and craft detail; exact tone requires approved examples.",
+      "evidence_ids": [],
+      "assumptions": [
+        "Working hypothesis; confirm with the partner."
+      ],
+      "confidence": "low"
+    },
+    "workflow_signals": [
+      {
+        "statement": "Multiple source versions",
+        "evidence_ids": [],
+        "assumptions": [
+          "Working hypothesis; confirm with the partner."
+        ],
+        "confidence": "low"
+      }
+    ],
+    "constraints": [
+      {
+        "statement": "Brand governance and legal review are required before external use.",
+        "evidence_ids": [
+          "E4"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      }
+    ],
+    "sensitivity_level": "high",
+    "what_matters_most": [
+      {
+        "statement": "An approved collection narrative",
+        "evidence_ids": [
+          "E2"
+        ],
+        "assumptions": [],
+        "confidence": "medium",
+        "why_it_matters_for_onboarding": "Start from signed-off source copy and preserve claim identifiers."
+      },
+      {
+        "statement": "Heritage and craft detail",
+        "evidence_ids": [
+          "E3"
+        ],
+        "assumptions": [],
+        "confidence": "medium",
+        "why_it_matters_for_onboarding": "Use brand language without inventing provenance."
+      },
+      {
+        "statement": "Regional consistency",
+        "evidence_ids": [
+          "E2"
+        ],
+        "assumptions": [],
+        "confidence": "medium",
+        "why_it_matters_for_onboarding": "Have a regional reviewer check tone and meaning."
+      },
+      {
+        "statement": "Visible approval gates",
+        "evidence_ids": [
+          "E4"
+        ],
+        "assumptions": [],
+        "confidence": "medium",
+        "why_it_matters_for_onboarding": "Include brand and legal owners before any release."
+      },
+      {
+        "statement": "Claims discipline",
+        "evidence_ids": [
+          "E5"
+        ],
+        "assumptions": [],
+        "confidence": "medium",
+        "why_it_matters_for_onboarding": "Leave unsupported sustainability claims out of every demo."
+      }
+    ],
+    "key_indicators": {
+      "fit_scorecard": {
+        "familiarity_with_technology": {
+          "score": 2,
+          "rationale": "No direct baseline assessment; ask before choosing the session level.",
+          "evidence_ids": [],
+          "assumptions": [
+            "Selection hypothesis; qualification remains open."
+          ]
+        },
+        "core_target_fit": {
+          "score": 4,
+          "rationale": "The stated creative goals provide a concrete workflow to explore.",
+          "evidence_ids": [
+            "E1",
+            "E2"
+          ],
+          "assumptions": []
+        },
+        "relationship_strength": {
+          "score": 3,
+          "rationale": "Warm relationship in the fictional brief; no real contact history.",
+          "evidence_ids": [],
+          "assumptions": [
+            "Selection hypothesis; qualification remains open."
+          ]
+        },
+        "potential": {
+          "score": 3,
+          "rationale": "Potential depends on the partner choosing a repeatable use after a safe pilot.",
+          "evidence_ids": [
+            "E2"
+          ],
+          "assumptions": []
+        }
+      },
+      "why_now_signals": [
+        {
+          "statement": "Timing is unconfirmed. Ask whether this is the right project window.",
+          "evidence_ids": [],
+          "assumptions": [
+            "No current deadline supplied."
+          ],
+          "confidence": "low"
+        }
+      ],
+      "audience_signals": [
+        {
+          "statement": "Regional brand teams, retail storytellers and customers reading collection materials",
+          "evidence_ids": [],
+          "assumptions": [
+            "Regional team and customer roles are a working audience hypothesis, not confirmed research."
+          ],
+          "confidence": "low"
+        }
+      ],
+      "business_signals": [
+        {
+          "statement": "Maintain a consistent seasonal story",
+          "evidence_ids": [
+            "E2"
+          ],
+          "assumptions": [],
+          "confidence": "medium"
+        }
+      ]
+    },
+    "unknowns": [
+      "No real-world research was performed.",
+      "Available assets, permissions, tools and timing are not confirmed.",
+      "No measured baseline or ROI is supplied."
+    ],
+    "questions_to_ask": [
+      "Who owns final approval for each market?",
+      "Which collection copy is already approved?",
+      "Which claims and terms must remain unchanged?"
+    ]
+  },
+  "workflow": [
+    {
+      "id": "W1",
+      "name": "Source collection narrative",
+      "owner_role": "Brand editorial",
+      "tools": [
+        "Approved copy repository (not confirmed)"
+      ],
+      "pain_points": [
+        "Multiple source versions"
+      ],
+      "time_cost_signal": "Not measured; establish a baseline with the partner.",
+      "opportunity": "Build a source-and-claim ledger",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "human_judgment_to_protect": "Brand meaning and historical accuracy",
+      "origin": "assumption"
+    },
+    {
+      "id": "W2",
+      "name": "Draft regional variants",
+      "owner_role": "Regional editorial",
+      "tools": [
+        "Translation workflow (not confirmed)"
+      ],
+      "pain_points": [
+        "Inconsistent regional interpretation"
+      ],
+      "time_cost_signal": "Not measured; establish a baseline with the partner.",
+      "opportunity": "Draft variants from an approved glossary",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "human_judgment_to_protect": "Cultural meaning and final voice",
+      "origin": "assumption"
+    },
+    {
+      "id": "W3",
+      "name": "Brand and legal review",
+      "owner_role": "Brand and legal",
+      "tools": [
+        "Review tracker (assumed)"
+      ],
+      "pain_points": [
+        "Approval status is hard to see"
+      ],
+      "time_cost_signal": "Not measured; establish a baseline with the partner.",
+      "opportunity": "Highlight changed claims and unresolved questions",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "human_judgment_to_protect": "Final claim approval",
+      "origin": "assumption"
+    },
+    {
+      "id": "W4",
+      "name": "Publish approved materials",
+      "owner_role": "Regional marketing",
+      "tools": [
+        "Owned channels (unspecified)"
+      ],
+      "pain_points": [
+        "Wrong-version risk"
+      ],
+      "time_cost_signal": "Not measured; establish a baseline with the partner.",
+      "opportunity": "Prepare an explicit release checklist",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "human_judgment_to_protect": "Release decision",
+      "origin": "assumption"
+    }
+  ],
+  "use_cases": [
+    {
+      "id": "UC1",
+      "title": "Approved-copy localization pilot",
+      "one_line": "Draft two regional variants with unchanged claim IDs and a reviewer checklist.",
+      "capability_ids": [
+        "translation_localization"
+      ],
+      "workflow_step_ids": [
+        "W2"
+      ],
+      "goal_link": "Maintain a consistent seasonal story",
+      "audience_link": "Regional brand teams, retail storytellers and customers reading collection materials",
+      "values_link": "Heritage and craftsmanship are stated brand values.",
+      "scores": {
+        "goal_fit": {
+          "score": 5,
+          "rationale": "E2 supports exploring this task: Draft two regional variants with unchanged claim IDs and a reviewer checklist. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 5,
+          "rationale": "The proposed recipient is regional brand teams, retail storytellers and customers reading collection materials. Test whether “Approved-copy localization pilot” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3: Heritage and craftsmanship are stated brand values. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 4,
+          "rationale": "A 3-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 4,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 5,
+          "rationale": "“Approved-copy localization pilot” targets draft regional variants, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 4,
+          "rationale": "Risk score assumes this control is followed: Keep approved claims immutable; require regional and legal review."
+        }
+      },
+      "rationale": "Because E2 states “Its stated goal is seasonal collection storytelling with consistent regional localization.”, prepare this bounded test: Draft two regional variants with unchanged claim IDs and a reviewer checklist. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Claim drift",
+          "severity": "medium",
+          "mitigation": "Keep approved claims immutable; require regional and legal review."
+        }
+      ],
+      "time_to_first_value_days": 3,
+      "effort": "medium",
+      "evidence_ids": [
+        "E2",
+        "E4",
+        "E5"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Use a fictional 150-word collection brief and compare two reviewed variants."
+    },
+    {
+      "id": "UC2",
+      "title": "Collection story source ledger",
+      "one_line": "Map every story statement to an approved source and owner.",
+      "capability_ids": [
+        "research_synthesis"
+      ],
+      "workflow_step_ids": [
+        "W1"
+      ],
+      "goal_link": "Maintain a consistent seasonal story",
+      "audience_link": "Regional brand teams, retail storytellers and customers reading collection materials",
+      "values_link": "Heritage and craftsmanship are stated brand values.",
+      "scores": {
+        "goal_fit": {
+          "score": 5,
+          "rationale": "E3 supports exploring this task: Map every story statement to an approved source and owner. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 4,
+          "rationale": "The proposed recipient is regional brand teams, retail storytellers and customers reading collection materials. Test whether “Collection story source ledger” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3: Heritage and craftsmanship are stated brand values. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 5,
+          "rationale": "A 1-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 5,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "“Collection story source ledger” targets source collection narrative, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Leave unsourced details as questions for the archive owner."
+        }
+      },
+      "rationale": "Because E3 states “Heritage and craftsmanship are stated brand values.”, prepare this bounded test: Map every story statement to an approved source and owner. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Unverified heritage",
+          "severity": "medium",
+          "mitigation": "Leave unsourced details as questions for the archive owner."
+        }
+      ],
+      "time_to_first_value_days": 1,
+      "effort": "low",
+      "evidence_ids": [
+        "E3",
+        "E5"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Audit five sentences in a fictional collection brief."
+    },
+    {
+      "id": "UC3",
+      "title": "Craft-detail editorial outline",
+      "one_line": "Build a story outline from approved craft descriptions.",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "workflow_step_ids": [
+        "W1"
+      ],
+      "goal_link": "Keep brand and legal review visible",
+      "audience_link": "Regional brand teams, retail storytellers and customers reading collection materials",
+      "values_link": "Heritage and craftsmanship are stated brand values.",
+      "scores": {
+        "goal_fit": {
+          "score": 4,
+          "rationale": "E2 supports exploring this task: Build a story outline from approved craft descriptions. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 5,
+          "rationale": "The proposed recipient is regional brand teams, retail storytellers and customers reading collection materials. Test whether “Craft-detail editorial outline” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3: Heritage and craftsmanship are stated brand values. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 4,
+          "rationale": "A 2-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 4,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 4,
+          "rationale": "“Craft-detail editorial outline” targets source collection narrative, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 4,
+          "rationale": "Risk score assumes this control is followed: Use only details present in the source ledger."
+        }
+      },
+      "rationale": "Because E2 states “Its stated goal is seasonal collection storytelling with consistent regional localization.”, prepare this bounded test: Build a story outline from approved craft descriptions. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Invented provenance",
+          "severity": "medium",
+          "mitigation": "Use only details present in the source ledger."
+        }
+      ],
+      "time_to_first_value_days": 2,
+      "effort": "medium",
+      "evidence_ids": [
+        "E2",
+        "E3"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Ask the brand editor to mark unsupported wording."
+    },
+    {
+      "id": "UC4",
+      "title": "Regional glossary comparison",
+      "one_line": "Find inconsistent translations of approved brand terms.",
+      "capability_ids": [
+        "research_synthesis"
+      ],
+      "workflow_step_ids": [
+        "W2"
+      ],
+      "goal_link": "Maintain a consistent seasonal story",
+      "audience_link": "Regional brand teams, retail storytellers and customers reading collection materials",
+      "values_link": "Heritage and craftsmanship are stated brand values.",
+      "scores": {
+        "goal_fit": {
+          "score": 5,
+          "rationale": "E2 supports exploring this task: Find inconsistent translations of approved brand terms. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 4,
+          "rationale": "The proposed recipient is regional brand teams, retail storytellers and customers reading collection materials. Test whether “Regional glossary comparison” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3: Heritage and craftsmanship are stated brand values. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 4,
+          "rationale": "A 2-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 4,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 4,
+          "rationale": "“Regional glossary comparison” targets draft regional variants, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Regional reviewers resolve differences; the system only flags them."
+        }
+      },
+      "rationale": "Because E2 states “Its stated goal is seasonal collection storytelling with consistent regional localization.”, prepare this bounded test: Find inconsistent translations of approved brand terms. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Overriding local nuance",
+          "severity": "medium",
+          "mitigation": "Regional reviewers resolve differences; the system only flags them."
+        }
+      ],
+      "time_to_first_value_days": 2,
+      "effort": "medium",
+      "evidence_ids": [
+        "E2",
+        "E3"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Review a ten-term fictional glossary."
+    },
+    {
+      "id": "UC5",
+      "title": "Legal review change summary",
+      "one_line": "Show changes between an approved source and a draft variant.",
+      "capability_ids": [
+        "research_synthesis"
+      ],
+      "workflow_step_ids": [
+        "W3"
+      ],
+      "goal_link": "Localize approved collection materials",
+      "audience_link": "Regional brand teams, retail storytellers and customers reading collection materials",
+      "values_link": "Heritage and craftsmanship are stated brand values.",
+      "scores": {
+        "goal_fit": {
+          "score": 5,
+          "rationale": "E4 supports exploring this task: Show changes between an approved source and a draft variant. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 3,
+          "rationale": "The proposed recipient is regional brand teams, retail storytellers and customers reading collection materials. Test whether “Legal review change summary” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3: Heritage and craftsmanship are stated brand values. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 5,
+          "rationale": "A 1-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 5,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "“Legal review change summary” targets brand and legal review, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Legal reviewers inspect the full text, not just the summary."
+        }
+      },
+      "rationale": "Because E4 states “Brand governance and legal review are required before external use.”, prepare this bounded test: Show changes between an approved source and a draft variant. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Missed claim change",
+          "severity": "medium",
+          "mitigation": "Legal reviewers inspect the full text, not just the summary."
+        }
+      ],
+      "time_to_first_value_days": 1,
+      "effort": "low",
+      "evidence_ids": [
+        "E4",
+        "E5"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Seed a changed claim and check it is surfaced."
+    },
+    {
+      "id": "UC6",
+      "title": "Retail briefing questions",
+      "one_line": "Draft questions for staff from approved seasonal copy.",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "workflow_step_ids": [
+        "W4"
+      ],
+      "goal_link": "Keep brand and legal review visible",
+      "audience_link": "Regional brand teams, retail storytellers and customers reading collection materials",
+      "values_link": "Heritage and craftsmanship are stated brand values.",
+      "scores": {
+        "goal_fit": {
+          "score": 4,
+          "rationale": "E2 supports exploring this task: Draft questions for staff from approved seasonal copy. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 4,
+          "rationale": "The proposed recipient is regional brand teams, retail storytellers and customers reading collection materials. Test whether “Retail briefing questions” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 4,
+          "rationale": "E3: Heritage and craftsmanship are stated brand values. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 5,
+          "rationale": "A 1-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 5,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "“Retail briefing questions” targets publish approved materials, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Answer only from approved material."
+        }
+      },
+      "rationale": "Because E2 states “Its stated goal is seasonal collection storytelling with consistent regional localization.”, prepare this bounded test: Draft questions for staff from approved seasonal copy. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Unsupported sales claims",
+          "severity": "medium",
+          "mitigation": "Answer only from approved material."
+        }
+      ],
+      "time_to_first_value_days": 1,
+      "effort": "low",
+      "evidence_ids": [
+        "E2",
+        "E4"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Ask retail trainers to identify gaps before use."
+    },
+    {
+      "id": "UC7",
+      "title": "Campaign asset checklist",
+      "one_line": "List required formats and approval owners for a fictional launch.",
+      "capability_ids": [
+        "workflow_automation"
+      ],
+      "workflow_step_ids": [
+        "W4"
+      ],
+      "goal_link": "Maintain a consistent seasonal story",
+      "audience_link": "Regional brand teams, retail storytellers and customers reading collection materials",
+      "values_link": "Heritage and craftsmanship are stated brand values.",
+      "scores": {
+        "goal_fit": {
+          "score": 4,
+          "rationale": "E2 supports exploring this task: List required formats and approval owners for a fictional launch. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 3,
+          "rationale": "The proposed recipient is regional brand teams, retail storytellers and customers reading collection materials. Test whether “Campaign asset checklist” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 4,
+          "rationale": "E3: Heritage and craftsmanship are stated brand values. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 4,
+          "rationale": "A 2-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 4,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "“Campaign asset checklist” targets publish approved materials, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 4,
+          "rationale": "Risk score assumes this control is followed: Keep routing as a draft until every owner confirms."
+        }
+      },
+      "rationale": "Because E2 states “Its stated goal is seasonal collection storytelling with consistent regional localization.”, prepare this bounded test: List required formats and approval owners for a fictional launch. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Unapproved routing",
+          "severity": "medium",
+          "mitigation": "Keep routing as a draft until every owner confirms."
+        }
+      ],
+      "time_to_first_value_days": 2,
+      "effort": "medium",
+      "evidence_ids": [
+        "E2",
+        "E4"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Review a checklist with brand and regional roles."
+    },
+    {
+      "id": "UC8",
+      "title": "Collection image reference notes",
+      "one_line": "Describe only visible craft details in brand-owned mock images.",
+      "capability_ids": [
+        "visual_reference_analysis"
+      ],
+      "workflow_step_ids": [
+        "W1"
+      ],
+      "goal_link": "Localize approved collection materials",
+      "audience_link": "Regional brand teams, retail storytellers and customers reading collection materials",
+      "values_link": "Heritage and craftsmanship are stated brand values.",
+      "scores": {
+        "goal_fit": {
+          "score": 3,
+          "rationale": "E3 supports exploring this task: Describe only visible craft details in brand-owned mock images. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 4,
+          "rationale": "The proposed recipient is regional brand teams, retail storytellers and customers reading collection materials. Test whether “Collection image reference notes” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 4,
+          "rationale": "E3: Heritage and craftsmanship are stated brand values. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 3,
+          "rationale": "A 3-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 4,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 4,
+          "rationale": "“Collection image reference notes” targets source collection narrative, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 3,
+          "rationale": "Risk score assumes this control is followed: Never infer fiber, origin or sustainability from an image."
+        }
+      },
+      "rationale": "Because E3 states “Heritage and craftsmanship are stated brand values.”, prepare this bounded test: Describe only visible craft details in brand-owned mock images. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "False material inference",
+          "severity": "high",
+          "mitigation": "Never infer fiber, origin or sustainability from an image."
+        }
+      ],
+      "time_to_first_value_days": 3,
+      "effort": "medium",
+      "evidence_ids": [
+        "E3",
+        "E5"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Have an editor verify every visual description."
+    },
+    {
+      "id": "UC9",
+      "title": "Workshop briefing pack",
+      "one_line": "Turn approved goals and constraints into a host briefing.",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "workflow_step_ids": [
+        "W3"
+      ],
+      "goal_link": "Keep brand and legal review visible",
+      "audience_link": "Regional brand teams, retail storytellers and customers reading collection materials",
+      "values_link": "Heritage and craftsmanship are stated brand values.",
+      "scores": {
+        "goal_fit": {
+          "score": 4,
+          "rationale": "E4 supports exploring this task: Turn approved goals and constraints into a host briefing. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 3,
+          "rationale": "The proposed recipient is regional brand teams, retail storytellers and customers reading collection materials. Test whether “Workshop briefing pack” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3: Heritage and craftsmanship are stated brand values. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 5,
+          "rationale": "A 1-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 5,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "“Workshop briefing pack” targets brand and legal review, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Exclude unreleased collection details unless all attendees are cleared."
+        }
+      },
+      "rationale": "Because E4 states “Brand governance and legal review are required before external use.”, prepare this bounded test: Turn approved goals and constraints into a host briefing. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Confidentiality",
+          "severity": "medium",
+          "mitigation": "Exclude unreleased collection details unless all attendees are cleared."
+        }
+      ],
+      "time_to_first_value_days": 1,
+      "effort": "low",
+      "evidence_ids": [
+        "E4"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Review the participant list and access level before sharing."
+    },
+    {
+      "id": "UC10",
+      "title": "Editorial review dashboard",
+      "one_line": "Summarize synthetic approval statuses by market.",
+      "capability_ids": [
+        "data_analysis"
+      ],
+      "workflow_step_ids": [
+        "W3"
+      ],
+      "goal_link": "Maintain a consistent seasonal story",
+      "audience_link": "Regional brand teams, retail storytellers and customers reading collection materials",
+      "values_link": "Heritage and craftsmanship are stated brand values.",
+      "scores": {
+        "goal_fit": {
+          "score": 3,
+          "rationale": "E2 supports exploring this task: Summarize synthetic approval statuses by market. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 3,
+          "rationale": "The proposed recipient is regional brand teams, retail storytellers and customers reading collection materials. Test whether “Editorial review dashboard” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 4,
+          "rationale": "E3: Heritage and craftsmanship are stated brand values. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 3,
+          "rationale": "A 3-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 4,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "“Editorial review dashboard” targets brand and legal review, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: A draft summary never grants approval."
+        }
+      },
+      "rationale": "Because E2 states “Its stated goal is seasonal collection storytelling with consistent regional localization.”, prepare this bounded test: Summarize synthetic approval statuses by market. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Misleading status",
+          "severity": "medium",
+          "mitigation": "A draft summary never grants approval."
+        }
+      ],
+      "time_to_first_value_days": 3,
+      "effort": "medium",
+      "evidence_ids": [
+        "E2",
+        "E4"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Reconcile the summary with the synthetic source rows."
+    }
+  ],
+  "not_recommended": [
+    {
+      "title": "Invent sustainability campaign claims",
+      "reason": "E5 requires approved substantiation, which this fixture does not contain.",
+      "risk": {
+        "type": "Misleading claims",
+        "severity": "high",
+        "mitigation": "Use only verified approved language and ask legal to review."
+      }
+    },
+    {
+      "title": "Generate a heritage story from imagined archives",
+      "reason": "E3 is a value, not evidence for specific historical facts.",
+      "risk": {
+        "type": "False provenance",
+        "severity": "high",
+        "mitigation": "Ask the archive owner for approved sources."
+      }
+    }
+  ],
+  "demo": {
+    "use_case_id": "UC1",
+    "concept": "Localize approved copy with a visible review gate",
+    "why_this_demo": "Because E2 calls for regional storytelling and E4 requires review, show a small draft with claim tracking rather than finished campaign assets.",
+    "versions": {
+      "five_min": "Confirm the goal, one boundary and whether a follow-up is wanted.",
+      "twenty_min": "A private working session. Read source copy together, compare variants, then spend time on ownership and review. No recording by default.",
+      "sixty_min_hands_on": "Only after explicit agreement: establish a baseline, try one approved input, compare the output, and record a keep/change/stop decision."
+    },
+    "script_beats": [
+      {
+        "time": "0–5 min",
+        "action": "Ask the partner to describe the handoff and boundaries.",
+        "intended_feeling": "Heard and in control",
+        "talking_point": "Who owns final approval for each market?"
+      },
+      {
+        "time": "5–12 min",
+        "action": "Fictional approved collection copy: a jacket with hand-finished seams and a structured silhouette. Prepare two regional editorial variants; preserve these details and flag any wording needing legal review. Do not add origin or sustainability claims.",
+        "intended_feeling": "Able to correct the working draft",
+        "talking_point": "This is a private draft from fictional or approved inputs; please challenge the assumptions."
+      },
+      {
+        "time": "12–20 min",
+        "action": "Ask the partner to keep, change or reject the output and choose the next step.",
+        "intended_feeling": "Free to decline",
+        "talking_point": "Which changes made regional review easier, and where did the draft move away from the approved meaning? Please identify the terms and claims that need tighter controls before another test."
+      }
+    ],
+    "sample_inputs": [
+      "Fictional approved collection copy: a jacket with hand-finished seams and a structured silhouette. Prepare two regional editorial variants; preserve these details and flag any wording needing legal review. Do not add origin or sustainability claims."
+    ],
+    "assets_needed": [
+      "Fictional practice input or partner-owned material with explicit permission",
+      "A host to capture corrections and unknowns"
+    ],
+    "wow_moment": "The partner can point to a useful decision or correction; there is no requirement to be impressed.",
+    "fallback_plan": "Use a prepared text example or a blank decision sheet. If the partner declines, keep the session to listening.",
+    "what_not_to_show": [
+      "Invent sustainability campaign claims",
+      "Generate a heritage story from imagined archives"
+    ],
+    "success_signal": "Every retained claim maps to the source; a regional reviewer accepts the meaning."
+  },
+  "experience": {
+    "tone_and_voice": "Precise, reserved and approval-aware. Ask for approved language before drafting.",
+    "host_and_channel": "Partner lead with a brand editorial counterpart; legal and regional roles join only when confirmed.",
+    "invitation_draft": "Could we review a small localization workflow using fictional collection copy? The aim is to see whether source tracking and a regional review checklist would help your team. Nothing would be published, and brand and legal approval would remain with your team.",
+    "setting_and_pacing": "A private working session. Read source copy together, compare variants, then spend time on ownership and review. No recording by default.",
+    "discretion": {
+      "level": "high",
+      "rules": [
+        "No recording without explicit agreement.",
+        "Use fictional or cleared inputs only.",
+        "Share notes only with confirmed participants."
+      ]
+    },
+    "accessibility_notes": [
+      "Ask for preferred format, language and access requirements.",
+      "Provide a readable text copy; do not rely on color or sound alone."
+    ],
+    "day_brief": {
+      "who": "Maison Aurelle — fictional brand; warm relationship.",
+      "why_them": "The stated goal is to maintain a consistent seasonal story; fit remains a qualification hypothesis.",
+      "what_they_care_about": [
+        "Maintain a consistent seasonal story",
+        "Localize approved collection materials",
+        "Keep brand and legal review visible"
+      ],
+      "do": [
+        "Precise, reserved and approval-aware. Ask for approved language before drafting.",
+        "Confirm permissions and a useful next step."
+      ],
+      "avoid": [
+        "Invent sustainability campaign claims",
+        "Generate a heritage story from imagined archives"
+      ],
+      "open_questions": [
+        "Who owns final approval for each market?",
+        "Which collection copy is already approved?",
+        "Which claims and terms must remain unchanged?"
+      ],
+      "next_step": "Ask the partner to correct the brief and choose one pilot or decline."
+    },
+    "event_plan": null,
+    "what_to_avoid": [
+      "Invent sustainability campaign claims",
+      "Generate a heritage story from imagined archives"
+    ]
+  },
+  "stakeholders": [
+    {
+      "name_or_role": "Brand editorial role",
+      "role_in_decision": "champion",
+      "what_they_care_about": "Consistent story and voice",
+      "engagement_approach": "Ask for approved source copy and non-negotiable terms.",
+      "risk": "Role is fictional; confirm actual participation and decision rights.",
+      "origin": "fixture"
+    },
+    {
+      "name_or_role": "Legal reviewer role",
+      "role_in_decision": "evaluator",
+      "what_they_care_about": "Claim substantiation and approval",
+      "engagement_approach": "Review claim IDs before variants.",
+      "risk": "Role is fictional; confirm actual participation and decision rights.",
+      "origin": "fixture"
+    },
+    {
+      "name_or_role": "Regional marketing role",
+      "role_in_decision": "user",
+      "what_they_care_about": "Local relevance",
+      "engagement_approach": "Invite corrections to nuance without changing approved facts.",
+      "risk": "Role is fictional; confirm actual participation and decision rights.",
+      "origin": "fixture"
+    }
+  ],
+  "journey": [
+    {
+      "name": "Introduction",
+      "goal": "Understand how to maintain a consistent seasonal story.",
+      "activities": [
+        "Confirm goals, boundaries and relationship context.",
+        "Who owns final approval for each market?"
+      ],
+      "owner_roles": [
+        "Partner lead",
+        "Brand editorial role"
+      ],
+      "partner_signal": "Corrects the brief",
+      "exit_criteria": "Partner confirms the problem and chooses whether to continue.",
+      "week_range": "1"
+    },
+    {
+      "name": "Education",
+      "goal": "Agree what is useful and appropriate.",
+      "activities": [
+        "Explain the relevant capability and its limits using approved inputs.",
+        "Because E2 calls for regional storytelling and E4 requires review, show a small draft with claim tracking rather than finished campaign assets."
+      ],
+      "owner_roles": [
+        "Partner lead",
+        "Brand editorial role"
+      ],
+      "partner_signal": "Explains a boundary",
+      "exit_criteria": "Partner can explain the limits and approves one safe test.",
+      "week_range": "2"
+    },
+    {
+      "name": "Experimentation",
+      "goal": "A source-linked localization draft is easier to review than an untracked draft.",
+      "activities": [
+        "Run one agreed pilot.",
+        "Use a fictional 150-word collection brief and compare two reviewed variants."
+      ],
+      "owner_roles": [
+        "Partner lead",
+        "Brand editorial role"
+      ],
+      "partner_signal": "Chooses a pilot outcome",
+      "exit_criteria": "Every retained claim maps to the source; a regional reviewer accepts the meaning.",
+      "week_range": "3–4"
+    },
+    {
+      "name": "Adoption",
+      "goal": "Make the chosen task repeatable.",
+      "activities": [
+        "Support one repeat use in the real workflow after approval.",
+        "Confirm a single contact and document the handover."
+      ],
+      "owner_roles": [
+        "Partner lead",
+        "Brand editorial role"
+      ],
+      "partner_signal": "Repeats an approved task",
+      "exit_criteria": "Partner repeats the agreed task independently with approved inputs.",
+      "week_range": "5–8"
+    },
+    {
+      "name": "Long-term engagement",
+      "goal": "Keep the relationship and feedback loop useful.",
+      "activities": [
+        "Review whether the workflow still helps the stated goal.",
+        "Close feedback items and agree whether to continue."
+      ],
+      "owner_roles": [
+        "Partner lead",
+        "Brand editorial role"
+      ],
+      "partner_signal": "Requests a useful next step",
+      "exit_criteria": "Partner and owner agree to continue, adjust or stop based on actual use.",
+      "week_range": "9–13"
+    }
+  ],
+  "experiments": [
+    {
+      "hypothesis": "A source-linked localization draft is easier to review than an untracked draft.",
+      "setup": "Use a fictional practice input or explicitly cleared partner material; record a manual baseline first.",
+      "steps": [
+        "Ask for agreement and confirm boundaries.",
+        "Use a fictional 150-word collection brief and compare two reviewed variants.",
+        "Compare against the baseline and record corrections."
+      ],
+      "metric": "Partner acceptance and number of unsupported or corrected statements; collect actual observations.",
+      "success_threshold": "Every retained claim maps to the source; a regional reviewer accepts the meaning. Proposed threshold; agree with the partner before testing.",
+      "timebox_days": 7,
+      "decision_gate": "Keep only if the partner accepts the result and all review requirements are met; otherwise change or stop.",
+      "risk": {
+        "type": "Claim drift",
+        "severity": "medium",
+        "mitigation": "Keep approved claims immutable; require regional and legal review."
+      }
+    },
+    {
+      "hypothesis": "A claim ledger reveals unsupported language before legal review.",
+      "setup": "Use a fictional practice input or explicitly cleared partner material; record a manual baseline first.",
+      "steps": [
+        "Ask for agreement and confirm boundaries.",
+        "Audit five sentences in a fictional collection brief.",
+        "Compare against the baseline and record corrections."
+      ],
+      "metric": "Partner acceptance and number of unsupported or corrected statements; collect actual observations.",
+      "success_threshold": "The reviewer identifies every deliberately seeded unsupported claim. Proposed threshold; agree with the partner before testing.",
+      "timebox_days": 7,
+      "decision_gate": "Keep only if the partner accepts the result and all review requirements are met; otherwise change or stop.",
+      "risk": {
+        "type": "Unverified heritage",
+        "severity": "medium",
+        "mitigation": "Leave unsourced details as questions for the archive owner."
+      }
+    },
+    {
+      "hypothesis": "An explicit approval checklist prevents draft copy being treated as final.",
+      "setup": "Use a fictional practice input or explicitly cleared partner material; record a manual baseline first.",
+      "steps": [
+        "Ask for agreement and confirm boundaries.",
+        "Ask the brand editor to mark unsupported wording.",
+        "Compare against the baseline and record corrections."
+      ],
+      "metric": "Partner acceptance and number of unsupported or corrected statements; collect actual observations.",
+      "success_threshold": "A teammate can identify the current owner and release gate without asking the host. Proposed threshold; agree with the partner before testing.",
+      "timebox_days": 14,
+      "decision_gate": "Keep only if the partner accepts the result and all review requirements are met; otherwise change or stop.",
+      "risk": {
+        "type": "Invented provenance",
+        "severity": "medium",
+        "mitigation": "Use only details present in the source ledger."
+      }
+    }
+  ],
+  "cadence": {
+    "weekly_standup_agenda": [
+      "What was tried and what stayed human?",
+      "What changed in the partner’s stated goal?",
+      "Which risks, questions or feedback need an owner?",
+      "Choose one next action or explicitly pause."
+    ],
+    "channel_setup": "One partner lead owns a private shared channel chosen by the partner. Ask before adding teammates.",
+    "touchpoints_90_days": [
+      {
+        "day": 1,
+        "purpose": "Confirm the brief",
+        "owner": "Partner lead",
+        "output": "Partner confirms the problem and chooses whether to continue."
+      },
+      {
+        "day": 7,
+        "purpose": "Review boundaries and learning needs",
+        "owner": "Partner lead",
+        "output": "Partner can explain the limits and approves one safe test."
+      },
+      {
+        "day": 14,
+        "purpose": "Agree inputs, permissions and a test for localize approved copy with a visible review gate",
+        "owner": "Partner lead",
+        "output": "Partner can explain the limits and approves one safe test."
+      },
+      {
+        "day": 21,
+        "purpose": "Review the pilot: A source-linked localization draft is easier to review than an untracked draft.",
+        "owner": "Partner lead",
+        "output": "Every retained claim maps to the source; a regional reviewer accepts the meaning."
+      },
+      {
+        "day": 28,
+        "purpose": "Review the pilot: A source-linked localization draft is easier to review than an untracked draft.",
+        "owner": "Partner lead",
+        "output": "Every retained claim maps to the source; a regional reviewer accepts the meaning."
+      },
+      {
+        "day": 35,
+        "purpose": "Support an independent repeat use of approved-copy localization pilot",
+        "owner": "Partner lead",
+        "output": "Partner repeats the agreed task independently with approved inputs."
+      },
+      {
+        "day": 42,
+        "purpose": "Support an independent repeat use of approved-copy localization pilot",
+        "owner": "Partner lead",
+        "output": "Partner repeats the agreed task independently with approved inputs."
+      },
+      {
+        "day": 49,
+        "purpose": "Support an independent repeat use of approved-copy localization pilot",
+        "owner": "Partner lead",
+        "output": "Partner repeats the agreed task independently with approved inputs."
+      },
+      {
+        "day": 56,
+        "purpose": "Support an independent repeat use of approved-copy localization pilot",
+        "owner": "Partner lead",
+        "output": "Partner repeats the agreed task independently with approved inputs."
+      },
+      {
+        "day": 63,
+        "purpose": "Review ongoing usefulness for maintain a consistent seasonal story and close open feedback",
+        "owner": "Partner lead",
+        "output": "Partner and owner agree to continue, adjust or stop based on actual use."
+      },
+      {
+        "day": 70,
+        "purpose": "Review ongoing usefulness for maintain a consistent seasonal story and close open feedback",
+        "owner": "Partner lead",
+        "output": "Partner and owner agree to continue, adjust or stop based on actual use."
+      },
+      {
+        "day": 77,
+        "purpose": "Review ongoing usefulness for maintain a consistent seasonal story and close open feedback",
+        "owner": "Partner lead",
+        "output": "Partner and owner agree to continue, adjust or stop based on actual use."
+      },
+      {
+        "day": 84,
+        "purpose": "Review ongoing usefulness for maintain a consistent seasonal story and close open feedback",
+        "owner": "Partner lead",
+        "output": "Partner and owner agree to continue, adjust or stop based on actual use."
+      },
+      {
+        "day": 90,
+        "purpose": "Review ongoing usefulness for maintain a consistent seasonal story and close open feedback",
+        "owner": "Partner lead",
+        "output": "90-day continue/change/stop decision and documented handover"
+      }
+    ],
+    "follow_up_messages": [
+      {
+        "when": "Within one working day of the session",
+        "channel": "Partner-approved private channel",
+        "draft": "Which changes made regional review easier, and where did the draft move away from the approved meaning? Please identify the terms and claims that need tighter controls before another test."
+      },
+      {
+        "when": "After a feedback item is reviewed",
+        "channel": "Same private channel",
+        "draft": "You raised an issue in the pilot. We recorded it, assigned an owner, and will share the outcome or a clear explanation if it cannot be addressed. Is our description accurate?"
+      }
+    ],
+    "handover_checklist": [
+      "Partner-approved goals and boundaries",
+      "One named point of contact and backup",
+      "Approved assets and confidentiality rules",
+      "Observed activation baseline and next review date",
+      "Open feedback with owners and response dates"
+    ]
+  },
+  "feedback": {
+    "capture_template": [
+      "Task and permitted input",
+      "Expected versus observed result",
+      "Partner’s own words, with permission",
+      "Severity and reproducibility",
+      "Owner, review date and partner update"
+    ],
+    "routing": "Partner lead checks for confidential material, then routes workflow defects to solutions and product defects to product. Record an owner and response date; no automatic sending.",
+    "close_the_loop_message": "We reviewed the issue you raised. Here is what changed, what remains open, and the next review date. Please tell us whether this addresses the problem in your workflow."
+  },
+  "metrics": {
+    "stage_definitions": {
+      "Introduction": "Partner confirms the problem and chooses whether to continue.",
+      "Education": "Partner can explain the limits and approves one safe test.",
+      "Experimentation": "Every retained claim maps to the source; a regional reviewer accepts the meaning.",
+      "Adoption": "Partner repeats the agreed task independently with approved inputs.",
+      "Long-term engagement": "Partner and owner agree to continue, adjust or stop based on actual use."
+    },
+    "leading_indicators": [
+      "Time from session to first approved trial",
+      "Whether the partner independently repeats the task",
+      "Unsupported claims and review corrections",
+      "Feedback items closed with a partner response"
+    ],
+    "time_to_activation_target": "Planning assumption: 1–3 months to independent repeat use; agree a baseline and target with the partner. Attendance does not count as activation."
+  },
+  "flags": [
+    {
+      "section": "All sections",
+      "severity": "medium",
+      "issue": "Fictional fixture evidence is not verified public research.",
+      "suggested_fix": "Confirm every fact and boundary before real outreach."
+    },
+    {
+      "section": "Use cases",
+      "severity": "medium",
+      "issue": "Scores, time estimates and thresholds are planning judgments, not measured outcomes.",
+      "suggested_fix": "Review weights and agree thresholds before a test."
+    }
+  ],
+  "claims_audit": [
+    "All source references point to labeled fictional persona briefs.",
+    "No real quotes, follower counts or measured outcomes are claimed.",
+    "Workflow steps and time-to-value are labeled hypotheses.",
+    "IP, disclosure and sustainability items are review prompts, not legal conclusions."
+  ],
+  "context_conflicts": [],
+  "context": {
+    "company": {},
+    "role_department": {},
+    "people": [],
+    "event": {},
+    "workflow": {},
+    "history_goals": {},
+    "notes": "",
+    "provenance": {},
+    "layer_enabled": {},
+    "version": 0
+  },
+  "changes": []
+}

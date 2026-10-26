@@ -1,0 +1,1427 @@
+{
+  "schema_version": "1.0",
+  "id": "juno-park",
+  "name": "Juno Park",
+  "partner_type": "creator",
+  "fictional": true,
+  "variant": "base",
+  "relationship": "New",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Juno is a fictional indie musician and creator-educator developing an album’s visual world.",
+      "source_url": "fixture://juno-park/persona#E1",
+      "source_title": "Fictional persona brief: Juno Park",
+      "date": "2026-10-26",
+      "kind": "work",
+      "origin": "fixture"
+    },
+    {
+      "id": "E2",
+      "claim": "Juno wants behind-the-scenes material that explains real creative decisions.",
+      "source_url": "fixture://juno-park/persona#E2",
+      "source_title": "Fictional persona brief: Juno Park",
+      "date": "2026-10-26",
+      "kind": "business",
+      "origin": "fixture"
+    },
+    {
+      "id": "E3",
+      "claim": "Authenticity and fan trust are stated priorities.",
+      "source_url": "fixture://juno-park/persona#E3",
+      "source_title": "Fictional persona brief: Juno Park",
+      "date": "2026-10-26",
+      "kind": "values",
+      "origin": "fixture"
+    },
+    {
+      "id": "E4",
+      "claim": "Juno is publicly skeptical of low-effort AI content in this fictional persona brief.",
+      "source_url": "fixture://juno-park/persona#E4",
+      "source_title": "Fictional persona brief: Juno Park",
+      "date": "2026-10-26",
+      "kind": "risk",
+      "origin": "fixture"
+    },
+    {
+      "id": "E5",
+      "claim": "The fictional brief describes a large video audience but provides no platform or follower count.",
+      "source_url": "fixture://juno-park/persona#E5",
+      "source_title": "Fictional persona brief: Juno Park",
+      "date": "2026-10-26",
+      "kind": "audience",
+      "origin": "fixture"
+    }
+  ],
+  "profile": {
+    "summary": {
+      "statement": "Juno is a fictional indie musician and creator-educator developing an album’s visual world.",
+      "evidence_ids": [
+        "E1"
+      ],
+      "assumptions": [],
+      "confidence": "medium"
+    },
+    "creative_goals": [
+      {
+        "statement": "Develop an album’s visual world",
+        "evidence_ids": [
+          "E1"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      },
+      {
+        "statement": "Document real creative decisions",
+        "evidence_ids": [
+          "E2"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      },
+      {
+        "statement": "Preserve fan trust",
+        "evidence_ids": [
+          "E3"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      }
+    ],
+    "audience": {
+      "who": {
+        "statement": "Fans following the album and learners watching behind-the-scenes material",
+        "evidence_ids": [
+          "E2",
+          "E5"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      },
+      "platforms": [
+        "Video channel (platform unspecified)"
+      ],
+      "size_signals": {
+        "statement": "No verified count. The brief contains no numerical audience data.",
+        "evidence_ids": [
+          "E5"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      }
+    },
+    "values": [
+      {
+        "statement": "Authenticity and fan trust are stated priorities.",
+        "evidence_ids": [
+          "E3"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      }
+    ],
+    "style_signature": {
+      "statement": "Artist-led visual direction; no approved image references have been supplied.",
+      "evidence_ids": [],
+      "assumptions": [
+        "Working hypothesis; confirm with the partner."
+      ],
+      "confidence": "low"
+    },
+    "workflow_signals": [
+      {
+        "statement": "Creative boundaries are not documented",
+        "evidence_ids": [],
+        "assumptions": [
+          "Working hypothesis; confirm with the partner."
+        ],
+        "confidence": "low"
+      }
+    ],
+    "constraints": [
+      {
+        "statement": "Juno is publicly skeptical of low-effort AI content in this fictional persona brief.",
+        "evidence_ids": [
+          "E4"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      }
+    ],
+    "sensitivity_level": "standard",
+    "what_matters_most": [
+      {
+        "statement": "Permission to explore at all",
+        "evidence_ids": [
+          "E4"
+        ],
+        "assumptions": [],
+        "confidence": "medium",
+        "why_it_matters_for_onboarding": "Begin by asking where assistance would and would not feel useful."
+      },
+      {
+        "statement": "Fan trust",
+        "evidence_ids": [
+          "E3"
+        ],
+        "assumptions": [],
+        "confidence": "medium",
+        "why_it_matters_for_onboarding": "Agree disclosure language before considering public-facing work."
+      },
+      {
+        "statement": "The album’s own visual language",
+        "evidence_ids": [
+          "E1"
+        ],
+        "assumptions": [],
+        "confidence": "medium",
+        "why_it_matters_for_onboarding": "Use Juno’s references and decisions instead of imitating another artist."
+      },
+      {
+        "statement": "Honest process documentation",
+        "evidence_ids": [
+          "E2"
+        ],
+        "assumptions": [],
+        "confidence": "medium",
+        "why_it_matters_for_onboarding": "Distinguish real process from reconstructed content."
+      },
+      {
+        "statement": "Audience uncertainty",
+        "evidence_ids": [
+          "E5"
+        ],
+        "assumptions": [],
+        "confidence": "medium",
+        "why_it_matters_for_onboarding": "Ask about channel context; do not fabricate audience numbers."
+      }
+    ],
+    "key_indicators": {
+      "fit_scorecard": {
+        "familiarity_with_technology": {
+          "score": 2,
+          "rationale": "No direct baseline assessment; ask before choosing the session level.",
+          "evidence_ids": [],
+          "assumptions": [
+            "Selection hypothesis; qualification remains open."
+          ]
+        },
+        "core_target_fit": {
+          "score": 4,
+          "rationale": "The stated creative goals provide a concrete workflow to explore.",
+          "evidence_ids": [
+            "E1",
+            "E2"
+          ],
+          "assumptions": []
+        },
+        "relationship_strength": {
+          "score": 1,
+          "rationale": "New relationship in the fictional brief; no real contact history.",
+          "evidence_ids": [],
+          "assumptions": [
+            "Selection hypothesis; qualification remains open."
+          ]
+        },
+        "potential": {
+          "score": 3,
+          "rationale": "Potential depends on the partner choosing a repeatable use after a safe pilot.",
+          "evidence_ids": [
+            "E2"
+          ],
+          "assumptions": []
+        }
+      },
+      "why_now_signals": [
+        {
+          "statement": "Timing is unconfirmed. Ask whether this is the right project window.",
+          "evidence_ids": [],
+          "assumptions": [
+            "No current deadline supplied."
+          ],
+          "confidence": "low"
+        }
+      ],
+      "audience_signals": [
+        {
+          "statement": "Fans following the album and learners watching behind-the-scenes material",
+          "evidence_ids": [
+            "E2",
+            "E5"
+          ],
+          "assumptions": [],
+          "confidence": "medium"
+        }
+      ],
+      "business_signals": [
+        {
+          "statement": "Develop an album’s visual world",
+          "evidence_ids": [
+            "E2"
+          ],
+          "assumptions": [],
+          "confidence": "medium"
+        }
+      ]
+    },
+    "unknowns": [
+      "No real-world research was performed.",
+      "Available assets, permissions, tools and timing are not confirmed.",
+      "No measured baseline or ROI is supplied."
+    ],
+    "questions_to_ask": [
+      "Would you prefer a listening session with no demonstration?",
+      "What kinds of assistance would feel misleading to fans?",
+      "Which of your own references can be used privately?"
+    ]
+  },
+  "workflow": [
+    {
+      "id": "W1",
+      "name": "Set album intent",
+      "owner_role": "Juno",
+      "tools": [
+        "Artist notes (not confirmed)"
+      ],
+      "pain_points": [
+        "Creative boundaries are not documented"
+      ],
+      "time_cost_signal": "Not measured; establish a baseline with the partner.",
+      "opportunity": "Record Juno’s own goals and exclusions",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "human_judgment_to_protect": "The album’s meaning and voice",
+      "origin": "assumption"
+    },
+    {
+      "id": "W2",
+      "name": "Explore visual direction",
+      "owner_role": "Juno and visual collaborator",
+      "tools": [
+        "Reference board (assumed)"
+      ],
+      "pain_points": [
+        "References may drift into imitation"
+      ],
+      "time_cost_signal": "Not measured; establish a baseline with the partner.",
+      "opportunity": "Organize only artist-owned references",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "human_judgment_to_protect": "Final visual direction",
+      "origin": "assumption"
+    },
+    {
+      "id": "W3",
+      "name": "Document the process",
+      "owner_role": "Juno",
+      "tools": [
+        "Video editor (not confirmed)"
+      ],
+      "pain_points": [
+        "A neat narrative can erase real uncertainty"
+      ],
+      "time_cost_signal": "Not measured; establish a baseline with the partner.",
+      "opportunity": "Structure a factual log of creative choices",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "human_judgment_to_protect": "What actually happened and how to describe it",
+      "origin": "assumption"
+    },
+    {
+      "id": "W4",
+      "name": "Share with fans",
+      "owner_role": "Juno",
+      "tools": [
+        "Video channel (unspecified)"
+      ],
+      "pain_points": [
+        "Disclosure may be unclear"
+      ],
+      "time_cost_signal": "Not measured; establish a baseline with the partner.",
+      "opportunity": "Review process labels and permissions",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "human_judgment_to_protect": "Whether, when and how to publish",
+      "origin": "assumption"
+    }
+  ],
+  "use_cases": [
+    {
+      "id": "UC1",
+      "title": "Creative boundaries listening brief",
+      "one_line": "Capture Juno’s own permitted and excluded uses before proposing a demonstration.",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "workflow_step_ids": [
+        "W1"
+      ],
+      "goal_link": "Develop an album’s visual world",
+      "audience_link": "Fans following the album and learners watching behind-the-scenes material",
+      "values_link": "Authenticity and fan trust are stated priorities.",
+      "scores": {
+        "goal_fit": {
+          "score": 5,
+          "rationale": "E3 supports exploring this task: Capture Juno’s own permitted and excluded uses before proposing a demonstration. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 5,
+          "rationale": "The proposed recipient is fans following the album and learners watching behind-the-scenes material. Test whether “Creative boundaries listening brief” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3: Authenticity and fan trust are stated priorities. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 5,
+          "rationale": "A 1-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 5,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 5,
+          "rationale": "“Creative boundaries listening brief” targets set album intent, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Juno corrects and approves the brief; silence is not consent."
+        }
+      },
+      "rationale": "Because E3 states “Authenticity and fan trust are stated priorities.”, prepare this bounded test: Capture Juno’s own permitted and excluded uses before proposing a demonstration. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Misrepresenting consent",
+          "severity": "medium",
+          "mitigation": "Juno corrects and approves the brief; silence is not consent."
+        }
+      ],
+      "time_to_first_value_days": 1,
+      "effort": "low",
+      "evidence_ids": [
+        "E3",
+        "E4"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Ask three open questions and return a draft boundaries brief for correction."
+    },
+    {
+      "id": "UC2",
+      "title": "Behind-the-scenes decision log",
+      "one_line": "Organize Juno’s own notes into a factual record of creative choices.",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "workflow_step_ids": [
+        "W3"
+      ],
+      "goal_link": "Develop an album’s visual world",
+      "audience_link": "Fans following the album and learners watching behind-the-scenes material",
+      "values_link": "Authenticity and fan trust are stated priorities.",
+      "scores": {
+        "goal_fit": {
+          "score": 4,
+          "rationale": "E2 supports exploring this task: Organize Juno’s own notes into a factual record of creative choices. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 5,
+          "rationale": "The proposed recipient is fans following the album and learners watching behind-the-scenes material. Test whether “Behind-the-scenes decision log” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3: Authenticity and fan trust are stated priorities. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 4,
+          "rationale": "A 2-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 5,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 4,
+          "rationale": "“Behind-the-scenes decision log” targets document the process, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Use only supplied notes and mark missing events as unknown."
+        }
+      },
+      "rationale": "Because E2 states “Juno wants behind-the-scenes material that explains real creative decisions.”, prepare this bounded test: Organize Juno’s own notes into a factual record of creative choices. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Invented process",
+          "severity": "medium",
+          "mitigation": "Use only supplied notes and mark missing events as unknown."
+        }
+      ],
+      "time_to_first_value_days": 2,
+      "effort": "medium",
+      "evidence_ids": [
+        "E2",
+        "E3"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Structure one real decision from an invented practice note, then ask for corrections."
+    },
+    {
+      "id": "UC3",
+      "title": "Fan disclosure wording review",
+      "one_line": "Compare clear labels for any assistance Juno has agreed to use.",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "workflow_step_ids": [
+        "W4"
+      ],
+      "goal_link": "Preserve fan trust",
+      "audience_link": "Fans following the album and learners watching behind-the-scenes material",
+      "values_link": "Authenticity and fan trust are stated priorities.",
+      "scores": {
+        "goal_fit": {
+          "score": 4,
+          "rationale": "E3 supports exploring this task: Compare clear labels for any assistance Juno has agreed to use. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 5,
+          "rationale": "The proposed recipient is fans following the album and learners watching behind-the-scenes material. Test whether “Fan disclosure wording review” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3: Authenticity and fan trust are stated priorities. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 5,
+          "rationale": "A 1-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 5,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "“Fan disclosure wording review” targets share with fans, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Treat language as a review prompt; check applicable platform and legal requirements."
+        }
+      },
+      "rationale": "Because E3 states “Authenticity and fan trust are stated priorities.”, prepare this bounded test: Compare clear labels for any assistance Juno has agreed to use. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Disclosure insufficiency",
+          "severity": "medium",
+          "mitigation": "Treat language as a review prompt; check applicable platform and legal requirements."
+        }
+      ],
+      "time_to_first_value_days": 1,
+      "effort": "low",
+      "evidence_ids": [
+        "E3"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Ask whether a reader can tell exactly where assistance was used."
+    },
+    {
+      "id": "UC4",
+      "title": "Artist-owned reference index",
+      "one_line": "Group Juno’s own references by mood and unresolved visual questions.",
+      "capability_ids": [
+        "visual_reference_analysis"
+      ],
+      "workflow_step_ids": [
+        "W2"
+      ],
+      "goal_link": "Develop an album’s visual world",
+      "audience_link": "Fans following the album and learners watching behind-the-scenes material",
+      "values_link": "Authenticity and fan trust are stated priorities.",
+      "scores": {
+        "goal_fit": {
+          "score": 4,
+          "rationale": "E1 supports exploring this task: Group Juno’s own references by mood and unresolved visual questions. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 4,
+          "rationale": "The proposed recipient is fans following the album and learners watching behind-the-scenes material. Test whether “Artist-owned reference index” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3: Authenticity and fan trust are stated priorities. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 3,
+          "rationale": "A 3-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 4,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 4,
+          "rationale": "“Artist-owned reference index” targets explore visual direction, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 4,
+          "rationale": "Risk score assumes this control is followed: Exclude third-party style mimicry and use only cleared references."
+        }
+      },
+      "rationale": "Because E1 states “Juno is a fictional indie musician and creator-educator developing an album’s visual world.”, prepare this bounded test: Group Juno’s own references by mood and unresolved visual questions. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Style imitation",
+          "severity": "medium",
+          "mitigation": "Exclude third-party style mimicry and use only cleared references."
+        }
+      ],
+      "time_to_first_value_days": 3,
+      "effort": "medium",
+      "evidence_ids": [
+        "E1",
+        "E3"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Review labels with the visual collaborator before any image experiment."
+    },
+    {
+      "id": "UC5",
+      "title": "Interview question outline",
+      "one_line": "Draft questions that uncover the album’s real decisions and doubts.",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "workflow_step_ids": [
+        "W3"
+      ],
+      "goal_link": "Document real creative decisions",
+      "audience_link": "Fans following the album and learners watching behind-the-scenes material",
+      "values_link": "Authenticity and fan trust are stated priorities.",
+      "scores": {
+        "goal_fit": {
+          "score": 4,
+          "rationale": "E1 supports exploring this task: Draft questions that uncover the album’s real decisions and doubts. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 4,
+          "rationale": "The proposed recipient is fans following the album and learners watching behind-the-scenes material. Test whether “Interview question outline” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3: Authenticity and fan trust are stated priorities. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 5,
+          "rationale": "A 1-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 5,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "“Interview question outline” targets document the process, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Questions invite real answers; never script a fictional process as fact."
+        }
+      },
+      "rationale": "Because E1 states “Juno is a fictional indie musician and creator-educator developing an album’s visual world.”, prepare this bounded test: Draft questions that uncover the album’s real decisions and doubts. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Scripted authenticity",
+          "severity": "medium",
+          "mitigation": "Questions invite real answers; never script a fictional process as fact."
+        }
+      ],
+      "time_to_first_value_days": 1,
+      "effort": "low",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Ask Juno to remove any leading questions."
+    },
+    {
+      "id": "UC6",
+      "title": "Accessible video captions",
+      "one_line": "Draft captions from a permitted practice transcript.",
+      "capability_ids": [
+        "translation_localization"
+      ],
+      "workflow_step_ids": [
+        "W3"
+      ],
+      "goal_link": "Preserve fan trust",
+      "audience_link": "Fans following the album and learners watching behind-the-scenes material",
+      "values_link": "Authenticity and fan trust are stated priorities.",
+      "scores": {
+        "goal_fit": {
+          "score": 3,
+          "rationale": "E2 supports exploring this task: Draft captions from a permitted practice transcript. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 5,
+          "rationale": "The proposed recipient is fans following the album and learners watching behind-the-scenes material. Test whether “Accessible video captions” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 4,
+          "rationale": "E3: Authenticity and fan trust are stated priorities. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 4,
+          "rationale": "A 2-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 4,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "“Accessible video captions” targets document the process, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Use spoken commentary only; do not generate or alter lyrics."
+        }
+      },
+      "rationale": "Because E2 states “Juno wants behind-the-scenes material that explains real creative decisions.”, prepare this bounded test: Draft captions from a permitted practice transcript. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Misquoted lyrics",
+          "severity": "medium",
+          "mitigation": "Use spoken commentary only; do not generate or alter lyrics."
+        }
+      ],
+      "time_to_first_value_days": 2,
+      "effort": "medium",
+      "evidence_ids": [
+        "E2",
+        "E5"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Review names and timing in a short commentary excerpt."
+    },
+    {
+      "id": "UC7",
+      "title": "Album reference conversation guide",
+      "one_line": "Turn artist-supplied goals into questions for a human visual collaborator.",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "workflow_step_ids": [
+        "W2"
+      ],
+      "goal_link": "Develop an album’s visual world",
+      "audience_link": "Fans following the album and learners watching behind-the-scenes material",
+      "values_link": "Authenticity and fan trust are stated priorities.",
+      "scores": {
+        "goal_fit": {
+          "score": 4,
+          "rationale": "E1 supports exploring this task: Turn artist-supplied goals into questions for a human visual collaborator. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 4,
+          "rationale": "The proposed recipient is fans following the album and learners watching behind-the-scenes material. Test whether “Album reference conversation guide” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3: Authenticity and fan trust are stated priorities. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 4,
+          "rationale": "A 2-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 5,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "“Album reference conversation guide” targets explore visual direction, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Keep options as questions, not conclusions."
+        }
+      },
+      "rationale": "Because E1 states “Juno is a fictional indie musician and creator-educator developing an album’s visual world.”, prepare this bounded test: Turn artist-supplied goals into questions for a human visual collaborator. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Over-directing the artist",
+          "severity": "medium",
+          "mitigation": "Keep options as questions, not conclusions."
+        }
+      ],
+      "time_to_first_value_days": 2,
+      "effort": "medium",
+      "evidence_ids": [
+        "E1"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Use one approved goal to prepare a collaborator conversation."
+    },
+    {
+      "id": "UC8",
+      "title": "Private storyboard descriptions",
+      "one_line": "Draft text-only scene alternatives after Juno opts in.",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "workflow_step_ids": [
+        "W2"
+      ],
+      "goal_link": "Document real creative decisions",
+      "audience_link": "Fans following the album and learners watching behind-the-scenes material",
+      "values_link": "Authenticity and fan trust are stated priorities.",
+      "scores": {
+        "goal_fit": {
+          "score": 4,
+          "rationale": "E1 supports exploring this task: Draft text-only scene alternatives after Juno opts in. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 3,
+          "rationale": "The proposed recipient is fans following the album and learners watching behind-the-scenes material. Test whether “Private storyboard descriptions” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 4,
+          "rationale": "E3: Authenticity and fan trust are stated priorities. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 3,
+          "rationale": "A 3-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 4,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 4,
+          "rationale": "“Private storyboard descriptions” targets explore visual direction, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 3,
+          "rationale": "Risk score assumes this control is followed: Do not offer until Juno explicitly chooses this test."
+        }
+      },
+      "rationale": "Because E1 states “Juno is a fictional indie musician and creator-educator developing an album’s visual world.”, prepare this bounded test: Draft text-only scene alternatives after Juno opts in. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Premature demonstration",
+          "severity": "high",
+          "mitigation": "Do not offer until Juno explicitly chooses this test."
+        }
+      ],
+      "time_to_first_value_days": 3,
+      "effort": "medium",
+      "evidence_ids": [
+        "E1",
+        "E4"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Compare two text alternatives without producing public assets."
+    },
+    {
+      "id": "UC9",
+      "title": "Video release checklist",
+      "one_line": "Track permission and disclosure checks before a practice release.",
+      "capability_ids": [
+        "workflow_automation"
+      ],
+      "workflow_step_ids": [
+        "W4"
+      ],
+      "goal_link": "Preserve fan trust",
+      "audience_link": "Fans following the album and learners watching behind-the-scenes material",
+      "values_link": "Authenticity and fan trust are stated priorities.",
+      "scores": {
+        "goal_fit": {
+          "score": 3,
+          "rationale": "E2 supports exploring this task: Track permission and disclosure checks before a practice release. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 4,
+          "rationale": "The proposed recipient is fans following the album and learners watching behind-the-scenes material. Test whether “Video release checklist” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3: Authenticity and fan trust are stated priorities. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 3,
+          "rationale": "A 3-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 4,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "“Video release checklist” targets share with fans, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Keep all outputs private; the artist makes the release decision."
+        }
+      },
+      "rationale": "Because E2 states “Juno wants behind-the-scenes material that explains real creative decisions.”, prepare this bounded test: Track permission and disclosure checks before a practice release. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Premature publication",
+          "severity": "medium",
+          "mitigation": "Keep all outputs private; the artist makes the release decision."
+        }
+      ],
+      "time_to_first_value_days": 3,
+      "effort": "medium",
+      "evidence_ids": [
+        "E2",
+        "E3"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Review a fictional release checklist with Juno."
+    },
+    {
+      "id": "UC10",
+      "title": "Synthetic audience feedback themes",
+      "one_line": "Categorize invented viewer comments to design a listening exercise.",
+      "capability_ids": [
+        "data_analysis"
+      ],
+      "workflow_step_ids": [
+        "W4"
+      ],
+      "goal_link": "Develop an album’s visual world",
+      "audience_link": "Fans following the album and learners watching behind-the-scenes material",
+      "values_link": "Authenticity and fan trust are stated priorities.",
+      "scores": {
+        "goal_fit": {
+          "score": 3,
+          "rationale": "E3 supports exploring this task: Categorize invented viewer comments to design a listening exercise. The assigned score is a planning judgment."
+        },
+        "audience_fit": {
+          "score": 4,
+          "rationale": "The proposed recipient is fans following the album and learners watching behind-the-scenes material. Test whether “Synthetic audience feedback themes” helps them make a clearer decision; no benefit has been measured."
+        },
+        "values_fit": {
+          "score": 4,
+          "rationale": "E3: Authenticity and fan trust are stated priorities. This task follows that value only if the stated mitigation is enforced."
+        },
+        "time_to_first_value": {
+          "score": 3,
+          "rationale": "A 3-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 4,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "“Synthetic audience feedback themes” targets share with fans, rather than generic content volume. Relative benefit remains untested."
+        },
+        "risk_safety": {
+          "score": 4,
+          "rationale": "Risk score assumes this control is followed: Label comments synthetic; never report them as audience research."
+        }
+      },
+      "rationale": "Because E3 states “Authenticity and fan trust are stated priorities.”, prepare this bounded test: Categorize invented viewer comments to design a listening exercise. Confirm that this task is actually useful before widening the scope.",
+      "risks": [
+        {
+          "type": "Treating synthetic feedback as fans’ views",
+          "severity": "medium",
+          "mitigation": "Label comments synthetic; never report them as audience research."
+        }
+      ],
+      "time_to_first_value_days": 3,
+      "effort": "medium",
+      "evidence_ids": [
+        "E3",
+        "E5"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Check that the categories invite questions rather than claims about fans."
+    }
+  ],
+  "not_recommended": [
+    {
+      "title": "Clone Juno’s voice for release",
+      "reason": "No voice permissions are supplied and E3 prioritizes trust.",
+      "risk": {
+        "type": "Voice and consent",
+        "severity": "high",
+        "mitigation": "Do not clone or distribute synthetic vocals."
+      }
+    },
+    {
+      "title": "Imitate a living artist’s album artwork",
+      "reason": "E1 calls for Juno’s visual world, not another artist’s signature.",
+      "risk": {
+        "type": "Authorship",
+        "severity": "high",
+        "mitigation": "Use Juno’s cleared references and a human collaborator."
+      }
+    },
+    {
+      "title": "Mass-generate fan-facing album content",
+      "reason": "E3 and E4 make volume-first automation a poor fit.",
+      "risk": {
+        "type": "Audience trust",
+        "severity": "high",
+        "mitigation": "Start with a listening session; do not publish generated content."
+      }
+    }
+  ],
+  "demo": {
+    "use_case_id": "UC1",
+    "concept": "Listening session; no demonstration by default",
+    "why_this_demo": "Because E3 and E4 prioritize trust and skepticism, first confirm whether Juno wants any assistance. A demonstration is optional and requires explicit agreement.",
+    "versions": {
+      "five_min": "Confirm the goal, one boundary and whether a follow-up is wanted.",
+      "twenty_min": "A private 1:1 with no recording. Listen first; leave room to decline. Do not open a demo until Juno asks for one.",
+      "sixty_min_hands_on": "Only after explicit agreement: establish a baseline, try one approved input, compare the output, and record a keep/change/stop decision."
+    },
+    "script_beats": [
+      {
+        "time": "0–5 min",
+        "action": "Ask the partner to describe the handoff and boundaries.",
+        "intended_feeling": "Heard and in control",
+        "talking_point": "Would you prefer a listening session with no demonstration?"
+      },
+      {
+        "time": "5–12 min",
+        "action": "Reflect Juno’s stated goals and exclusions back for correction. Do not open a demonstration unless asked.",
+        "intended_feeling": "Able to correct the working draft",
+        "talking_point": "This is a private draft from fictional or approved inputs; please challenge the assumptions."
+      },
+      {
+        "time": "12–20 min",
+        "action": "Ask the partner to keep, change or reject the output and choose the next step.",
+        "intended_feeling": "Free to decline",
+        "talking_point": "Does the brief reflect your boundaries accurately? Please remove anything that assumes agreement. If you would rather stop here, we can close the session without an experiment."
+      }
+    ],
+    "sample_inputs": [
+      "Fictional practice notes: I want the album to feel intimate, not polished into sameness. I want fans to see the choices I made. Summarize only these stated goals; list questions about boundaries without proposing generated artwork."
+    ],
+    "assets_needed": [
+      "Fictional practice input or partner-owned material with explicit permission",
+      "A host to capture corrections and unknowns"
+    ],
+    "wow_moment": "The partner can point to a useful decision or correction; there is no requirement to be impressed.",
+    "fallback_plan": "Use a prepared text example or a blank decision sheet. If the partner declines, keep the session to listening.",
+    "what_not_to_show": [
+      "Clone Juno’s voice for release",
+      "Imitate a living artist’s album artwork",
+      "Mass-generate fan-facing album content"
+    ],
+    "success_signal": "Juno approves the boundaries and explicitly chooses whether to continue."
+  },
+  "experience": {
+    "tone_and_voice": "Plain, curious and non-persuasive. Treat skepticism as information, not an objection to overcome.",
+    "host_and_channel": "One partner lead, in Juno’s preferred private channel. Bring no additional specialists without asking.",
+    "invitation_draft": "Would a short conversation about your album process be useful? I would like to understand where assistance could help and what you want to keep entirely your own. We can keep it to listening, with no demo and no expectation to use anything.",
+    "setting_and_pacing": "A private 1:1 with no recording. Listen first; leave room to decline. Do not open a demo until Juno asks for one.",
+    "discretion": {
+      "level": "standard",
+      "rules": [
+        "No recording without explicit agreement.",
+        "Use fictional or cleared inputs only.",
+        "Share notes only with confirmed participants."
+      ]
+    },
+    "accessibility_notes": [
+      "Ask for preferred format, language and access requirements.",
+      "Provide a readable text copy; do not rely on color or sound alone."
+    ],
+    "day_brief": {
+      "who": "Juno Park — fictional creator; new relationship.",
+      "why_them": "The stated goal is to develop an album’s visual world; fit remains a qualification hypothesis.",
+      "what_they_care_about": [
+        "Develop an album’s visual world",
+        "Document real creative decisions",
+        "Preserve fan trust"
+      ],
+      "do": [
+        "Plain, curious and non-persuasive. Treat skepticism as information, not an objection to overcome.",
+        "Confirm permissions and a useful next step."
+      ],
+      "avoid": [
+        "Clone Juno’s voice for release",
+        "Imitate a living artist’s album artwork",
+        "Mass-generate fan-facing album content"
+      ],
+      "open_questions": [
+        "Would you prefer a listening session with no demonstration?",
+        "What kinds of assistance would feel misleading to fans?",
+        "Which of your own references can be used privately?"
+      ],
+      "next_step": "Ask the partner to correct the brief and choose one pilot or decline."
+    },
+    "event_plan": null,
+    "what_to_avoid": [
+      "Clone Juno’s voice for release",
+      "Imitate a living artist’s album artwork",
+      "Mass-generate fan-facing album content"
+    ]
+  },
+  "stakeholders": [
+    {
+      "name_or_role": "Musician / creator-educator",
+      "role_in_decision": "champion",
+      "what_they_care_about": "Control of voice and audience trust",
+      "engagement_approach": "Ask permission before proposing an experiment.",
+      "risk": "Role is fictional; confirm actual participation and decision rights.",
+      "origin": "fixture"
+    },
+    {
+      "name_or_role": "Visual collaborator role — participation unconfirmed",
+      "role_in_decision": "user",
+      "what_they_care_about": "Album coherence and authorship",
+      "engagement_approach": "Let Juno decide whether to invite this role.",
+      "risk": "Role is fictional; confirm actual participation and decision rights.",
+      "origin": "fixture"
+    }
+  ],
+  "journey": [
+    {
+      "name": "Introduction",
+      "goal": "Understand how to develop an album’s visual world.",
+      "activities": [
+        "Confirm goals, boundaries and relationship context.",
+        "Would you prefer a listening session with no demonstration?"
+      ],
+      "owner_roles": [
+        "Partner lead",
+        "Musician / creator-educator"
+      ],
+      "partner_signal": "Corrects the brief",
+      "exit_criteria": "Partner confirms the problem and chooses whether to continue.",
+      "week_range": "1"
+    },
+    {
+      "name": "Education",
+      "goal": "Agree what is useful and appropriate.",
+      "activities": [
+        "Explain the relevant capability and its limits using approved inputs.",
+        "Because E3 and E4 prioritize trust and skepticism, first confirm whether Juno wants any assistance. A demonstration is optional and requires explicit agreement."
+      ],
+      "owner_roles": [
+        "Partner lead",
+        "Musician / creator-educator"
+      ],
+      "partner_signal": "Explains a boundary",
+      "exit_criteria": "Partner can explain the limits and approves one safe test.",
+      "week_range": "2"
+    },
+    {
+      "name": "Experimentation",
+      "goal": "A listening brief can accurately capture Juno’s boundaries without pressuring adoption.",
+      "activities": [
+        "Run one agreed pilot.",
+        "Ask three open questions and return a draft boundaries brief for correction."
+      ],
+      "owner_roles": [
+        "Partner lead",
+        "Musician / creator-educator"
+      ],
+      "partner_signal": "Chooses a pilot outcome",
+      "exit_criteria": "Juno approves the boundaries and explicitly chooses whether to continue.",
+      "week_range": "3–4"
+    },
+    {
+      "name": "Adoption",
+      "goal": "Make the chosen task repeatable.",
+      "activities": [
+        "Support one repeat use in the real workflow after approval.",
+        "Confirm a single contact and document the handover."
+      ],
+      "owner_roles": [
+        "Partner lead",
+        "Musician / creator-educator"
+      ],
+      "partner_signal": "Repeats an approved task",
+      "exit_criteria": "Partner repeats the agreed task independently with approved inputs.",
+      "week_range": "5–8"
+    },
+    {
+      "name": "Long-term engagement",
+      "goal": "Keep the relationship and feedback loop useful.",
+      "activities": [
+        "Review whether the workflow still helps the stated goal.",
+        "Close feedback items and agree whether to continue."
+      ],
+      "owner_roles": [
+        "Partner lead",
+        "Musician / creator-educator"
+      ],
+      "partner_signal": "Requests a useful next step",
+      "exit_criteria": "Partner and owner agree to continue, adjust or stop based on actual use.",
+      "week_range": "9–13"
+    }
+  ],
+  "experiments": [
+    {
+      "hypothesis": "A listening brief can accurately capture Juno’s boundaries without pressuring adoption.",
+      "setup": "Use a fictional practice input or explicitly cleared partner material; record a manual baseline first.",
+      "steps": [
+        "Ask for agreement and confirm boundaries.",
+        "Ask three open questions and return a draft boundaries brief for correction.",
+        "Compare against the baseline and record corrections."
+      ],
+      "metric": "Partner acceptance and number of unsupported or corrected statements; collect actual observations.",
+      "success_threshold": "Juno approves the boundaries and explicitly chooses whether to continue. Proposed threshold; agree with the partner before testing.",
+      "timebox_days": 7,
+      "decision_gate": "Keep only if the partner accepts the result and all review requirements are met; otherwise change or stop.",
+      "risk": {
+        "type": "Misrepresenting consent",
+        "severity": "medium",
+        "mitigation": "Juno corrects and approves the brief; silence is not consent."
+      }
+    },
+    {
+      "hypothesis": "A factual decision log can support process documentation without inventing creative events.",
+      "setup": "Use a fictional practice input or explicitly cleared partner material; record a manual baseline first.",
+      "steps": [
+        "Ask for agreement and confirm boundaries.",
+        "Structure one real decision from an invented practice note, then ask for corrections.",
+        "Compare against the baseline and record corrections."
+      ],
+      "metric": "Partner acceptance and number of unsupported or corrected statements; collect actual observations.",
+      "success_threshold": "Every sentence traces to a supplied note; Juno accepts the account. Proposed threshold; agree with the partner before testing.",
+      "timebox_days": 7,
+      "decision_gate": "Keep only if the partner accepts the result and all review requirements are met; otherwise change or stop.",
+      "risk": {
+        "type": "Invented process",
+        "severity": "medium",
+        "mitigation": "Use only supplied notes and mark missing events as unknown."
+      }
+    },
+    {
+      "hypothesis": "Clear assistance labels help a reviewer understand what stayed human.",
+      "setup": "Use a fictional practice input or explicitly cleared partner material; record a manual baseline first.",
+      "steps": [
+        "Ask for agreement and confirm boundaries.",
+        "Ask whether a reader can tell exactly where assistance was used.",
+        "Compare against the baseline and record corrections."
+      ],
+      "metric": "Partner acceptance and number of unsupported or corrected statements; collect actual observations.",
+      "success_threshold": "A reviewer correctly identifies assisted and human steps; Juno approves the wording. Proposed threshold; agree with the partner before testing.",
+      "timebox_days": 14,
+      "decision_gate": "Keep only if the partner accepts the result and all review requirements are met; otherwise change or stop.",
+      "risk": {
+        "type": "Disclosure insufficiency",
+        "severity": "medium",
+        "mitigation": "Treat language as a review prompt; check applicable platform and legal requirements."
+      }
+    }
+  ],
+  "cadence": {
+    "weekly_standup_agenda": [
+      "What was tried and what stayed human?",
+      "What changed in the partner’s stated goal?",
+      "Which risks, questions or feedback need an owner?",
+      "Choose one next action or explicitly pause."
+    ],
+    "channel_setup": "One partner lead owns a private shared channel chosen by the partner. Ask before adding teammates.",
+    "touchpoints_90_days": [
+      {
+        "day": 1,
+        "purpose": "Confirm the brief",
+        "owner": "Partner lead",
+        "output": "Partner confirms the problem and chooses whether to continue."
+      },
+      {
+        "day": 7,
+        "purpose": "Review boundaries and learning needs",
+        "owner": "Partner lead",
+        "output": "Partner can explain the limits and approves one safe test."
+      },
+      {
+        "day": 14,
+        "purpose": "Agree inputs, permissions and a test for listening session; no demonstration by default",
+        "owner": "Partner lead",
+        "output": "Partner can explain the limits and approves one safe test."
+      },
+      {
+        "day": 21,
+        "purpose": "Review the pilot: A listening brief can accurately capture Juno’s boundaries without pressuring adoption.",
+        "owner": "Partner lead",
+        "output": "Juno approves the boundaries and explicitly chooses whether to continue."
+      },
+      {
+        "day": 28,
+        "purpose": "Review the pilot: A listening brief can accurately capture Juno’s boundaries without pressuring adoption.",
+        "owner": "Partner lead",
+        "output": "Juno approves the boundaries and explicitly chooses whether to continue."
+      },
+      {
+        "day": 35,
+        "purpose": "Support an independent repeat use of creative boundaries listening brief",
+        "owner": "Partner lead",
+        "output": "Partner repeats the agreed task independently with approved inputs."
+      },
+      {
+        "day": 42,
+        "purpose": "Support an independent repeat use of creative boundaries listening brief",
+        "owner": "Partner lead",
+        "output": "Partner repeats the agreed task independently with approved inputs."
+      },
+      {
+        "day": 49,
+        "purpose": "Support an independent repeat use of creative boundaries listening brief",
+        "owner": "Partner lead",
+        "output": "Partner repeats the agreed task independently with approved inputs."
+      },
+      {
+        "day": 56,
+        "purpose": "Support an independent repeat use of creative boundaries listening brief",
+        "owner": "Partner lead",
+        "output": "Partner repeats the agreed task independently with approved inputs."
+      },
+      {
+        "day": 63,
+        "purpose": "Review ongoing usefulness for develop an album’s visual world and close open feedback",
+        "owner": "Partner lead",
+        "output": "Partner and owner agree to continue, adjust or stop based on actual use."
+      },
+      {
+        "day": 70,
+        "purpose": "Review ongoing usefulness for develop an album’s visual world and close open feedback",
+        "owner": "Partner lead",
+        "output": "Partner and owner agree to continue, adjust or stop based on actual use."
+      },
+      {
+        "day": 77,
+        "purpose": "Review ongoing usefulness for develop an album’s visual world and close open feedback",
+        "owner": "Partner lead",
+        "output": "Partner and owner agree to continue, adjust or stop based on actual use."
+      },
+      {
+        "day": 84,
+        "purpose": "Review ongoing usefulness for develop an album’s visual world and close open feedback",
+        "owner": "Partner lead",
+        "output": "Partner and owner agree to continue, adjust or stop based on actual use."
+      },
+      {
+        "day": 90,
+        "purpose": "Review ongoing usefulness for develop an album’s visual world and close open feedback",
+        "owner": "Partner lead",
+        "output": "90-day continue/change/stop decision and documented handover"
+      }
+    ],
+    "follow_up_messages": [
+      {
+        "when": "Within one working day of the session",
+        "channel": "Partner-approved private channel",
+        "draft": "Does the brief reflect your boundaries accurately? Please remove anything that assumes agreement. If you would rather stop here, we can close the session without an experiment."
+      },
+      {
+        "when": "After a feedback item is reviewed",
+        "channel": "Same private channel",
+        "draft": "You raised an issue in the pilot. We recorded it, assigned an owner, and will share the outcome or a clear explanation if it cannot be addressed. Is our description accurate?"
+      }
+    ],
+    "handover_checklist": [
+      "Partner-approved goals and boundaries",
+      "One named point of contact and backup",
+      "Approved assets and confidentiality rules",
+      "Observed activation baseline and next review date",
+      "Open feedback with owners and response dates"
+    ]
+  },
+  "feedback": {
+    "capture_template": [
+      "Task and permitted input",
+      "Expected versus observed result",
+      "Partner’s own words, with permission",
+      "Severity and reproducibility",
+      "Owner, review date and partner update"
+    ],
+    "routing": "Partner lead checks for confidential material, then routes workflow defects to solutions and product defects to product. Record an owner and response date; no automatic sending.",
+    "close_the_loop_message": "We reviewed the issue you raised. Here is what changed, what remains open, and the next review date. Please tell us whether this addresses the problem in your workflow."
+  },
+  "metrics": {
+    "stage_definitions": {
+      "Introduction": "Partner confirms the problem and chooses whether to continue.",
+      "Education": "Partner can explain the limits and approves one safe test.",
+      "Experimentation": "Juno approves the boundaries and explicitly chooses whether to continue.",
+      "Adoption": "Partner repeats the agreed task independently with approved inputs.",
+      "Long-term engagement": "Partner and owner agree to continue, adjust or stop based on actual use."
+    },
+    "leading_indicators": [
+      "Time from session to first approved trial",
+      "Whether the partner independently repeats the task",
+      "Unsupported claims and review corrections",
+      "Feedback items closed with a partner response"
+    ],
+    "time_to_activation_target": "Planning assumption: 1–3 months to independent repeat use; agree a baseline and target with the partner. Attendance does not count as activation."
+  },
+  "flags": [
+    {
+      "section": "All sections",
+      "severity": "medium",
+      "issue": "Fictional fixture evidence is not verified public research.",
+      "suggested_fix": "Confirm every fact and boundary before real outreach."
+    },
+    {
+      "section": "Use cases",
+      "severity": "medium",
+      "issue": "Scores, time estimates and thresholds are planning judgments, not measured outcomes.",
+      "suggested_fix": "Review weights and agree thresholds before a test."
+    },
+    {
+      "section": "Demo",
+      "severity": "high",
+      "issue": "A demonstration could disregard Juno’s stated skepticism.",
+      "suggested_fix": "Listen first. Offer no demonstration without explicit agreement."
+    }
+  ],
+  "claims_audit": [
+    "All source references point to labeled fictional persona briefs.",
+    "No real quotes, follower counts or measured outcomes are claimed.",
+    "Workflow steps and time-to-value are labeled hypotheses.",
+    "IP, disclosure and sustainability items are review prompts, not legal conclusions."
+  ],
+  "context_conflicts": [],
+  "context": {
+    "company": {},
+    "role_department": {},
+    "people": [],
+    "event": {},
+    "workflow": {},
+    "history_goals": {},
+    "notes": "",
+    "provenance": {},
+    "layer_enabled": {},
+    "version": 0
+  },
+  "changes": []
+}

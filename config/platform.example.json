@@ -1,1 +1,52 @@
-{"name":"Creative AI platform","tone":"Warm, direct, specific","approved_capabilities":[],"constraints":["No capabilities approved until reviewed in M2."]}
+{
+  "name": "Creative AI platform",
+  "tone": "Practical, direct, specific",
+  "approved_capabilities": [
+    {
+      "id": "drafting_ideation",
+      "name": "Drafting and ideation"
+    },
+    {
+      "id": "image_generation_editing",
+      "name": "Image generation and editing"
+    },
+    {
+      "id": "visual_reference_analysis",
+      "name": "Visual reference analysis"
+    },
+    {
+      "id": "research_synthesis",
+      "name": "Research and synthesis"
+    },
+    {
+      "id": "code_prototyping",
+      "name": "Code and rapid prototyping"
+    },
+    {
+      "id": "data_analysis",
+      "name": "Data analysis"
+    },
+    {
+      "id": "voice_audio",
+      "name": "Voice and audio"
+    },
+    {
+      "id": "workflow_automation",
+      "name": "Workflow automation and agents"
+    },
+    {
+      "id": "translation_localization",
+      "name": "Translation and localization"
+    },
+    {
+      "id": "personalization",
+      "name": "Personalization at scale"
+    }
+  ],
+  "constraints": [
+    "Demo fixtures illustrate possible uses, not verified product capabilities.",
+    "Use partner-owned or explicitly cleared material.",
+    "A human approves external outputs.",
+    "No real model or provider integration is available in demo mode."
+  ]
+}

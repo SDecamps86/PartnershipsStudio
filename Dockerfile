@@ -5,6 +5,8 @@ COPY pyproject.toml uv.lock ./
 RUN uv sync --frozen --no-dev
 COPY app ./app
 COPY atelier ./atelier
+COPY fixtures ./fixtures
+COPY config ./config
 RUN useradd --uid 10001 --create-home studio
 USER studio
 EXPOSE 8000

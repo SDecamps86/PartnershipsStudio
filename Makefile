@@ -6,6 +6,6 @@ check:
 	uv run ruff format --check .
 	uv run mypy
 	uv run pytest tests
-	uv run pytest evals
+	uv run python -m evals.run
 eval:
-	uv run pytest evals
+	uv run python -m evals.run

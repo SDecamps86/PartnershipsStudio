@@ -9,5 +9,5 @@ class Settings(BaseSettings):
 
     @property
     def live_available(self) -> bool:
-        # M0 deliberately has no generation path, regardless of environment.
+        # Demo mode deliberately has no generation path, regardless of environment.
         return False
