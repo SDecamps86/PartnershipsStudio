@@ -32,3 +32,7 @@ Planned private environment: OPENAI_API_KEY, OPENAI_MODEL, ACCESS_CODES, DAILY_B
 The demo now needs `fixtures/` and `config/` in its runtime directory; the Dockerfile includes both. Use exactly one uvicorn process because sessions are in memory. No API key is required or read. Imports are capped at 512,000 bytes and retained only in the active session. The local host binding remains `127.0.0.1` by default.
 
 `make eval` runs offline fixture quality gates and writes `evals/reports/latest.md`. `make check` includes that runner alongside lint, formatting, strict types and route/session/security tests. Browser accessibility QA is separate and described in the M1 verification report.
+
+## Pipeline revision
+
+The app now maintains a session-local partner portfolio. Use a single worker; no durable pipeline storage or CRM synchronization exists. JSON exports save only the selected partner. The dashboard uses America/Los_Angeles for its reference date and displays fictional event times as PT. Restarts and idle expiry clear all in-session operational edits.

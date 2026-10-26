@@ -1,0 +1,216 @@
+{
+  "tool": "axe-core 4.10.3",
+  "theme": "light",
+  "results": [
+    {
+      "path": "/?audit=1",
+      "violations": [],
+      "passes": 41,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "path": "/pipeline?audit=1",
+      "violations": [],
+      "passes": 51,
+      "incomplete": []
+    },
+    {
+      "path": "/pipeline?layout=board&audit=1",
+      "violations": [],
+      "passes": 45,
+      "incomplete": []
+    },
+    {
+      "path": "/studio?view=overview&audit=1",
+      "violations": [],
+      "passes": 44,
+      "incomplete": []
+    },
+    {
+      "path": "/studio?view=profile&audit=1",
+      "violations": [],
+      "passes": 38,
+      "incomplete": []
+    },
+    {
+      "path": "/studio?view=priorities&audit=1",
+      "violations": [],
+      "passes": 40,
+      "incomplete": []
+    },
+    {
+      "path": "/studio?view=stakeholders&audit=1",
+      "violations": [],
+      "passes": 40,
+      "incomplete": []
+    },
+    {
+      "path": "/studio?view=workflow&audit=1",
+      "violations": [],
+      "passes": 40,
+      "incomplete": []
+    },
+    {
+      "path": "/studio?view=use-cases&audit=1",
+      "violations": [],
+      "passes": 45,
+      "incomplete": []
+    },
+    {
+      "path": "/studio?view=demo&audit=1",
+      "violations": [],
+      "passes": 42,
+      "incomplete": []
+    },
+    {
+      "path": "/studio?view=experience&audit=1",
+      "violations": [],
+      "passes": 43,
+      "incomplete": []
+    },
+    {
+      "path": "/studio?view=brief&audit=1",
+      "violations": [],
+      "passes": 42,
+      "incomplete": []
+    },
+    {
+      "path": "/studio?view=journey&audit=1",
+      "violations": [],
+      "passes": 42,
+      "incomplete": []
+    },
+    {
+      "path": "/studio?view=experiments&audit=1",
+      "violations": [],
+      "passes": 42,
+      "incomplete": []
+    },
+    {
+      "path": "/studio?view=cadence&audit=1",
+      "violations": [],
+      "passes": 46,
+      "incomplete": []
+    },
+    {
+      "path": "/studio?view=feedback&audit=1",
+      "violations": [],
+      "passes": 42,
+      "incomplete": []
+    },
+    {
+      "path": "/studio?view=tasks&audit=1",
+      "violations": [],
+      "passes": 43,
+      "incomplete": []
+    },
+    {
+      "path": "/studio?view=integrity&audit=1",
+      "violations": [],
+      "passes": 41,
+      "incomplete": []
+    },
+    {
+      "path": "/studio?view=overview&audit=1&modal=1",
+      "violations": [],
+      "passes": 25,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    }
+  ],
+  "breakpoints": [
+    {
+      "width": 375,
+      "path": "/",
+      "focusedSections": 0,
+      "mainWidth": 375,
+      "overflow": false
+    },
+    {
+      "width": 375,
+      "path": "/pipeline",
+      "focusedSections": 0,
+      "mainWidth": 375,
+      "overflow": false
+    },
+    {
+      "width": 375,
+      "path": "/studio?view=overview",
+      "focusedSections": 0,
+      "mainWidth": 375,
+      "overflow": false
+    },
+    {
+      "width": 375,
+      "path": "/studio?view=use-cases",
+      "focusedSections": 1,
+      "mainWidth": 375,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "path": "/",
+      "focusedSections": 0,
+      "mainWidth": 768,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "path": "/pipeline",
+      "focusedSections": 0,
+      "mainWidth": 768,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "path": "/studio?view=overview",
+      "focusedSections": 0,
+      "mainWidth": 768,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "path": "/studio?view=use-cases",
+      "focusedSections": 1,
+      "mainWidth": 768,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "path": "/",
+      "focusedSections": 0,
+      "mainWidth": 1440,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "path": "/pipeline",
+      "focusedSections": 0,
+      "mainWidth": 1440,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "path": "/studio?view=overview",
+      "focusedSections": 0,
+      "mainWidth": 1440,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "path": "/studio?view=use-cases",
+      "focusedSections": 1,
+      "mainWidth": 1440,
+      "overflow": false
+    }
+  ]
+}

@@ -1423,5 +1423,80 @@
     "layer_enabled": {},
     "version": 0
   },
-  "changes": []
+  "changes": [],
+  "tracking": {
+    "sector": "Music & creator education",
+    "initials": "JP",
+    "owner": "You",
+    "stage": "Introduction",
+    "maturity": "Qualifying",
+    "priority": "Medium",
+    "business_context": "Album planning is the creative context. There is no agreement to demonstrate or generate material; start with boundaries.",
+    "why_critical": "This is the trust-sensitive case: a useful outcome may be a clear decision not to use a capability. Listening quality matters more than demo completion.",
+    "critical_evidence_ids": [
+      "E1",
+      "E3",
+      "E4"
+    ],
+    "current_workflow": "Album intent → artist-owned references → real decision notes → behind-the-scenes release. Treat this as a workflow hypothesis.",
+    "workflow_evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "workflow_origin": "assumption",
+    "audience_segment": "Creator audiences",
+    "event": {
+      "title": "Album process listening session",
+      "date": "2026-11-02",
+      "time": "11:00",
+      "duration_minutes": 30,
+      "format": "Listening 1:1",
+      "venue": "Private video call",
+      "audience": "Musician and partner lead; no additional guests without permission",
+      "invited": 2,
+      "confirmed": 0,
+      "status": "Not invited"
+    },
+    "tasks": [
+      {
+        "id": "consent",
+        "title": "Confirm a listening-only conversation is welcome",
+        "owner": "You",
+        "due": "2026-10-28",
+        "done": false,
+        "category": "qualification"
+      },
+      {
+        "id": "boundaries",
+        "title": "Ask about excluded uses before preparing a demo",
+        "owner": "You",
+        "due": "2026-10-29",
+        "done": false,
+        "category": "qualification"
+      },
+      {
+        "id": "invite",
+        "title": "Review a no-demo invitation",
+        "owner": "You",
+        "due": "2026-10-30",
+        "done": false,
+        "category": "invitation"
+      },
+      {
+        "id": "brief",
+        "title": "Prepare the boundaries question sheet",
+        "owner": "You",
+        "due": "2026-11-01",
+        "done": false,
+        "category": "assets"
+      }
+    ],
+    "touchpoints_completed": 0,
+    "touchpoints_planned": 3,
+    "pilots_completed": 0,
+    "pilots_planned": 3,
+    "independent_uses": 0,
+    "activation_target_days": 90,
+    "origin": "fixture"
+  }
 }

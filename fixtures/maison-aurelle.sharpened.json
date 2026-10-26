@@ -1498,5 +1498,88 @@
       "after": "The E6 constraints are added to the host brief and the pilot must respect them.",
       "reason": "New context narrows which inputs and outputs are acceptable; existing risks still require review."
     }
-  ]
+  ],
+  "tracking": {
+    "sector": "Luxury fashion",
+    "initials": "MA",
+    "owner": "You",
+    "stage": "Experimentation",
+    "maturity": "Qualified",
+    "priority": "High",
+    "business_context": "Seasonal storytelling needs central brand approval and accurate regional versions. Use fictional collection copy in the workshop.",
+    "why_critical": "The pilot tests a repeatable regional review process with explicit brand and legal ownership, rather than one-off content creation.",
+    "critical_evidence_ids": [
+      "E2",
+      "E4",
+      "E5"
+    ],
+    "current_workflow": "Approved source copy → claim ledger → regional variants → brand and legal approval → release.",
+    "workflow_evidence_ids": [
+      "E2",
+      "E4"
+    ],
+    "workflow_origin": "assumption",
+    "audience_segment": "Brand & regional teams",
+    "event": {
+      "title": "Collection localization workshop",
+      "date": "2026-11-05",
+      "time": "10:00",
+      "duration_minutes": 45,
+      "format": "Private workshop",
+      "venue": "Private working room",
+      "audience": "Brand editorial, legal, regional marketing and host roles",
+      "invited": 6,
+      "confirmed": 6,
+      "status": "Confirmed"
+    },
+    "tasks": [
+      {
+        "id": "source",
+        "title": "Confirm the approved source-copy sandbox",
+        "owner": "Brand editor",
+        "due": "2026-10-25",
+        "done": true,
+        "category": "assets"
+      },
+      {
+        "id": "legal",
+        "title": "Confirm legal review owner",
+        "owner": "You",
+        "due": "2026-10-26",
+        "done": true,
+        "category": "approval"
+      },
+      {
+        "id": "regional",
+        "title": "Confirm regional reviewer roles",
+        "owner": "You",
+        "due": "2026-10-26",
+        "done": true,
+        "category": "qualification"
+      },
+      {
+        "id": "brief",
+        "title": "Review the host day brief",
+        "owner": "You",
+        "due": "2026-10-27",
+        "done": true,
+        "category": "assets"
+      },
+      {
+        "id": "invite",
+        "title": "Confirm workshop participants",
+        "owner": "You",
+        "due": "2026-10-28",
+        "done": true,
+        "category": "invitation"
+      }
+    ],
+    "touchpoints_completed": 4,
+    "touchpoints_planned": 6,
+    "pilots_completed": 1,
+    "pilots_planned": 3,
+    "independent_uses": 0,
+    "activation_target_days": 90,
+    "origin": "fixture"
+  }
 }

@@ -4,16 +4,13 @@ from datetime import date
 from enum import StrEnum
 from typing import Annotated, Literal, Self
 
-from pydantic import BaseModel, ConfigDict, Field, model_validator
+from pydantic import Field, model_validator
 
-Score = Annotated[int, Field(ge=1, le=5)]
-Text = Annotated[str, Field(min_length=1, max_length=8000)]
+from atelier.contracts import Model, Score, Text
+from atelier.tracking import Tracking
+
 Confidence = Literal["low", "medium", "high"]
 Origin = Literal["research", "user", "assumption", "fixture"]
-
-
-class Model(BaseModel):
-    model_config = ConfigDict(extra="forbid", str_max_length=8000)
 
 
 class Dimension(StrEnum):
@@ -330,6 +327,7 @@ class Studio(Model):
     context_conflicts: list[str]
     context: Context
     changes: list[Change] = Field(default_factory=list)
+    tracking: Tracking | None = None
 
     @model_validator(mode="after")
     def references(self) -> Self:
@@ -354,6 +352,10 @@ class Studio(Model):
         for u in self.use_cases:
             if not set(u.workflow_step_ids) <= workflow_ids:
                 raise ValueError("Unknown workflow step")
+        if self.tracking:
+            refs = self.tracking.critical_evidence_ids + self.tracking.workflow_evidence_ids
+            if not set(refs) <= set(ids):
+                raise ValueError("Tracking references unknown evidence")
         self._check_evidence(self.model_dump(), set(ids))
         return self
 
@@ -368,3 +370,7 @@ class Studio(Model):
         elif isinstance(value, list):
             for child in value:
                 Studio._check_evidence(child, ids)
+
+
+class WeightUpdate(Model):
+    weights: dict[Dimension, Annotated[int, Field(ge=0, le=100)]]

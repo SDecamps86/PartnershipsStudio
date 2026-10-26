@@ -1,8 +1,16 @@
 # PartnershipsStudio
 
-An internal workspace for preparing partner sessions and follow-up.
+An internal tool for tailoring partner experiences and tracking their preparation.
 
-**M1 — demo mode complete.** Open one of three fictional partners to review goals, use cases, workflow assumptions, demo preparation, experience design, stakeholders, a five-stage journey, three experiments, a 90-day cadence, feedback, metrics and sources.
+## Three working tabs
+
+- **Prepare:** enter a partner or client name. The demo opens five fictional partners.
+- **Pipeline:** see partner stages, pending actions, session readiness, upcoming experiences and the complete directory. Filter by name, workflow, stage, preparation state or audience; switch between list and board views.
+- **Partner:** open a concise operational overview, then use focused pages for context, workflow, use cases, session design, the host brief, journey, experiments, follow-up, tasks and sources. Only the selected page is rendered.
+
+The overview puts identity, lead maturity, importance, business context, a specific workflow, next event and audience alongside readiness, touchpoints, pilots and independent use. Preparation checkboxes update readiness and the pipeline. Update tracking changes stage, maturity, priority, invitation status and observed-count fields. All supplied figures and events are fictional examples, not actual business results.
+
+## Run locally
 
 ```sh
 uv sync --frozen
@@ -10,27 +18,32 @@ make check
 make run
 ```
 
-Open http://127.0.0.1:8000. Python 3.12+ and uv are required. No API key, external assets or AI calls are used.
+Open http://127.0.0.1:8000. Python 3.12+ and uv are required. No API key or AI call is used. The runtime uses local assets only and has no JavaScript build step.
 
-## Review the demo
+## Demo partners
 
-1. Open Lena Voss, Maison Aurelle or Juno Park.
-2. Review the twelve sections using the section navigation. Source chips show their fictional brief on hover or focus and link to the source entry.
-3. Change scoring weights. Ranking updates locally; weights normalize to 100. The prepared demo does not automatically change.
-4. Open Sample context to compare a prewritten, more specific plan with the base fixture. This is a bundle preview, not free-form refinement.
-5. Copy a section or message, export Markdown or JSON with current weights, or print the plan or day brief. Import exported JSON from the partner selection page to restore it.
-6. Clear session to remove the current studio. Sessions expire after 30 idle minutes; exported files remain on your device.
+| Fictional partner | Preparation focus |
+| --- | --- |
+| Lena Voss | Automotive 3D client reviews, craft authorship and NDA boundaries |
+| Maison Aurelle | Luxury fashion storytelling, regional localization and approval ownership |
+| Juno Park | Listening, creative boundaries and fan trust before a demo |
+| Circuit Vale | Fashion technology, digital-to-physical sample handoffs and tested product claims |
+| Oria House Hotels | Luxury hospitality, property-host handoffs and accurate service promises without guest data |
 
-The three fixtures deliberately differ. Lena's plan protects authorship and client NDAs. Maison Aurelle's plan makes approval ownership explicit. Juno's plan starts with listening and permission, with several uses excluded.
+Each has a base plan and a prewritten sample-context version, ten scored use cases, all twelve original content sections, three experiments and a five-stage journey. Recommendations cite fictional brief evidence or identify assumptions.
 
-## Current boundaries
+## Saving and retention
 
-Scores, time estimates and thresholds are planning judgments against fictional evidence. Verify before real outreach. There is no live research, generation, editable content, arbitrary context-layer recomputation, access-code gate or public deployment. Inline edits, verification, locks and comparison remain M3 work. The print stylesheet targets a one-page A4 day brief; printer-specific pagination requires review.
+Partner selection preserves the workspace's task and tracking changes. Sample-context switching replaces the prepared content while keeping operational tracking and score weights. Scoring weights also survive navigation between partner pages.
 
-The app uses FastAPI, Pydantic v2 and Jinja2 with local CSS and a small native JavaScript controller. No JavaScript build step or third-party runtime requests. Browser storage holds only a theme preference; JSON export/import provides explicit persistence. Run a single server process: sessions are process-local and disappear on restart.
+Export the current partner as JSON to preserve its complete plan, weights and tracking. Markdown, section copying and print views are available too. Restore JSON through the pipeline's Import control. Browser storage holds only the theme preference. The workspace is session-only, expires after 30 idle minutes, and disappears on server restart. Clear workspace removes all current session data; reopening the pipeline seeds fresh fictional examples. There is no cross-session CRM or external integration.
 
-Quality checks cover strict types, lint, formatting, all six fixture schemas, twelve-section rendering, evidence integrity, capabilities, tailoring, ranking, session isolation/expiry, hostile HTML escaping and import/export round trips. The browser audit and remaining limits are in [M1 verification](evals/reports/M1.md).
+## Current limits
 
-[Milestone plan](docs/PLAN.md) · [Decisions](docs/DECISIONS.md) · [Architecture](docs/ARCHITECTURE.md) · [Privacy](docs/PRIVACY.md) · [Run and deployment](docs/DEPLOY.md)
+M1 plus the requested UX/pipeline revision. Live research and generation remain M2; free-form context, general inline content editing, verification, locks and comparison remain M3. Private deployment, access codes, spend protection and public static showcase remain M4. No remote push or deployment has occurred.
+
+Scores, dates, counts and thresholds are planning examples or operator-entered values. Readiness means preparation checklist completion, not lead conversion likelihood or confirmed attendance. Independent use is a manually recorded count, not product telemetry. Verify before real outreach. Print pagination depends on the browser/printer.
+
+[Architecture](docs/ARCHITECTURE.md) · [Decisions](docs/DECISIONS.md) · [Privacy](docs/PRIVACY.md) · [Deployment](docs/DEPLOY.md) · [UX verification](evals/reports/UX.md)
 
 MIT licensed. Fictional data implies no affiliation or endorsement.

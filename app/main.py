@@ -2,9 +2,11 @@ import asyncio
 import json
 from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager, suppress
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlsplit
+from zoneinfo import ZoneInfo
 
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
@@ -15,10 +17,12 @@ from starlette.middleware.base import RequestResponseEndpoint
 from starlette.responses import Response
 
 from atelier.exports import markdown_export
-from atelier.schemas import Dimension, Studio
+from atelier.pipeline import dashboard
+from atelier.schemas import Dimension, Studio, WeightUpdate
 from atelier.scoring import rank_use_cases
 from atelier.settings import Settings
 from atelier.store import PERSONAS, SessionStore, load_fixture
+from atelier.tracking import Stage, TaskUpdate, TrackingUpdate
 
 ROOT = Path(__file__).resolve().parent
 settings = Settings()
@@ -79,9 +83,12 @@ async def security_headers(request: Request, call_next: RequestResponseEndpoint)
     response.headers["Referrer-Policy"] = "no-referrer"
     response.headers["X-Robots-Tag"] = "noindex, nofollow"
     response.headers["Cache-Control"] = "no-store"
-    if request.url.path.startswith("/studio") or request.url.path == "/session/heartbeat":
+    if (
+        request.url.path.startswith(("/studio", "/pipeline", "/partners"))
+        or request.url.path == "/session/heartbeat"
+    ):
         token = request.cookies.get(COOKIE)
-        if token and store.get(token) is not None:
+        if token and store.exists(token):
             set_session_cookie(response, token, request)
     return response
 
@@ -98,8 +105,11 @@ def set_session_cookie(response: Response, token: str, request: Request) -> None
 
 
 def page(request: Request, name: str, **context: Any) -> Response:
+    selected = store.get(request.cookies.get(COOKIE))
     return templates.TemplateResponse(
-        request=request, name=name, context={"mode": "demo", **context}
+        request=request,
+        name=name,
+        context={"mode": "demo", "active_partner": selected, "active_tab": "", **context},
     )
 
 
@@ -112,7 +122,58 @@ def current(request: Request) -> Studio:
 
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request) -> Response:
-    return page(request, "home.html", examples=[load_fixture(p) for p in PERSONAS])
+    return page(
+        request, "home.html", active_tab="prepare", examples=[load_fixture(p) for p in PERSONAS]
+    )
+
+
+def workspace_token(request: Request) -> tuple[str, bool]:
+    token = request.cookies.get(COOKIE)
+    if token and store.exists(token):
+        return token, False
+    return store.create(), True
+
+
+@app.get("/pipeline", response_class=HTMLResponse)
+async def pipeline_page(
+    request: Request,
+    q: str = "",
+    stage: str = "",
+    state: str = "",
+    priority: str = "",
+    audience: str = "",
+    layout: str = "list",
+) -> Response:
+    if max(map(len, [q, stage, state, priority, audience])) > 200:
+        raise HTTPException(400, "Filter text is too long")
+    token, created = workspace_token(request)
+    data = dashboard(
+        store.list(token),
+        datetime.now(ZoneInfo("America/Los_Angeles")).date(),
+        q,
+        stage,
+        state,
+        priority,
+        audience,
+    )
+    response = page(
+        request, "pipeline.html", active_tab="pipeline", board=layout == "board", **data
+    )
+    if created:
+        set_session_cookie(response, token, request)
+    return response
+
+
+@app.get("/partners/{partner_id}")
+async def select_partner(request: Request, partner_id: str, view: str = "overview") -> Response:
+    token, _ = workspace_token(request)
+    if not store.select(token, partner_id):
+        raise HTTPException(404, "Partner not found in this workspace")
+    response = RedirectResponse(
+        f"/studio?view={view if view in VIEWS else 'overview'}", status_code=303
+    )
+    set_session_cookie(response, token, request)
+    return response
 
 
 @app.get("/examples/{persona}/{variant}")
@@ -121,27 +182,118 @@ async def open_example(request: Request, persona: str, variant: str) -> Response
         studio = load_fixture(persona, variant)
     except ValueError as error:
         raise HTTPException(404, "Example not found") from error
-    store.delete(request.cookies.get(COOKIE))
-    response = RedirectResponse("/studio", status_code=303)
-    set_session_cookie(response, store.create(studio), request)
+    token, _ = workspace_token(request)
+    existing = next((s for s in store.list(token) if s.id == persona), None)
+    if existing and existing.variant == variant:
+        store.select(token, persona)
+    else:
+        store.put(token, studio, preserve_tracking=True)
+    response = RedirectResponse("/studio?view=overview", status_code=303)
+    set_session_cookie(response, token, request)
     return response
 
 
+VIEWS = {
+    "overview": ("Overview", "overview"),
+    "profile": ("Partner profile", "context"),
+    "priorities": ("Priorities", "context"),
+    "stakeholders": ("Stakeholders", "context"),
+    "workflow": ("Workflow", "workflow"),
+    "use-cases": ("Use cases", "use-cases"),
+    "demo": ("Session plan", "session"),
+    "experience": ("Experience design", "session"),
+    "brief": ("Day brief", "session"),
+    "journey": ("Journey", "plan"),
+    "experiments": ("Experiments", "plan"),
+    "cadence": ("90-day follow-up", "plan"),
+    "feedback": ("Feedback & metrics", "plan"),
+    "tasks": ("Preparation tasks", "plan"),
+    "integrity": ("Sources & risks", "integrity"),
+}
+
+
 @app.get("/studio", response_class=HTMLResponse)
-async def studio_page(request: Request) -> Response:
+async def studio_page(request: Request, view: str = "overview") -> Response:
+    if view not in VIEWS:
+        raise HTTPException(404, "Partner page not found")
     try:
         studio = current(request)
     except HTTPException:
-        return page(request, "expired.html")
+        return page(request, "expired.html", active_tab="partner")
+    title, group = VIEWS[view]
     return page(
         request,
         "studio.html",
+        active_tab="partner",
         studio=studio,
+        view=view,
+        view_title=title,
+        group=group,
+        views=VIEWS,
         ranked=rank_use_cases(studio.use_cases, studio.scoring_weights),
         weights=studio.scoring_weights,
         dimensions=list(Dimension),
+        stages=list(Stage),
         sample_available=studio.id in PERSONAS and studio.fictional,
     )
+
+
+@app.get("/studio/print", response_class=HTMLResponse)
+async def print_plan(request: Request) -> Response:
+    studio = current(request)
+    return page(
+        request,
+        "print.html",
+        studio=studio,
+        active_tab="partner",
+        ranked=rank_use_cases(studio.use_cases, studio.scoring_weights),
+        weights=studio.scoring_weights,
+        dimensions=list(Dimension),
+    )
+
+
+@app.post("/partners/{partner_id}/tasks/{task_id}")
+async def update_task(
+    request: Request, partner_id: str, task_id: str, update: TaskUpdate
+) -> Response:
+    token = request.cookies.get(COOKIE)
+    if not token or not store.exists(token):
+        raise HTTPException(410, "Session expired. Open the pipeline to start again.")
+    if not store.update_task(token, partner_id, task_id, update.done):
+        raise HTTPException(404, "Preparation task not found")
+    response = JSONResponse({"saved": True})
+    set_session_cookie(response, token, request)
+    return response
+
+
+@app.post("/partners/{partner_id}/tracking")
+async def update_tracking(request: Request, partner_id: str, update: TrackingUpdate) -> Response:
+    token = request.cookies.get(COOKIE)
+    if not token or not store.exists(token):
+        raise HTTPException(410, "Session expired. Open the pipeline to start again.")
+    try:
+        saved = store.update_tracking(token, partner_id, update)
+    except ValidationError as error:
+        raise HTTPException(422, "Counts cannot exceed the planned or invited totals.") from error
+    if not saved:
+        raise HTTPException(404, "Partner tracking not found")
+    response = JSONResponse({"saved": True})
+    set_session_cookie(response, token, request)
+    return response
+
+
+@app.post("/studio/weights")
+async def update_weights(request: Request, update: WeightUpdate) -> Response:
+    studio = current(request)
+    try:
+        rank_use_cases(studio.use_cases, update.weights)
+    except ValueError as error:
+        raise HTTPException(422, str(error)) from error
+    studio.scoring_weights = update.weights
+    token = request.cookies.get(COOKIE)
+    if token:
+        store.put(token, studio)
+    return Response(status_code=204)
 
 
 @app.get("/studio/data")
@@ -189,15 +341,20 @@ async def import_studio(request: Request) -> Response:
         raise HTTPException(
             422, "This file does not match the studio schema. Nothing was imported."
         ) from error
-    store.delete(request.cookies.get(COOKIE))
-    response = JSONResponse({"url": "/studio"})
-    set_session_cookie(response, store.create(studio), request)
+    token, _ = workspace_token(request)
+    try:
+        store.put(token, studio)
+    except ValueError as error:
+        raise HTTPException(422, str(error)) from error
+    response = JSONResponse({"url": "/studio?view=overview"})
+    set_session_cookie(response, token, request)
     return response
 
 
 @app.post("/session/heartbeat")
 async def heartbeat(request: Request) -> Response:
-    current(request)
+    if not store.exists(request.cookies.get(COOKIE)):
+        raise HTTPException(410, "Session expired")
     return Response(status_code=204)
 
 

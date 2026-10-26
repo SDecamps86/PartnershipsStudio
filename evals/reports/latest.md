@@ -5,7 +5,7 @@ Scope: schema, grounding references, capabilities, risks, tailoring, ranking and
 Result: PASS
 
 ```text
-....                                                                     [100%]
-4 passed in 0.08s
+.....                                                                    [100%]
+5 passed in 0.10s
 
 ```

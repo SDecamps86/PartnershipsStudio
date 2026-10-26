@@ -1,7 +1,9 @@
 # Fictional demo fixtures
 
-Six hand-authored, schema-validated studios: base and prewritten sample-context versions of Lena Voss, Maison Aurelle and Juno Park. Sources beginning `fixture://` refer to invented persona briefs, not real research. No factual claim about a real individual or company is intended.
+Ten hand-authored, schema-validated studios: base and sample-context versions of Lena Voss, Maison Aurelle, Juno Park, Circuit Vale and Oria House Hotels. `fixture://` sources are fictional persona briefs, never real public evidence.
 
-Each fixture has ten candidates, all seven score dimensions and rationale, per-candidate risks, excluded uses, five priorities, a five-stage journey, three experiments, host preparation, cadence, feedback, provenance and explicit unknowns. Runtime code computes ranking; stored data contains dimension judgments only.
+Every studio has ten scored candidates with rationale and mitigations, excluded uses, five priorities, five journey stages, three experiments, session and host preparation, cadence, feedback, explicit unknowns and source references. Runtime code computes ranking. Sample context changes the top recommended task for each partner.
 
-Sample context changes the first-ranked task for each partner. Lena's workflow moves the feedback decision sheet ahead of visual directions. Maison's approval rule moves the source ledger ahead of localization. Juno's stated permission allows a private decision log after boundary approval. The drawer switches entire variants; independent layers and live edits are not part of M1.
+Each fixture also includes a fictional `tracking` scenario: sector, owner, current stage, lead maturity, importance, workflow, proposed event, audience, task states and count metrics. These seed the demo pipeline. They do not represent real invitations, clients, attendees, product usage or business results. Pipeline readiness and open counts are computed from the task records; the initial counts are not measured performance.
+
+Changing a task or metric affects only the visitor's short-lived workspace. Neither the fixture files nor another visitor's data is modified. The base/sharpened preview keeps operational tracking separate from prepared-content changes.

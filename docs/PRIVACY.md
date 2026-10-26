@@ -9,3 +9,9 @@ Browser localStorage stores only a theme preference. Studio data is not automati
 The supplied uvicorn command disables access logs. The application does not log input/output content. Hosting infrastructure may have separate metadata logging; review it before deployment.
 
 Not yet implemented: public research, moderation, triage for private individuals/minors, access codes, per-code limits, budget enforcement and public static showcase. Configure a real private removal-contact email before live deployment. The demo must not be exposed as a public live playground.
+
+## Partner pipeline
+
+The current session holds a small portfolio rather than a single partner. Checklist completion, lead stage/maturity, invitation status and manually entered metric counts stay in that same session. The seeded operational figures and event plans are fictional. No live calendar, email, CRM or product telemetry is connected.
+
+The workspace is limited to 12 partners and 3 MB, with at most 100 sessions in one server process. Clearing the workspace removes all its records; a new demo workspace is seeded from immutable fictional fixtures. Export/import preserves one selected partner at a time, including tracking. Switching partners does not erase earlier edits. Switching sample-context variants preserves tracking and weights.

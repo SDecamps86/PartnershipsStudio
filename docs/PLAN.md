@@ -19,3 +19,9 @@ Completed: six validated fixtures, all twelve workspace sections, weights and ra
 Review: whether the three plans reflect your preparation process; whether the ranking criteria and default weights help; what context you want to supply first in M3; whether the day brief has what you need to host.
 
 Deferred as scoped: M2 live research and staged streaming; M3 editable fields, context layers, verification and comparison; M4 private access, budget enforcement and deployment. No publication or remote push has occurred.
+
+## Requested UX revision after M1
+
+Completed: Prepare/Pipeline/Partner navigation; intake-only home; computed pipeline counts and stage occupancy; searchable/filterable directory and status board; upcoming sessions and pending actions; compact partner overview; separate detail pages; validated, session-only task and tracking updates; persistent per-partner weights; fashion-technology and luxury-hotel fictional brands (10 total fixture files).
+
+Review the overall three-tab flow, the overview's decision hierarchy, and whether readiness/task/activation indicators are useful for your actual working process. Live research and durable storage remain outside this revision.

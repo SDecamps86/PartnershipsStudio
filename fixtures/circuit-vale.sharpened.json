@@ -1,0 +1,1541 @@
+{
+  "schema_version": "1.0",
+  "id": "circuit-vale",
+  "name": "Circuit Vale",
+  "partner_type": "brand",
+  "fictional": true,
+  "variant": "sharpened",
+  "relationship": "Warm",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Circuit Vale is a fictional fashion brand combining technical apparel, digital product design and physical prototyping.",
+      "source_url": "fixture://circuit-vale/persona#E1",
+      "source_title": "Fictional persona brief: Circuit Vale",
+      "date": "2026-10-26",
+      "kind": "work",
+      "origin": "fixture"
+    },
+    {
+      "id": "E2",
+      "claim": "Its stated goal is shortening the handoff from digital sample review to a physical prototype decision.",
+      "source_url": "fixture://circuit-vale/persona#E2",
+      "source_title": "Fictional persona brief: Circuit Vale",
+      "date": "2026-10-26",
+      "kind": "business",
+      "origin": "fixture"
+    },
+    {
+      "id": "E3",
+      "claim": "The brand values functional design, accurate product claims and a clear record of design authorship.",
+      "source_url": "fixture://circuit-vale/persona#E3",
+      "source_title": "Fictional persona brief: Circuit Vale",
+      "date": "2026-10-26",
+      "kind": "values",
+      "origin": "fixture"
+    },
+    {
+      "id": "E4",
+      "claim": "Unreleased patterns, supplier files and fit data are confidential; technical performance claims require testing.",
+      "source_url": "fixture://circuit-vale/persona#E4",
+      "source_title": "Fictional persona brief: Circuit Vale",
+      "date": "2026-10-26",
+      "kind": "risk",
+      "origin": "fixture"
+    },
+    {
+      "id": "E5",
+      "claim": "The fictional product-design team is comfortable with 3D samples but has no agreed AI review standard.",
+      "source_url": "fixture://circuit-vale/persona#E5",
+      "source_title": "Fictional persona brief: Circuit Vale",
+      "date": "2026-10-26",
+      "kind": "audience",
+      "origin": "fixture"
+    },
+    {
+      "id": "E6",
+      "claim": "{\"workflow\": {\"process\": \"Material review must happen before the physical sample order.\", \"pain_points\": \"Performance statements are reaching the handoff without a linked test record.\", \"human_judgment\": \"The engineer approves test claims and the designer approves construction intent.\"}}",
+      "source_url": "fixture://circuit-vale/sample-context",
+      "source_title": "Prewritten sample context (fictional)",
+      "date": "2026-10-26",
+      "kind": "business",
+      "origin": "fixture"
+    }
+  ],
+  "profile": {
+    "summary": {
+      "statement": "Circuit Vale is a fictional fashion brand combining technical apparel, digital product design and physical prototyping.",
+      "evidence_ids": [
+        "E1"
+      ],
+      "assumptions": [],
+      "confidence": "medium"
+    },
+    "creative_goals": [
+      {
+        "statement": "Reduce ambiguity in digital-to-physical sample handoffs",
+        "evidence_ids": [
+          "E2"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      },
+      {
+        "statement": "Keep product and engineering teams aligned",
+        "evidence_ids": [
+          "E3"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      },
+      {
+        "statement": "Protect unreleased designs and tested performance claims",
+        "evidence_ids": [
+          "E4"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      }
+    ],
+    "audience": {
+      "who": {
+        "statement": "Product designers, material engineers and merchandising reviewers evaluating a technical garment",
+        "evidence_ids": [],
+        "assumptions": [
+          "Professional role audience is a working hypothesis from the fictional brief; confirm who participates."
+        ],
+        "confidence": "low"
+      },
+      "platforms": [
+        "Internal sample reviews",
+        "Owned product pages after approval"
+      ],
+      "size_signals": {
+        "statement": "Audience size unknown; ask which audience matters for the pilot.",
+        "evidence_ids": [],
+        "assumptions": [
+          "No audience count supplied."
+        ],
+        "confidence": "low"
+      }
+    },
+    "values": [
+      {
+        "statement": "The brand values functional design, accurate product claims and a clear record of design authorship.",
+        "evidence_ids": [
+          "E3"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      }
+    ],
+    "style_signature": {
+      "statement": "Technical apparel with a functional design language; do not invent a visual brand signature.",
+      "evidence_ids": [],
+      "assumptions": [
+        "Working hypothesis; confirm with the partner."
+      ],
+      "confidence": "low"
+    },
+    "workflow_signals": [
+      {
+        "statement": "Review notes lack specification references",
+        "evidence_ids": [],
+        "assumptions": [
+          "Working hypothesis; confirm with the partner."
+        ],
+        "confidence": "low"
+      }
+    ],
+    "constraints": [
+      {
+        "statement": "Unreleased patterns, supplier files and fit data are confidential; technical performance claims require testing.",
+        "evidence_ids": [
+          "E4"
+        ],
+        "assumptions": [],
+        "confidence": "medium"
+      }
+    ],
+    "sensitivity_level": "confidential",
+    "what_matters_most": [
+      {
+        "statement": "A reviewable sample decision",
+        "evidence_ids": [
+          "E2"
+        ],
+        "assumptions": [],
+        "confidence": "medium",
+        "why_it_matters_for_onboarding": "Use a synthetic tech pack and make every unresolved specification visible."
+      },
+      {
+        "statement": "Protected pattern and supplier data",
+        "evidence_ids": [
+          "E4"
+        ],
+        "assumptions": [],
+        "confidence": "medium",
+        "why_it_matters_for_onboarding": "Keep unreleased designs and supplier files out of the pilot."
+      },
+      {
+        "statement": "Design and engineering alignment",
+        "evidence_ids": [
+          "E1"
+        ],
+        "assumptions": [],
+        "confidence": "medium",
+        "why_it_matters_for_onboarding": "Put the designer and material reviewer on the same decision record."
+      },
+      {
+        "statement": "Tested performance claims",
+        "evidence_ids": [
+          "E4"
+        ],
+        "assumptions": [],
+        "confidence": "medium",
+        "why_it_matters_for_onboarding": "Separate observed construction details from claims that require physical tests."
+      },
+      {
+        "statement": "A shared review standard",
+        "evidence_ids": [
+          "E5"
+        ],
+        "assumptions": [],
+        "confidence": "medium",
+        "why_it_matters_for_onboarding": "Agree how corrections, approval and human sign-off will work before scaling."
+      }
+    ],
+    "key_indicators": {
+      "fit_scorecard": {
+        "familiarity_with_technology": {
+          "score": 2,
+          "rationale": "No direct baseline assessment; ask before choosing the session level.",
+          "evidence_ids": [],
+          "assumptions": [
+            "Selection hypothesis; qualification remains open."
+          ]
+        },
+        "core_target_fit": {
+          "score": 4,
+          "rationale": "The stated creative goals provide a concrete workflow to explore.",
+          "evidence_ids": [
+            "E1",
+            "E2"
+          ],
+          "assumptions": []
+        },
+        "relationship_strength": {
+          "score": 3,
+          "rationale": "Warm relationship in the fictional brief; no real contact history.",
+          "evidence_ids": [],
+          "assumptions": [
+            "Selection hypothesis; qualification remains open."
+          ]
+        },
+        "potential": {
+          "score": 3,
+          "rationale": "Potential depends on the partner choosing a repeatable use after a safe pilot.",
+          "evidence_ids": [
+            "E2"
+          ],
+          "assumptions": []
+        }
+      },
+      "why_now_signals": [
+        {
+          "statement": "Timing is unconfirmed. Ask whether this is the right project window.",
+          "evidence_ids": [],
+          "assumptions": [
+            "No current deadline supplied."
+          ],
+          "confidence": "low"
+        }
+      ],
+      "audience_signals": [
+        {
+          "statement": "Product designers, material engineers and merchandising reviewers evaluating a technical garment",
+          "evidence_ids": [],
+          "assumptions": [
+            "Professional role audience is a working hypothesis from the fictional brief; confirm who participates."
+          ],
+          "confidence": "low"
+        }
+      ],
+      "business_signals": [
+        {
+          "statement": "Reduce ambiguity in digital-to-physical sample handoffs",
+          "evidence_ids": [
+            "E2"
+          ],
+          "assumptions": [],
+          "confidence": "medium"
+        }
+      ]
+    },
+    "unknowns": [
+      "No real-world research was performed.",
+      "Available assets, permissions, tools and timing are not confirmed.",
+      "No measured baseline or ROI is supplied."
+    ],
+    "questions_to_ask": [
+      "Which sample-review handoff causes the most rework?",
+      "Who approves fit, construction and performance claims?",
+      "Can the team provide a synthetic tech pack instead of an unreleased design?"
+    ]
+  },
+  "workflow": [
+    {
+      "id": "W1",
+      "name": "Prepare digital sample",
+      "owner_role": "Product designer",
+      "tools": [
+        "3D garment workspace (fictional)"
+      ],
+      "pain_points": [
+        "Review notes lack specification references"
+      ],
+      "time_cost_signal": "Not measured; establish a baseline with the partner.",
+      "opportunity": "Attach questions to explicit tech-pack fields",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "human_judgment_to_protect": "Original pattern and design intent",
+      "origin": "assumption"
+    },
+    {
+      "id": "W2",
+      "name": "Cross-functional review",
+      "owner_role": "Designer and material engineer",
+      "tools": [
+        "Internal review board (assumed)"
+      ],
+      "pain_points": [
+        "Fit, construction and claim issues get mixed"
+      ],
+      "time_cost_signal": "Not measured; establish a baseline with the partner.",
+      "opportunity": "Separate design decisions, engineering questions and test requirements",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "human_judgment_to_protect": "Physical fit and engineering judgment",
+      "origin": "assumption"
+    },
+    {
+      "id": "W3",
+      "name": "Prototype decision",
+      "owner_role": "Product lead",
+      "tools": [
+        "Prototype approval sheet (assumed)"
+      ],
+      "pain_points": [
+        "Unresolved questions reach the supplier"
+      ],
+      "time_cost_signal": "Not measured; establish a baseline with the partner.",
+      "opportunity": "Create a traceable handoff checklist with unresolved items",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "human_judgment_to_protect": "Approval to build a physical sample",
+      "origin": "assumption"
+    },
+    {
+      "id": "W4",
+      "name": "Product information approval",
+      "owner_role": "Merchandising and legal",
+      "tools": [
+        "Approved product copy (assumed)"
+      ],
+      "pain_points": [
+        "Digital imagery can imply untested performance"
+      ],
+      "time_cost_signal": "Not measured; establish a baseline with the partner.",
+      "opportunity": "Audit product language against an approved test ledger",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "human_judgment_to_protect": "Final technical claims and release decision",
+      "origin": "assumption"
+    }
+  ],
+  "use_cases": [
+    {
+      "id": "UC1",
+      "title": "Digital sample decision pack",
+      "one_line": "Turn a synthetic tech pack and review notes into a decision record before physical prototyping.",
+      "capability_ids": [
+        "research_synthesis"
+      ],
+      "workflow_step_ids": [
+        "W2",
+        "W3"
+      ],
+      "goal_link": "Reduce ambiguity in digital-to-physical sample handoffs",
+      "audience_link": "Product designers, material engineers and merchandising reviewers evaluating a technical garment",
+      "values_link": "The brand values functional design, accurate product claims and a clear record of design authorship.",
+      "scores": {
+        "goal_fit": {
+          "score": 3,
+          "rationale": "E2 supports testing this task: Turn a synthetic tech pack and review notes into a decision record before physical prototyping. The score remains a planning judgment."
+        },
+        "audience_fit": {
+          "score": 5,
+          "rationale": "The output is reviewed by product designers, material engineers and merchandising reviewers evaluating a technical garment; audience benefit must be confirmed."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3 states The brand values functional design, accurate product claims and a clear record of design authorship."
+        },
+        "time_to_first_value": {
+          "score": 4,
+          "rationale": "A 2-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 4,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 5,
+          "rationale": "This addresses “Digital sample decision pack” in the stated workflow; relative benefit against current practice is unmeasured."
+        },
+        "risk_safety": {
+          "score": 4,
+          "rationale": "Risk score assumes this control is followed: Use synthetic specifications; keep patterns and supplier files out of the pilot."
+        }
+      },
+      "rationale": "Because E2 states “Its stated goal is shortening the handoff from digital sample review to a physical prototype decision.”, test this specific handoff: Turn a synthetic tech pack and review notes into a decision record before physical prototyping. Confirm usefulness with the partner before expanding.",
+      "risks": [
+        {
+          "type": "Unreleased design leakage",
+          "severity": "medium",
+          "mitigation": "Use synthetic specifications; keep patterns and supplier files out of the pilot."
+        }
+      ],
+      "time_to_first_value_days": 2,
+      "effort": "medium",
+      "evidence_ids": [
+        "E2",
+        "E4"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Review one synthetic garment handoff and check every unresolved field is visible."
+    },
+    {
+      "id": "UC2",
+      "title": "Technical claim review ledger",
+      "one_line": "Link proposed product statements to an approved test record or an explicit open question.",
+      "capability_ids": [
+        "research_synthesis"
+      ],
+      "workflow_step_ids": [
+        "W4"
+      ],
+      "goal_link": "Reduce ambiguity in digital-to-physical sample handoffs",
+      "audience_link": "Product designers, material engineers and merchandising reviewers evaluating a technical garment",
+      "values_link": "The brand values functional design, accurate product claims and a clear record of design authorship.",
+      "scores": {
+        "goal_fit": {
+          "score": 5,
+          "rationale": "E2 supports testing this task: Link proposed product statements to an approved test record or an explicit open question. The score remains a planning judgment."
+        },
+        "audience_fit": {
+          "score": 5,
+          "rationale": "The output is reviewed by product designers, material engineers and merchandising reviewers evaluating a technical garment; audience benefit must be confirmed."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3 states The brand values functional design, accurate product claims and a clear record of design authorship."
+        },
+        "time_to_first_value": {
+          "score": 5,
+          "rationale": "A 1-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 5,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 5,
+          "rationale": "This addresses “Technical claim review ledger” in the stated workflow; relative benefit against current practice is unmeasured."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: No claim is approved without the human test owner and substantiation."
+        }
+      },
+      "rationale": "Because E2 states “Its stated goal is shortening the handoff from digital sample review to a physical prototype decision.”, test this specific handoff: Link proposed product statements to an approved test record or an explicit open question. Confirm usefulness with the partner before expanding.",
+      "risks": [
+        {
+          "type": "Unsupported performance claims",
+          "severity": "medium",
+          "mitigation": "No claim is approved without the human test owner and substantiation."
+        }
+      ],
+      "time_to_first_value_days": 1,
+      "effort": "low",
+      "evidence_ids": [
+        "E2",
+        "E4",
+        "E6"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Seed an untested waterproofing statement and verify it remains blocked."
+    },
+    {
+      "id": "UC3",
+      "title": "Sample review question sorter",
+      "one_line": "Group fictional review notes by fit, construction, design and test ownership.",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "workflow_step_ids": [
+        "W2"
+      ],
+      "goal_link": "Protect unreleased designs and tested performance claims",
+      "audience_link": "Product designers, material engineers and merchandising reviewers evaluating a technical garment",
+      "values_link": "The brand values functional design, accurate product claims and a clear record of design authorship.",
+      "scores": {
+        "goal_fit": {
+          "score": 5,
+          "rationale": "E2 supports testing this task: Group fictional review notes by fit, construction, design and test ownership. The score remains a planning judgment."
+        },
+        "audience_fit": {
+          "score": 4,
+          "rationale": "The output is reviewed by product designers, material engineers and merchandising reviewers evaluating a technical garment; audience benefit must be confirmed."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3 states The brand values functional design, accurate product claims and a clear record of design authorship."
+        },
+        "time_to_first_value": {
+          "score": 5,
+          "rationale": "A 1-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 5,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "This addresses “Sample review question sorter” in the stated workflow; relative benefit against current practice is unmeasured."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Human owners confirm every assigned question."
+        }
+      },
+      "rationale": "Because E2 states “Its stated goal is shortening the handoff from digital sample review to a physical prototype decision.”, test this specific handoff: Group fictional review notes by fit, construction, design and test ownership. Confirm usefulness with the partner before expanding.",
+      "risks": [
+        {
+          "type": "Wrong routing",
+          "severity": "medium",
+          "mitigation": "Human owners confirm every assigned question."
+        }
+      ],
+      "time_to_first_value_days": 1,
+      "effort": "low",
+      "evidence_ids": [
+        "E2",
+        "E4"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Give a designer and engineer the same fictional notes and compare routing."
+    },
+    {
+      "id": "UC4",
+      "title": "Prototype handoff checklist",
+      "one_line": "Draft an approval checklist from confirmed specifications and unresolved decisions.",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "workflow_step_ids": [
+        "W3"
+      ],
+      "goal_link": "Reduce ambiguity in digital-to-physical sample handoffs",
+      "audience_link": "Product designers, material engineers and merchandising reviewers evaluating a technical garment",
+      "values_link": "The brand values functional design, accurate product claims and a clear record of design authorship.",
+      "scores": {
+        "goal_fit": {
+          "score": 5,
+          "rationale": "E2 supports testing this task: Draft an approval checklist from confirmed specifications and unresolved decisions. The score remains a planning judgment."
+        },
+        "audience_fit": {
+          "score": 4,
+          "rationale": "The output is reviewed by product designers, material engineers and merchandising reviewers evaluating a technical garment; audience benefit must be confirmed."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3 states The brand values functional design, accurate product claims and a clear record of design authorship."
+        },
+        "time_to_first_value": {
+          "score": 4,
+          "rationale": "A 2-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 5,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 4,
+          "rationale": "This addresses “Prototype handoff checklist” in the stated workflow; relative benefit against current practice is unmeasured."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Mark every checklist as draft until the product lead signs off."
+        }
+      },
+      "rationale": "Because E3 states “The brand values functional design, accurate product claims and a clear record of design authorship.”, test this specific handoff: Draft an approval checklist from confirmed specifications and unresolved decisions. Confirm usefulness with the partner before expanding.",
+      "risks": [
+        {
+          "type": "Implied build approval",
+          "severity": "medium",
+          "mitigation": "Mark every checklist as draft until the product lead signs off."
+        }
+      ],
+      "time_to_first_value_days": 2,
+      "effort": "medium",
+      "evidence_ids": [
+        "E3",
+        "E4"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Ask a colleague to identify what still blocks a sample order."
+    },
+    {
+      "id": "UC5",
+      "title": "Design rationale archive outline",
+      "one_line": "Organize designer-owned rationale without changing who made each decision.",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "workflow_step_ids": [
+        "W1",
+        "W2"
+      ],
+      "goal_link": "Keep product and engineering teams aligned",
+      "audience_link": "Product designers, material engineers and merchandising reviewers evaluating a technical garment",
+      "values_link": "The brand values functional design, accurate product claims and a clear record of design authorship.",
+      "scores": {
+        "goal_fit": {
+          "score": 4,
+          "rationale": "E2 supports testing this task: Organize designer-owned rationale without changing who made each decision. The score remains a planning judgment."
+        },
+        "audience_fit": {
+          "score": 4,
+          "rationale": "The output is reviewed by product designers, material engineers and merchandising reviewers evaluating a technical garment; audience benefit must be confirmed."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3 states The brand values functional design, accurate product claims and a clear record of design authorship."
+        },
+        "time_to_first_value": {
+          "score": 4,
+          "rationale": "A 2-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 5,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "This addresses “Design rationale archive outline” in the stated workflow; relative benefit against current practice is unmeasured."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Keep the original designer, date and source beside each decision."
+        }
+      },
+      "rationale": "Because E3 states “The brand values functional design, accurate product claims and a clear record of design authorship.”, test this specific handoff: Organize designer-owned rationale without changing who made each decision. Confirm usefulness with the partner before expanding.",
+      "risks": [
+        {
+          "type": "Authorship loss",
+          "severity": "medium",
+          "mitigation": "Keep the original designer, date and source beside each decision."
+        }
+      ],
+      "time_to_first_value_days": 2,
+      "effort": "medium",
+      "evidence_ids": [
+        "E3",
+        "E4"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Have the designer verify a short fictional decision history."
+    },
+    {
+      "id": "UC6",
+      "title": "Material experiment comparison",
+      "one_line": "Summarize synthetic test observations in a comparison table.",
+      "capability_ids": [
+        "data_analysis"
+      ],
+      "workflow_step_ids": [
+        "W2"
+      ],
+      "goal_link": "Protect unreleased designs and tested performance claims",
+      "audience_link": "Product designers, material engineers and merchandising reviewers evaluating a technical garment",
+      "values_link": "The brand values functional design, accurate product claims and a clear record of design authorship.",
+      "scores": {
+        "goal_fit": {
+          "score": 4,
+          "rationale": "E2 supports testing this task: Summarize synthetic test observations in a comparison table. The score remains a planning judgment."
+        },
+        "audience_fit": {
+          "score": 4,
+          "rationale": "The output is reviewed by product designers, material engineers and merchandising reviewers evaluating a technical garment; audience benefit must be confirmed."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3 states The brand values functional design, accurate product claims and a clear record of design authorship."
+        },
+        "time_to_first_value": {
+          "score": 3,
+          "rationale": "A 3-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 4,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 4,
+          "rationale": "This addresses “Material experiment comparison” in the stated workflow; relative benefit against current practice is unmeasured."
+        },
+        "risk_safety": {
+          "score": 4,
+          "rationale": "Risk score assumes this control is followed: No performance conclusion is inferred from synthetic or incomplete data."
+        }
+      },
+      "rationale": "Because E3 states “The brand values functional design, accurate product claims and a clear record of design authorship.”, test this specific handoff: Summarize synthetic test observations in a comparison table. Confirm usefulness with the partner before expanding.",
+      "risks": [
+        {
+          "type": "False material conclusions",
+          "severity": "medium",
+          "mitigation": "No performance conclusion is inferred from synthetic or incomplete data."
+        }
+      ],
+      "time_to_first_value_days": 3,
+      "effort": "medium",
+      "evidence_ids": [
+        "E3",
+        "E4"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Ask an engineer which follow-up tests are still needed."
+    },
+    {
+      "id": "UC7",
+      "title": "Digital sample annotation guide",
+      "one_line": "Draft consistent language for visible construction notes on cleared sample images.",
+      "capability_ids": [
+        "visual_reference_analysis"
+      ],
+      "workflow_step_ids": [
+        "W1"
+      ],
+      "goal_link": "Reduce ambiguity in digital-to-physical sample handoffs",
+      "audience_link": "Product designers, material engineers and merchandising reviewers evaluating a technical garment",
+      "values_link": "The brand values functional design, accurate product claims and a clear record of design authorship.",
+      "scores": {
+        "goal_fit": {
+          "score": 4,
+          "rationale": "E2 supports testing this task: Draft consistent language for visible construction notes on cleared sample images. The score remains a planning judgment."
+        },
+        "audience_fit": {
+          "score": 4,
+          "rationale": "The output is reviewed by product designers, material engineers and merchandising reviewers evaluating a technical garment; audience benefit must be confirmed."
+        },
+        "values_fit": {
+          "score": 4,
+          "rationale": "E3 states The brand values functional design, accurate product claims and a clear record of design authorship."
+        },
+        "time_to_first_value": {
+          "score": 3,
+          "rationale": "A 3-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 4,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 4,
+          "rationale": "This addresses “Digital sample annotation guide” in the stated workflow; relative benefit against current practice is unmeasured."
+        },
+        "risk_safety": {
+          "score": 3,
+          "rationale": "Risk score assumes this control is followed: Only describe visible details; physical fit stays unassessed."
+        }
+      },
+      "rationale": "Because E3 states “The brand values functional design, accurate product claims and a clear record of design authorship.”, test this specific handoff: Draft consistent language for visible construction notes on cleared sample images. Confirm usefulness with the partner before expanding.",
+      "risks": [
+        {
+          "type": "Inferring fit from imagery",
+          "severity": "high",
+          "mitigation": "Only describe visible details; physical fit stays unassessed."
+        }
+      ],
+      "time_to_first_value_days": 3,
+      "effort": "medium",
+      "evidence_ids": [
+        "E3",
+        "E4"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Check a cleared practice image against engineer-written annotations."
+    },
+    {
+      "id": "UC8",
+      "title": "Review workshop agenda",
+      "one_line": "Prepare a 45-minute design-and-engineering review around one sample decision.",
+      "capability_ids": [
+        "drafting_ideation"
+      ],
+      "workflow_step_ids": [
+        "W2"
+      ],
+      "goal_link": "Keep product and engineering teams aligned",
+      "audience_link": "Product designers, material engineers and merchandising reviewers evaluating a technical garment",
+      "values_link": "The brand values functional design, accurate product claims and a clear record of design authorship.",
+      "scores": {
+        "goal_fit": {
+          "score": 4,
+          "rationale": "E2 supports testing this task: Prepare a 45-minute design-and-engineering review around one sample decision. The score remains a planning judgment."
+        },
+        "audience_fit": {
+          "score": 3,
+          "rationale": "The output is reviewed by product designers, material engineers and merchandising reviewers evaluating a technical garment; audience benefit must be confirmed."
+        },
+        "values_fit": {
+          "score": 5,
+          "rationale": "E3 states The brand values functional design, accurate product claims and a clear record of design authorship."
+        },
+        "time_to_first_value": {
+          "score": 5,
+          "rationale": "A 1-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 5,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "This addresses “Review workshop agenda” in the stated workflow; relative benefit against current practice is unmeasured."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Confirm product, design and engineering roles before sending."
+        }
+      },
+      "rationale": "Because E3 states “The brand values functional design, accurate product claims and a clear record of design authorship.”, test this specific handoff: Prepare a 45-minute design-and-engineering review around one sample decision. Confirm usefulness with the partner before expanding.",
+      "risks": [
+        {
+          "type": "Overlooking a decision owner",
+          "severity": "medium",
+          "mitigation": "Confirm product, design and engineering roles before sending."
+        }
+      ],
+      "time_to_first_value_days": 1,
+      "effort": "low",
+      "evidence_ids": [
+        "E3",
+        "E4"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Walk through the agenda using role-based fictional attendees."
+    },
+    {
+      "id": "UC9",
+      "title": "Approved terminology localization",
+      "one_line": "Localize already approved construction terms without adding benefits.",
+      "capability_ids": [
+        "translation_localization"
+      ],
+      "workflow_step_ids": [
+        "W4"
+      ],
+      "goal_link": "Protect unreleased designs and tested performance claims",
+      "audience_link": "Product designers, material engineers and merchandising reviewers evaluating a technical garment",
+      "values_link": "The brand values functional design, accurate product claims and a clear record of design authorship.",
+      "scores": {
+        "goal_fit": {
+          "score": 3,
+          "rationale": "E2 supports testing this task: Localize already approved construction terms without adding benefits. The score remains a planning judgment."
+        },
+        "audience_fit": {
+          "score": 4,
+          "rationale": "The output is reviewed by product designers, material engineers and merchandising reviewers evaluating a technical garment; audience benefit must be confirmed."
+        },
+        "values_fit": {
+          "score": 4,
+          "rationale": "E3 states The brand values functional design, accurate product claims and a clear record of design authorship."
+        },
+        "time_to_first_value": {
+          "score": 3,
+          "rationale": "A 3-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 4,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "This addresses “Approved terminology localization” in the stated workflow; relative benefit against current practice is unmeasured."
+        },
+        "risk_safety": {
+          "score": 4,
+          "rationale": "Risk score assumes this control is followed: A regional technical reviewer approves final wording."
+        }
+      },
+      "rationale": "Because E3 states “The brand values functional design, accurate product claims and a clear record of design authorship.”, test this specific handoff: Localize already approved construction terms without adding benefits. Confirm usefulness with the partner before expanding.",
+      "risks": [
+        {
+          "type": "Technical mistranslation",
+          "severity": "medium",
+          "mitigation": "A regional technical reviewer approves final wording."
+        }
+      ],
+      "time_to_first_value_days": 3,
+      "effort": "medium",
+      "evidence_ids": [
+        "E3",
+        "E4"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Review a ten-term synthetic glossary."
+    },
+    {
+      "id": "UC10",
+      "title": "Sample revision tracker",
+      "one_line": "Summarize changes across synthetic review rounds.",
+      "capability_ids": [
+        "data_analysis"
+      ],
+      "workflow_step_ids": [
+        "W2"
+      ],
+      "goal_link": "Reduce ambiguity in digital-to-physical sample handoffs",
+      "audience_link": "Product designers, material engineers and merchandising reviewers evaluating a technical garment",
+      "values_link": "The brand values functional design, accurate product claims and a clear record of design authorship.",
+      "scores": {
+        "goal_fit": {
+          "score": 4,
+          "rationale": "E2 supports testing this task: Summarize changes across synthetic review rounds. The score remains a planning judgment."
+        },
+        "audience_fit": {
+          "score": 3,
+          "rationale": "The output is reviewed by product designers, material engineers and merchandising reviewers evaluating a technical garment; audience benefit must be confirmed."
+        },
+        "values_fit": {
+          "score": 4,
+          "rationale": "E3 states The brand values functional design, accurate product claims and a clear record of design authorship."
+        },
+        "time_to_first_value": {
+          "score": 3,
+          "rationale": "A 3-day trial is a planning assumption, not a measured result."
+        },
+        "feasibility": {
+          "score": 4,
+          "rationale": "Feasibility assumes approved inputs and an available human reviewer."
+        },
+        "differentiation": {
+          "score": 3,
+          "rationale": "This addresses “Sample revision tracker” in the stated workflow; relative benefit against current practice is unmeasured."
+        },
+        "risk_safety": {
+          "score": 5,
+          "rationale": "Risk score assumes this control is followed: Keep source version identifiers and human approval status visible."
+        }
+      },
+      "rationale": "Because E3 states “The brand values functional design, accurate product claims and a clear record of design authorship.”, test this specific handoff: Summarize changes across synthetic review rounds. Confirm usefulness with the partner before expanding.",
+      "risks": [
+        {
+          "type": "Version confusion",
+          "severity": "medium",
+          "mitigation": "Keep source version identifiers and human approval status visible."
+        }
+      ],
+      "time_to_first_value_days": 3,
+      "effort": "medium",
+      "evidence_ids": [
+        "E3",
+        "E4"
+      ],
+      "assumptions": [
+        "Trial duration and benefit are unmeasured; confirm inputs and reviewer availability."
+      ],
+      "first_experiment": "Reconcile every summary row with the source revision log."
+    }
+  ],
+  "not_recommended": [
+    {
+      "title": "Generate production patterns without review",
+      "reason": "E4 makes design files confidential, and a visual draft cannot establish physical fit.",
+      "risk": {
+        "type": "Design integrity",
+        "severity": "high",
+        "mitigation": "Keep patterns in approved design tools and retain human technical review."
+      }
+    },
+    {
+      "title": "Publish untested performance benefits",
+      "reason": "E4 requires physical substantiation, not inferred marketing language.",
+      "risk": {
+        "type": "False product claims",
+        "severity": "high",
+        "mitigation": "Ask the test owner for approved evidence before any claim."
+      }
+    }
+  ],
+  "demo": {
+    "use_case_id": "UC2",
+    "concept": "Technical claim review ledger",
+    "why_this_demo": "Because E6 supplies a more specific constraint, use the newly agreed next task rather than the original proposal.",
+    "versions": {
+      "five_min": "Confirm the goal, one boundary and whether a follow-up is wanted.",
+      "twenty_min": "Confirm E6 and review the first dependency: Link proposed product statements to an approved test record or an explicit open question.",
+      "sixty_min_hands_on": "Only after explicit agreement: establish a baseline, try one approved input, compare the output, and record a keep/change/stop decision."
+    },
+    "script_beats": [
+      {
+        "time": "0–5 min",
+        "action": "Ask the partner to describe the handoff and boundaries.",
+        "intended_feeling": "Heard and in control",
+        "talking_point": "Which sample-review handoff causes the most rework?"
+      },
+      {
+        "time": "5–12 min",
+        "action": "Seed an untested waterproofing statement and verify it remains blocked.",
+        "intended_feeling": "Able to correct the working draft",
+        "talking_point": "This is a private draft from fictional or approved inputs; please challenge the assumptions."
+      },
+      {
+        "time": "12–20 min",
+        "action": "Ask the partner to keep, change or reject the output and choose the next step.",
+        "intended_feeling": "Free to decline",
+        "talking_point": "Which fields were still ambiguous at the sample handoff, and which claims need a test owner? Please mark any implied approval we should remove before a second trial."
+      }
+    ],
+    "sample_inputs": [
+      "Seed an untested waterproofing statement and verify it remains blocked."
+    ],
+    "assets_needed": [
+      "Fictional practice input or partner-owned material with explicit permission",
+      "A host to capture corrections and unknowns"
+    ],
+    "wow_moment": "The partner can point to a useful decision or correction; there is no requirement to be impressed.",
+    "fallback_plan": "Use a prepared text example or a blank decision sheet. If the partner declines, keep the session to listening.",
+    "what_not_to_show": [
+      "Generate production patterns without review",
+      "Publish untested performance benefits"
+    ],
+    "success_signal": "Every untested claim stays explicitly unapproved. Proposed threshold; agree with the partner before testing."
+  },
+  "experience": {
+    "tone_and_voice": "Technical and direct. Ask designers and engineers to correct the draft; avoid speculative product benefits.",
+    "host_and_channel": "Partner lead and a technical workflow host, with product design and engineering roles confirmed before the session.",
+    "invitation_draft": "Could your design and engineering reviewers join a working session on one digital-sample handoff? We will use a synthetic tech pack, keep pattern files out of the session, and check whether the decision record makes unresolved questions clearer.",
+    "setting_and_pacing": "A private 45-minute working review around one synthetic garment. Show the decision record beside its source and leave time for corrections.",
+    "discretion": {
+      "level": "confidential",
+      "rules": [
+        "No recording without explicit agreement.",
+        "Use fictional or cleared inputs only.",
+        "Share notes only with confirmed participants."
+      ]
+    },
+    "accessibility_notes": [
+      "Ask for preferred format, language and access requirements.",
+      "Provide a readable text copy; do not rely on color or sound alone."
+    ],
+    "day_brief": {
+      "who": "Circuit Vale — fictional brand; warm relationship.",
+      "why_them": "The stated goal is to reduce ambiguity in digital-to-physical sample handoffs; fit remains a qualification hypothesis.",
+      "what_they_care_about": [
+        "Reduce ambiguity in digital-to-physical sample handoffs",
+        "Keep product and engineering teams aligned",
+        "Protect unreleased designs and tested performance claims"
+      ],
+      "do": [
+        "Technical and direct. Ask designers and engineers to correct the draft; avoid speculative product benefits.",
+        "Confirm permissions and a useful next step.",
+        "Confirm the added E6 approval constraint before any draft is treated as ready."
+      ],
+      "avoid": [
+        "Generate production patterns without review",
+        "Publish untested performance benefits"
+      ],
+      "open_questions": [
+        "Which sample-review handoff causes the most rework?",
+        "Who approves fit, construction and performance claims?",
+        "Can the team provide a synthetic tech pack instead of an unreleased design?"
+      ],
+      "next_step": "Technical claim review ledger first. Confirm this with the partner."
+    },
+    "event_plan": null,
+    "what_to_avoid": [
+      "Generate production patterns without review",
+      "Publish untested performance benefits"
+    ]
+  },
+  "stakeholders": [
+    {
+      "name_or_role": "Product design lead",
+      "role_in_decision": "champion",
+      "what_they_care_about": "Design intent and sample rework",
+      "engagement_approach": "Ask which handoff decision needs a clearer record.",
+      "risk": "Role is fictional; confirm actual participation and decision rights.",
+      "origin": "fixture"
+    },
+    {
+      "name_or_role": "Material engineer",
+      "role_in_decision": "evaluator",
+      "what_they_care_about": "Test substantiation and construction accuracy",
+      "engagement_approach": "Review unresolved claims before any proposed benefit.",
+      "risk": "Role is fictional; confirm actual participation and decision rights.",
+      "origin": "fixture"
+    },
+    {
+      "name_or_role": "Merchandising reviewer",
+      "role_in_decision": "user",
+      "what_they_care_about": "Approved product information",
+      "engagement_approach": "Distinguish draft notes from release-ready language.",
+      "risk": "Role is fictional; confirm actual participation and decision rights.",
+      "origin": "fixture"
+    }
+  ],
+  "journey": [
+    {
+      "name": "Introduction",
+      "goal": "Understand how to reduce ambiguity in digital-to-physical sample handoffs.",
+      "activities": [
+        "Confirm goals, boundaries and relationship context.",
+        "Which sample-review handoff causes the most rework?"
+      ],
+      "owner_roles": [
+        "Partner lead",
+        "Product design lead"
+      ],
+      "partner_signal": "Corrects the brief",
+      "exit_criteria": "Partner confirms the problem and chooses whether to continue.",
+      "week_range": "1"
+    },
+    {
+      "name": "Education",
+      "goal": "Agree what is useful and appropriate.",
+      "activities": [
+        "Explain the relevant capability and its limits using approved inputs.",
+        "Because E2 identifies a handoff problem and E4 restricts unreleased data, use a synthetic tech pack to separate approved specifications from unresolved questions."
+      ],
+      "owner_roles": [
+        "Partner lead",
+        "Product design lead"
+      ],
+      "partner_signal": "Explains a boundary",
+      "exit_criteria": "Partner can explain the limits and approves one safe test.",
+      "week_range": "2"
+    },
+    {
+      "name": "Experimentation",
+      "goal": "A claim ledger prevents untested performance language from passing review.",
+      "activities": [
+        "Seed an untested waterproofing statement and verify it remains blocked.",
+        "Keep the new constraints from E6 in view."
+      ],
+      "owner_roles": [
+        "Partner lead",
+        "Product design lead"
+      ],
+      "partner_signal": "Chooses a pilot outcome",
+      "exit_criteria": "Every untested claim stays explicitly unapproved. Proposed threshold; agree with the partner before testing.",
+      "week_range": "3–4"
+    },
+    {
+      "name": "Adoption",
+      "goal": "Make the chosen task repeatable.",
+      "activities": [
+        "Support one repeat use in the real workflow after approval.",
+        "Confirm a single contact and document the handover."
+      ],
+      "owner_roles": [
+        "Partner lead",
+        "Product design lead"
+      ],
+      "partner_signal": "Repeats an approved task",
+      "exit_criteria": "Partner repeats the agreed task independently with approved inputs.",
+      "week_range": "5–8"
+    },
+    {
+      "name": "Long-term engagement",
+      "goal": "Keep the relationship and feedback loop useful.",
+      "activities": [
+        "Review whether the workflow still helps the stated goal.",
+        "Close feedback items and agree whether to continue."
+      ],
+      "owner_roles": [
+        "Partner lead",
+        "Product design lead"
+      ],
+      "partner_signal": "Requests a useful next step",
+      "exit_criteria": "Partner and owner agree to continue, adjust or stop based on actual use.",
+      "week_range": "9–13"
+    }
+  ],
+  "experiments": [
+    {
+      "hypothesis": "A claim ledger prevents untested performance language from passing review.",
+      "setup": "Use a fictional practice input or explicitly cleared partner material; record a manual baseline first.",
+      "steps": [
+        "Ask for agreement and confirm boundaries.",
+        "Seed an untested waterproofing statement and verify it remains blocked.",
+        "Compare against the baseline and record corrections."
+      ],
+      "metric": "Partner acceptance and number of unsupported or corrected statements; collect actual observations.",
+      "success_threshold": "Every untested claim stays explicitly unapproved. Proposed threshold; agree with the partner before testing.",
+      "timebox_days": 7,
+      "decision_gate": "Keep only if the partner accepts the result and all review requirements are met; otherwise change or stop.",
+      "risk": {
+        "type": "Unsupported performance claims",
+        "severity": "medium",
+        "mitigation": "No claim is approved without the human test owner and substantiation."
+      }
+    },
+    {
+      "hypothesis": "A decision pack makes unresolved sample questions visible before physical prototyping.",
+      "setup": "Use a fictional practice input or explicitly cleared partner material; record a manual baseline first.",
+      "steps": [
+        "Ask for agreement and confirm boundaries.",
+        "Review one synthetic garment handoff and check every unresolved field is visible.",
+        "Compare against the baseline and record corrections."
+      ],
+      "metric": "Partner acceptance and number of unsupported or corrected statements; collect actual observations.",
+      "success_threshold": "The designer and engineer can identify every open specification without rereading the original notes. Proposed threshold; agree with the partner before testing.",
+      "timebox_days": 7,
+      "decision_gate": "Keep only if the partner accepts the result and all review requirements are met; otherwise change or stop.",
+      "risk": {
+        "type": "Unreleased design leakage",
+        "severity": "medium",
+        "mitigation": "Use synthetic specifications; keep patterns and supplier files out of the pilot."
+      }
+    },
+    {
+      "hypothesis": "A question sorter helps design and engineering agree review ownership.",
+      "setup": "Use a fictional practice input or explicitly cleared partner material; record a manual baseline first.",
+      "steps": [
+        "Ask for agreement and confirm boundaries.",
+        "Give a designer and engineer the same fictional notes and compare routing.",
+        "Compare against the baseline and record corrections."
+      ],
+      "metric": "Partner acceptance and number of unsupported or corrected statements; collect actual observations.",
+      "success_threshold": "Both reviewers agree an owner for every seeded question. Proposed threshold; agree with the partner before testing.",
+      "timebox_days": 14,
+      "decision_gate": "Keep only if the partner accepts the result and all review requirements are met; otherwise change or stop.",
+      "risk": {
+        "type": "Wrong routing",
+        "severity": "medium",
+        "mitigation": "Human owners confirm every assigned question."
+      }
+    }
+  ],
+  "cadence": {
+    "weekly_standup_agenda": [
+      "What was tried and what stayed human?",
+      "What changed in the partner’s stated goal?",
+      "Which risks, questions or feedback need an owner?",
+      "Choose one next action or explicitly pause."
+    ],
+    "channel_setup": "One partner lead owns a private shared channel chosen by the partner. Ask before adding teammates.",
+    "touchpoints_90_days": [
+      {
+        "day": 1,
+        "purpose": "Confirm the brief",
+        "owner": "Partner lead",
+        "output": "Partner confirms the problem and chooses whether to continue."
+      },
+      {
+        "day": 7,
+        "purpose": "Review boundaries and learning needs",
+        "owner": "Partner lead",
+        "output": "Partner confirms the problem and chooses whether to continue."
+      },
+      {
+        "day": 14,
+        "purpose": "Agree a safe experiment",
+        "owner": "Partner lead",
+        "output": "Partner confirms the problem and chooses whether to continue."
+      },
+      {
+        "day": 21,
+        "purpose": "Review the first pilot",
+        "owner": "Partner lead",
+        "output": "Partner can explain the limits and approves one safe test."
+      },
+      {
+        "day": 28,
+        "purpose": "Review actual repeat use, open feedback and whether to continue",
+        "owner": "Partner lead",
+        "output": "Partner can explain the limits and approves one safe test."
+      },
+      {
+        "day": 35,
+        "purpose": "Review actual repeat use, open feedback and whether to continue",
+        "owner": "Partner lead",
+        "output": "Partner can explain the limits and approves one safe test."
+      },
+      {
+        "day": 42,
+        "purpose": "Review actual repeat use, open feedback and whether to continue",
+        "owner": "Partner lead",
+        "output": "The designer and engineer can identify every open specification without rereading the original notes."
+      },
+      {
+        "day": 49,
+        "purpose": "Review actual repeat use, open feedback and whether to continue",
+        "owner": "Partner lead",
+        "output": "The designer and engineer can identify every open specification without rereading the original notes."
+      },
+      {
+        "day": 56,
+        "purpose": "Review actual repeat use, open feedback and whether to continue",
+        "owner": "Partner lead",
+        "output": "The designer and engineer can identify every open specification without rereading the original notes."
+      },
+      {
+        "day": 63,
+        "purpose": "Review actual repeat use, open feedback and whether to continue",
+        "owner": "Partner lead",
+        "output": "Partner repeats the agreed task independently with approved inputs."
+      },
+      {
+        "day": 70,
+        "purpose": "Review actual repeat use, open feedback and whether to continue",
+        "owner": "Partner lead",
+        "output": "Partner repeats the agreed task independently with approved inputs."
+      },
+      {
+        "day": 77,
+        "purpose": "Review actual repeat use, open feedback and whether to continue",
+        "owner": "Partner lead",
+        "output": "Partner repeats the agreed task independently with approved inputs."
+      },
+      {
+        "day": 84,
+        "purpose": "Review actual repeat use, open feedback and whether to continue",
+        "owner": "Partner lead",
+        "output": "Partner and owner agree to continue, adjust or stop based on actual use."
+      },
+      {
+        "day": 90,
+        "purpose": "Review actual repeat use, open feedback and whether to continue",
+        "owner": "Partner lead",
+        "output": "90-day continue/change/stop decision and documented handover"
+      }
+    ],
+    "follow_up_messages": [
+      {
+        "when": "Within one working day of the session",
+        "channel": "Partner-approved private channel",
+        "draft": "Which fields were still ambiguous at the sample handoff, and which claims need a test owner? Please mark any implied approval we should remove before a second trial."
+      },
+      {
+        "when": "After a feedback item is reviewed",
+        "channel": "Same private channel",
+        "draft": "You raised an issue in the pilot. We recorded it, assigned an owner, and will share the outcome or a clear explanation if it cannot be addressed. Is our description accurate?"
+      }
+    ],
+    "handover_checklist": [
+      "Partner-approved goals and boundaries",
+      "One named point of contact and backup",
+      "Approved assets and confidentiality rules",
+      "Observed activation baseline and next review date",
+      "Open feedback with owners and response dates"
+    ]
+  },
+  "feedback": {
+    "capture_template": [
+      "Task and permitted input",
+      "Expected versus observed result",
+      "Partner’s own words, with permission",
+      "Severity and reproducibility",
+      "Owner, review date and partner update"
+    ],
+    "routing": "Partner lead checks for confidential material, then routes workflow defects to solutions and product defects to product. Record an owner and response date; no automatic sending.",
+    "close_the_loop_message": "We reviewed the issue you raised. Here is what changed, what remains open, and the next review date. Please tell us whether this addresses the problem in your workflow."
+  },
+  "metrics": {
+    "stage_definitions": {
+      "Introduction": "Partner confirms the problem and chooses whether to continue.",
+      "Education": "Partner can explain the limits and approves one safe test.",
+      "Experimentation": "Every untested claim stays explicitly unapproved. Proposed threshold; agree with the partner before testing.",
+      "Adoption": "Partner repeats the agreed task independently with approved inputs.",
+      "Long-term engagement": "Partner and owner agree to continue, adjust or stop based on actual use."
+    },
+    "leading_indicators": [
+      "Time from session to first approved trial",
+      "Whether the partner independently repeats the task",
+      "Unsupported claims and review corrections",
+      "Feedback items closed with a partner response"
+    ],
+    "time_to_activation_target": "Planning assumption: 1–3 months to independent repeat use; agree a baseline and target with the partner. Attendance does not count as activation."
+  },
+  "flags": [
+    {
+      "section": "All sections",
+      "severity": "medium",
+      "issue": "Fictional fixture evidence is not verified public research.",
+      "suggested_fix": "Confirm every fact and boundary before real outreach."
+    },
+    {
+      "section": "Use cases",
+      "severity": "medium",
+      "issue": "Scores, time estimates and thresholds are planning judgments, not measured outcomes.",
+      "suggested_fix": "Review weights and agree thresholds before a test."
+    }
+  ],
+  "claims_audit": [
+    "All source references point to labeled fictional persona briefs.",
+    "No real quotes, follower counts or measured outcomes are claimed.",
+    "Workflow steps and time-to-value are labeled hypotheses.",
+    "IP, disclosure and sustainability items are review prompts, not legal conclusions."
+  ],
+  "context_conflicts": [],
+  "context": {
+    "company": {},
+    "role_department": {},
+    "people": [],
+    "event": {},
+    "workflow": {
+      "process": "Material review must happen before the physical sample order.",
+      "pain_points": "Performance statements are reaching the handoff without a linked test record.",
+      "human_judgment": "The engineer approves test claims and the designer approves construction intent."
+    },
+    "history_goals": {},
+    "notes": "",
+    "provenance": {
+      "workflow": "fixture"
+    },
+    "layer_enabled": {
+      "workflow": true
+    },
+    "version": 1
+  },
+  "changes": [
+    {
+      "section": "Use cases",
+      "before": "Digital sample decision pack first",
+      "after": "Technical claim review ledger first",
+      "reason": "The supplied workflow identifies unsubstantiated performance language as the immediate handoff blocker."
+    },
+    {
+      "section": "Demo design",
+      "before": "Review a digital-to-physical sample handoff",
+      "after": "Technical claim review ledger",
+      "reason": "Sample context E6 changes which task should be prepared first."
+    },
+    {
+      "section": "Journey",
+      "before": "Run the original proposed pilot.",
+      "after": "Seed an untested waterproofing statement and verify it remains blocked.",
+      "reason": "The experiment follows the more specific context rather than the name-only hypothesis."
+    }
+  ],
+  "tracking": {
+    "sector": "Fashion technology",
+    "initials": "CV",
+    "owner": "You",
+    "stage": "Adoption",
+    "maturity": "Active",
+    "priority": "High",
+    "business_context": "A product-design team is testing whether synthetic review records help designers and material engineers agree sample decisions.",
+    "why_critical": "A repeatable design-to-engineering handoff can connect creative use to actual product decisions. Technical claim accuracy is the key adoption gate.",
+    "critical_evidence_ids": [
+      "E1",
+      "E2",
+      "E4"
+    ],
+    "current_workflow": "Digital garment sample → cross-functional specification review → physical prototype decision → approved product information.",
+    "workflow_evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "workflow_origin": "assumption",
+    "audience_segment": "Design & engineering",
+    "event": {
+      "title": "Digital sample pilot review",
+      "date": "2026-11-10",
+      "time": "13:30",
+      "duration_minutes": 45,
+      "format": "Cross-functional working review",
+      "venue": "Private video call",
+      "audience": "Product design, material engineering, merchandising and partner lead",
+      "invited": 4,
+      "confirmed": 3,
+      "status": "Invited"
+    },
+    "tasks": [
+      {
+        "id": "scope",
+        "title": "Confirm the synthetic tech-pack scope",
+        "owner": "Product design lead",
+        "due": "2026-10-22",
+        "done": true,
+        "category": "qualification"
+      },
+      {
+        "id": "sandbox",
+        "title": "Prepare synthetic sample notes",
+        "owner": "Workflow host",
+        "due": "2026-10-23",
+        "done": true,
+        "category": "assets"
+      },
+      {
+        "id": "owners",
+        "title": "Assign design and engineering reviewers",
+        "owner": "You",
+        "due": "2026-10-24",
+        "done": true,
+        "category": "approval"
+      },
+      {
+        "id": "pilot",
+        "title": "Record two reviewed pilot outcomes",
+        "owner": "Product design lead",
+        "due": "2026-10-25",
+        "done": true,
+        "category": "follow-up"
+      },
+      {
+        "id": "claims",
+        "title": "Confirm the physical-test ledger owner",
+        "owner": "Material engineer",
+        "due": "2026-10-29",
+        "done": false,
+        "category": "approval"
+      }
+    ],
+    "touchpoints_completed": 6,
+    "touchpoints_planned": 8,
+    "pilots_completed": 2,
+    "pilots_planned": 3,
+    "independent_uses": 3,
+    "activation_target_days": 60,
+    "origin": "fixture"
+  }
+}

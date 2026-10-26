@@ -3,9 +3,9 @@ import json
 import pytest
 from fastapi.testclient import TestClient
 
-from app.main import app
+from app.main import VIEWS, app
 from atelier.settings import Settings
-from atelier.store import load_fixture
+from atelier.store import PERSONAS, load_fixture
 
 ORIGIN = {"origin": "http://testserver"}
 
@@ -23,12 +23,15 @@ def test_pages_and_security() -> None:
         assert not Settings(app_mode="live").live_available
 
 
-@pytest.mark.parametrize("persona", ["lena-voss", "maison-aurelle", "juno-park"])
+@pytest.mark.parametrize("persona", PERSONAS)
 @pytest.mark.parametrize("variant", ["base", "sharpened"])
 def test_all_twelve_sections_and_exports(persona: str, variant: str) -> None:
     with TestClient(app) as client:
         response = client.get(f"/examples/{persona}/{variant}")
         assert response.status_code == 200
+        full = client.get("/studio/print")
+        for view in VIEWS:
+            assert client.get("/studio", params={"view": view}).status_code == 200
         for section in [
             "overview",
             "priorities",
@@ -43,7 +46,7 @@ def test_all_twelve_sections_and_exports(persona: str, variant: str) -> None:
             "feedback",
             "integrity",
         ]:
-            assert f'id="{section}"' in response.text
+            assert f'id="{section}"' in full.text
         data = client.get("/studio/export/json")
         assert data.status_code == 200
         assert data.json() == load_fixture(persona, variant).model_dump(mode="json")
@@ -98,5 +101,5 @@ def test_export_preserves_custom_weights() -> None:
         assert response.json()["scoring_weights"] == weights
         client.post("/studio/import", content=response.content, headers=ORIGIN)
         assert client.get("/studio/data").json()["scoring_weights"] == weights
-        assert 'value="100"' in client.get("/studio").text
+        assert 'value="100"' in client.get("/studio?view=use-cases").text
         assert client.get("/studio/export/json", params={"weights": "{}"}).status_code == 400

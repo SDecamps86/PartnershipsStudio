@@ -30,7 +30,7 @@ def test_all_fixture_contracts_and_capabilities() -> None:
 
 def test_tailoring_and_juno_boundaries() -> None:
     tops = [rank_use_cases(load_fixture(p).use_cases)[0][0].title for p in PERSONAS]
-    assert len(set(tops)) == 3
+    assert len(set(tops)) == len(PERSONAS)
     juno = load_fixture("juno-park")
     assert "listening" in tops[2].lower()
     assert "no demonstration" in juno.demo.concept.lower()
@@ -55,3 +55,20 @@ def test_scores_match_formula() -> None:
         for case, score in rank_use_cases(load_fixture(persona).use_cases):
             expected = sum(DEFAULT_WEIGHTS[d] * case.scores[d].score / 5 for d in DEFAULT_WEIGHTS)
             assert abs(score - expected) < 1e-9
+
+
+def test_tracking_and_funnel_consistency() -> None:
+    from datetime import date
+
+    from atelier.pipeline import dashboard
+
+    studios = [load_fixture(p) for p in PERSONAS]
+    data = dashboard(studios, date(2026, 10, 26))
+    assert sum(data["stage_counts"].values()) == len(PERSONAS)
+    assert sum(data["counts"].values()) == len(PERSONAS)
+    assert data["pending_tasks"] == sum(
+        len(s.tracking.tasks) - s.tracking.completed for s in studios if s.tracking
+    )
+    assert all(
+        s.tracking and s.tracking.event.confirmed <= s.tracking.event.invited for s in studios
+    )

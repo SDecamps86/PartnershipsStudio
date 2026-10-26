@@ -1455,5 +1455,88 @@
       "after": "The E6 constraints are added to the host brief and the pilot must respect them.",
       "reason": "New context narrows which inputs and outputs are acceptable; existing risks still require review."
     }
-  ]
+  ],
+  "tracking": {
+    "sector": "3D art & education",
+    "initials": "LV",
+    "owner": "You",
+    "stage": "Education",
+    "maturity": "Qualified",
+    "priority": "High",
+    "business_context": "An independent practice preparing client review directions and teaching process. The pilot must work without an NDA client project.",
+    "why_critical": "A review workflow can serve both client work and teaching, while testing whether craft ownership stays with the artist.",
+    "critical_evidence_ids": [
+      "E1",
+      "E2",
+      "E5"
+    ],
+    "current_workflow": "Brief → look-development directions → client feedback → approved revision. Current tools and timing still need confirmation.",
+    "workflow_evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "workflow_origin": "assumption",
+    "audience_segment": "Creative practitioners",
+    "event": {
+      "title": "Client review workflow session",
+      "date": "2026-11-04",
+      "time": "14:00",
+      "duration_minutes": 45,
+      "format": "1:1 working session",
+      "venue": "Private video call",
+      "audience": "Artist, partner lead and visual-workflow host",
+      "invited": 3,
+      "confirmed": 1,
+      "status": "Invitation drafted"
+    },
+    "tasks": [
+      {
+        "id": "goals",
+        "title": "Confirm the review bottleneck",
+        "owner": "You",
+        "due": "2026-10-26",
+        "done": true,
+        "category": "qualification"
+      },
+      {
+        "id": "practice",
+        "title": "Prepare a self-owned practice scene",
+        "owner": "Workflow host",
+        "due": "2026-10-27",
+        "done": true,
+        "category": "assets"
+      },
+      {
+        "id": "permissions",
+        "title": "Confirm image permissions and NDA exclusions",
+        "owner": "You",
+        "due": "2026-10-29",
+        "done": false,
+        "category": "approval"
+      },
+      {
+        "id": "invite",
+        "title": "Review and send the session invitation",
+        "owner": "You",
+        "due": "2026-10-30",
+        "done": false,
+        "category": "invitation"
+      },
+      {
+        "id": "baseline",
+        "title": "Agree the manual review baseline",
+        "owner": "Workflow host",
+        "due": "2026-11-03",
+        "done": false,
+        "category": "qualification"
+      }
+    ],
+    "touchpoints_completed": 2,
+    "touchpoints_planned": 3,
+    "pilots_completed": 0,
+    "pilots_planned": 3,
+    "independent_uses": 0,
+    "activation_target_days": 60,
+    "origin": "fixture"
+  }
 }
