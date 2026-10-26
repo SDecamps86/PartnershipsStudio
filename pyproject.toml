@@ -1,0 +1,24 @@
+[project]
+name = "partnerships-studio"
+version = "0.1.0"
+description = "Partner-first creative onboarding, grounded in evidence."
+requires-python = ">=3.12"
+dependencies = ["fastapi>=0.115,<1", "uvicorn[standard]>=0.34,<1", "jinja2>=3.1.6,<4", "pydantic-settings>=2.7,<3"]
+
+[dependency-groups]
+dev = ["ruff>=0.11", "mypy>=1.15", "pytest>=8.3", "httpx>=0.28", "pre-commit>=4.1"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "ASYNC"]
+
+[tool.mypy]
+strict = true
+files = ["app", "atelier"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "evals"]
+pythonpath = ["."]
