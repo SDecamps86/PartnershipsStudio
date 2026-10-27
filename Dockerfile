@@ -7,6 +7,9 @@ COPY app ./app
 COPY atelier ./atelier
 COPY fixtures ./fixtures
 COPY config ./config
+COPY site ./site
+COPY scripts ./scripts
+RUN PYTHONPATH=/srv .venv/bin/python scripts/build_demo.py
 RUN useradd --uid 10001 --create-home studio
 USER studio
 EXPOSE 8000

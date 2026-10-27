@@ -9,3 +9,5 @@ __pycache__/
 !.env.example
 .DS_Store
 evals/reports/local-*
+
+site/dist/

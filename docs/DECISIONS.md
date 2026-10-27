@@ -31,3 +31,13 @@
 23. Keep a portfolio of up to 12 partners per session, capped at 3 MB and 100 sessions. Selecting a partner no longer destroys the previous partner's state. Base/sharpened switches preserve operational tracking and scoring weights. Imported data remains isolated to its own visitor session.
 24. Display event times in Pacific time and derive the dashboard's reference date in America/Los_Angeles. Fictional event dates are fixed sample planning dates; no live calendar connection exists.
 25. Use compact partner cards on phones, a directory table on desktop, and a mobile page selector. The overview summarizes the decisions needed to host; detailed supporting content sits on separate pages.
+
+## Editable deployment demo and publication
+
+26. The owner requested an explicit demo/private-environment notice. Display that statement globally without exposing a private link or operational data. The owner's environment was not accessed or independently verified during this task.
+27. Publish a buildless static demonstration, independent of the Python server. Browser memory holds visitor changes; JSON exports provide persistence. No visitor data is transmitted to a generation, owner, or persistence endpoint. The original Python implementation remains a local foundation.
+28. Extend shared schemas with implementation plans, fictional named teams, a dedicated SA, milestone dates/ownership/dependencies, seat activation, training counts and blockers. Validate counts, dates, accountable owners and dependency cycles.
+29. Provide explicit editing forms instead of implying live recomputation. Edited context carries a review notice; recommendations stay as prepared unless the visitor edits them. Targets and completed counts can both change, within validation bounds.
+30. Build public assets solely from immutable fictional fixtures. Source packaging excludes sessions, keys, private materials and the Python server. The static candidate uses the same Pydantic JSON schema for import/form validation plus cross-field constraints.
+31. Create a 45-second captioned, silent walkthrough from actual UI captures; label the demo and fictional data throughout. No real customer video or audio is used.
+32. Sites registration succeeded, but automatic approval review rejected the helper's terminal-input action because sandbox approval is disabled. No saved version or live deployment exists. Preserve the registered Site ID for resumption; never create a duplicate Site to retry.

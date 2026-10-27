@@ -9,7 +9,7 @@ from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo
 
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
+from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pydantic import ValidationError
@@ -52,6 +52,11 @@ app = FastAPI(
     title="PartnershipsStudio", docs_url=None, redoc_url=None, openapi_url=None, lifespan=lifespan
 )
 app.mount("/static", StaticFiles(directory=ROOT / "static"), name="static")
+app.mount(
+    "/assets",
+    StaticFiles(directory=ROOT.parent / "site/dist/assets", check_dir=False),
+    name="demo-assets",
+)
 templates = Jinja2Templates(directory=ROOT / "templates")
 
 
@@ -122,6 +127,9 @@ def current(request: Request) -> Studio:
 
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request) -> Response:
+    demo = ROOT.parent / "site/dist/index.html"
+    if demo.exists():
+        return FileResponse(demo)
     return page(
         request, "home.html", active_tab="prepare", examples=[load_fixture(p) for p in PERSONAS]
     )

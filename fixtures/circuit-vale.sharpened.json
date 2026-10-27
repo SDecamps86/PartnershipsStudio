@@ -1537,5 +1537,148 @@
     "independent_uses": 3,
     "activation_target_days": 60,
     "origin": "fixture"
+  },
+  "implementation": {
+    "title": "Digital sample deployment",
+    "objective": "Roll out a review standard for synthetic digital-to-physical sample handoffs.",
+    "solution_workflow": "Synthetic tech pack → design/engineering review → verified claim ledger → prototype gate.",
+    "phase": "Rollout",
+    "health": "On track",
+    "sa_lead_id": "sa",
+    "customer_lead": "Product design lead",
+    "kickoff": "2026-10-20",
+    "target_launch": "2026-12-15",
+    "next_checkpoint": "2026-11-02",
+    "environment": "Fictional sandbox using synthetic or explicitly cleared material. No production or owner data.",
+    "success_criteria": [
+      "The customer approves a specific, repeatable workflow.",
+      "Every release has a named human approval owner.",
+      "Training supports independent repeat use; attendance alone is insufficient."
+    ],
+    "team": [
+      {
+        "id": "sales",
+        "name": "Maya Chen",
+        "department": "Sales",
+        "role": "Partnerships lead",
+        "responsibility": "Maintain the partner goal, scope and executive handover."
+      },
+      {
+        "id": "marketing",
+        "name": "Nora Bell",
+        "department": "Marketing",
+        "role": "Enablement communications",
+        "responsibility": "Prepare audience-appropriate training and approved messaging."
+      },
+      {
+        "id": "legal",
+        "name": "Jordan Reed",
+        "department": "Legal",
+        "role": "Legal and privacy reviewer",
+        "responsibility": "Review permissions, confidentiality and claims before release."
+      },
+      {
+        "id": "sa",
+        "name": "Theo Martin",
+        "department": "Solutions architecture",
+        "role": "Dedicated implementation lead",
+        "responsibility": "Own solution design, technical checkpoints and the deployment plan."
+      },
+      {
+        "id": "engineering",
+        "name": "Samir Patel",
+        "department": "Engineering",
+        "role": "Technical delivery lead",
+        "responsibility": "Validate the sandbox, integration constraints and implementation defects."
+      },
+      {
+        "id": "product",
+        "name": "Elena Brooks",
+        "department": "Product",
+        "role": "Product feedback owner",
+        "responsibility": "Prioritize product gaps and close the feedback loop with the partner."
+      }
+    ],
+    "milestones": [
+      {
+        "id": "m1",
+        "title": "Discovery",
+        "phase": "Discovery",
+        "start": "2026-10-20",
+        "due": "2026-10-26",
+        "progress": 100,
+        "owner_id": "sales",
+        "dependencies": [],
+        "exit_criteria": "Partner corrects the goal and agrees the boundaries.",
+        "status": "Complete"
+      },
+      {
+        "id": "m2",
+        "title": "Solution design",
+        "phase": "Solution design",
+        "start": "2026-10-27",
+        "due": "2026-11-02",
+        "progress": 100,
+        "owner_id": "sa",
+        "dependencies": [
+          "m1"
+        ],
+        "exit_criteria": "SA and reviewer approve the sandbox and workflow design.",
+        "status": "Complete"
+      },
+      {
+        "id": "m3",
+        "title": "Pilot",
+        "phase": "Pilot",
+        "start": "2026-11-03",
+        "due": "2026-11-16",
+        "progress": 100,
+        "owner_id": "sa",
+        "dependencies": [
+          "m2"
+        ],
+        "exit_criteria": "Partner accepts the test result against an agreed baseline.",
+        "status": "Complete"
+      },
+      {
+        "id": "m4",
+        "title": "Rollout",
+        "phase": "Rollout",
+        "start": "2026-11-17",
+        "due": "2026-11-30",
+        "progress": 60,
+        "owner_id": "engineering",
+        "dependencies": [
+          "m3"
+        ],
+        "exit_criteria": "Named teams can repeat the approved workflow with a documented handover.",
+        "status": "In progress"
+      },
+      {
+        "id": "m5",
+        "title": "Adoption",
+        "phase": "Adoption",
+        "start": "2026-12-01",
+        "due": "2026-12-15",
+        "progress": 10,
+        "owner_id": "marketing",
+        "dependencies": [
+          "m4"
+        ],
+        "exit_criteria": "Review actual independent use, training completion and unresolved feedback.",
+        "status": "In progress"
+      }
+    ],
+    "seats_planned": 24,
+    "seats_activated": 14,
+    "training_planned": 6,
+    "training_delivered": 3,
+    "users_to_train": 24,
+    "users_trained": 12,
+    "blockers": [],
+    "next_action": "Confirm the material-test ledger owner before expanding to the second review team.",
+    "notes": "",
+    "fictional_team": true,
+    "updated_by_user": false
   }
 }

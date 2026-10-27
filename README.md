@@ -1,49 +1,40 @@
 # PartnershipsStudio
 
-An internal tool for tailoring partner experiences and tracking their preparation.
+An internal workflow demonstrated with fictional partner data: preparation, pipeline management, customer deployment and enablement.
 
-## Three working tabs
+The current entry point has four tabs: **Prepare**, **Pipeline**, **Partner**, and **Deployment & enablement**. A visible notice explains that this is a demo and that the working version and operational data belong to the owner's private environment. That owner-environment statement was supplied by the owner; this build does not access it.
 
-- **Prepare:** enter a partner or client name. The demo opens five fictional partners.
-- **Pipeline:** see partner stages, pending actions, session readiness, upcoming experiences and the complete directory. Filter by name, workflow, stage, preparation state or audience; switch between list and board views.
-- **Partner:** open a concise operational overview, then use focused pages for context, workflow, use cases, session design, the host brief, journey, experiments, follow-up, tasks and sources. Only the selected page is rendered.
+## Interactive demo
 
-The overview puts identity, lead maturity, importance, business context, a specific workflow, next event and audience alongside readiness, touchpoints, pilots and independent use. Preparation checkboxes update readiness and the pipeline. Update tracking changes stage, maturity, priority, invitation status and observed-count fields. All supplied figures and events are fictional examples, not actual business results.
+Visitors can edit partner context, event details, lead status, metric targets/counts, workflow steps, use cases/scores, priorities and preparation tasks. Implementation projects include a dedicated solutions architect, dated milestones and dependencies, rollout progress, blockers, training/seat indicators, and fictional owners in Sales, Marketing, Legal, Solutions Architecture, Engineering and Product.
 
-## Run locally
+Edits remain in browser memory and are lost on reload. Export one partner or the complete workspace as JSON to retain them; import restores validated data. No edit or import is sent to an owner system or server. Only the theme preference uses localStorage. Editing context does not silently regenerate recommendations.
+
+All five partners, team names, dates and operating counts are fictional. Readiness measures checklist completion; implementation progress is the mean milestone completion; activation and training counts are manually supplied demo indicators.
+
+## Run
 
 ```sh
 uv sync --frozen
-make check
 make run
 ```
 
-Open http://127.0.0.1:8000. Python 3.12+ and uv are required. No API key or AI call is used. The runtime uses local assets only and has no JavaScript build step.
+Open http://127.0.0.1:8000. `make run` builds the static demo before starting FastAPI. The Python API and original server-rendered views remain as a local foundation. They are not included in the static publication package.
 
-## Demo partners
+```sh
+make check
+make eval
+PYTHONPATH=. uv run python scripts/build_demo.py --output site/dist
+```
 
-| Fictional partner | Preparation focus |
-| --- | --- |
-| Lena Voss | Automotive 3D client reviews, craft authorship and NDA boundaries |
-| Maison Aurelle | Luxury fashion storytelling, regional localization and approval ownership |
-| Juno Park | Listening, creative boundaries and fan trust before a demo |
-| Circuit Vale | Fashion technology, digital-to-physical sample handoffs and tested product claims |
-| Oria House Hotels | Luxury hospitality, property-host handoffs and accurate service promises without guest data |
+Static output can be served by any static host. The build accepts only the known fictional fixture files; it never reads sessions, environment secrets or owner data. The demo needs no API key, generation endpoint, analytics, database or JavaScript build step.
 
-Each has a base plan and a prewritten sample-context version, ten scored use cases, all twelve original content sections, three experiments and a five-stage journey. Recommendations cite fictional brief evidence or identify assumptions.
+## Walkthrough and publication
 
-## Saving and retention
+A 45-second silent, captioned interface walkthrough is included at `site/assets/mini-demo.mp4`, with a poster and WebVTT captions. It is available through Watch demo in the app. It is an annotated sequence of actual interface captures, not a real customer recording.
 
-Partner selection preserves the workspace's task and tracking changes. Sample-context switching replaces the prepared content while keeping operational tracking and score weights. Scoring weights also survive navigation between partner pages.
+The requested publication was attempted through Sites. Registration succeeded; source submission was blocked by the desktop execution approval policy before a version could be pushed/deployed. The Site is **not live**. See [publication status](docs/PUBLISH_STATUS.md) and [verification](evals/reports/DEPLOYMENT_DEMO.md).
 
-Export the current partner as JSON to preserve its complete plan, weights and tracking. Markdown, section copying and print views are available too. Restore JSON through the pipeline's Import control. Browser storage holds only the theme preference. The workspace is session-only, expires after 30 idle minutes, and disappears on server restart. Clear workspace removes all current session data; reopening the pipeline seeds fresh fictional examples. There is no cross-session CRM or external integration.
+[Architecture](docs/ARCHITECTURE.md) · [Decisions](docs/DECISIONS.md) · [Privacy](docs/PRIVACY.md) · [Deployment](docs/DEPLOY.md)
 
-## Current limits
-
-M1 plus the requested UX/pipeline revision. Live research and generation remain M2; free-form context, general inline content editing, verification, locks and comparison remain M3. Private deployment, access codes, spend protection and public static showcase remain M4. No remote push or deployment has occurred.
-
-Scores, dates, counts and thresholds are planning examples or operator-entered values. Readiness means preparation checklist completion, not lead conversion likelihood or confirmed attendance. Independent use is a manually recorded count, not product telemetry. Verify before real outreach. Print pagination depends on the browser/printer.
-
-[Architecture](docs/ARCHITECTURE.md) · [Decisions](docs/DECISIONS.md) · [Privacy](docs/PRIVACY.md) · [Deployment](docs/DEPLOY.md) · [UX verification](evals/reports/UX.md)
-
-MIT licensed. Fictional data implies no affiliation or endorsement.
+MIT licensed. Fictional examples imply no affiliation or endorsement.

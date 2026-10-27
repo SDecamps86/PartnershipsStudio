@@ -94,6 +94,9 @@ class SessionStore:
         if preserve_tracking and existing:
             new.tracking = existing.tracking.model_copy(deep=True) if existing.tracking else None
             new.scoring_weights = existing.scoring_weights.copy()
+            new.implementation = (
+                existing.implementation.model_copy(deep=True) if existing.implementation else None
+            )
         size = sum(
             len(s.model_dump_json().encode()) for key, s in session.studios.items() if key != new.id
         ) + len(new.model_dump_json().encode())

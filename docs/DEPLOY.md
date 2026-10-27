@@ -36,3 +36,11 @@ The demo now needs `fixtures/` and `config/` in its runtime directory; the Docke
 ## Pipeline revision
 
 The app now maintains a session-local partner portfolio. Use a single worker; no durable pipeline storage or CRM synchronization exists. JSON exports save only the selected partner. The dashboard uses America/Los_Angeles for its reference date and displays fictional event times as PT. Restarts and idle expiry clear all in-session operational edits.
+
+## Editable static demo
+
+Build with `PYTHONPATH=. uv run python scripts/build_demo.py --output site/dist`. The output contains only index.html, static JS/CSS, fictional fixture JSON, its schema, and the walkthrough media. Any static host can serve it; hash routing needs no server rewrite. Browser changes are not persisted remotely.
+
+The registered Sites checkout is the sibling `PartnershipsStudioDemo` directory, whose `.openai/hosting.json` must be reused. Sites requires the exact source commit to be pushed before saving/deploying a version. Do not claim publication from an expected URL or local ZIP alone. Do not store source credentials in a file or shell argument.
+
+Current blocker: the supported helper's stdin submission was rejected by automatic desktop approval review (`sandbox_approval` disabled). Additional network/repository permissions did not resolve this terminal-input restriction. Registration exists, but no version was pushed or deployed. Resume from the existing Site once the execution policy permits the helper input. No account key should be pasted into chat.

@@ -25,3 +25,9 @@ flowchart LR
 `app/main.py` serves three primary surfaces. `/studio?view=...` validates a page whitelist and includes only the selected content partial. `/studio/print` is the explicit full-content route. The browser handles dialogs, clipboard, local ranking, tracking forms and task updates through same-origin POST endpoints.
 
 The 30-minute idle lifecycle, HttpOnly SameSite cookie, optional Secure cookie under HTTPS, strict CSP, no-store/noindex pages and no body logging remain. A lifespan task sweeps expired sessions every 30 seconds; any expired lookup fails immediately. Use one worker. Exports are explicit persistence; there is no automatic browser backup or database.
+
+## Current browser-demo entry point
+
+The main root serves the generated static `site/dist/index.html` when built. Its four-tab hash router reads only the fictional asset JSON and schema. Editing and validation occur in browser memory; workspace JSON provides explicit persistence. This surface is independently hostable and does not call the Python session APIs. The older server-rendered routes/APIs remain a local foundation, separate from the static publication package.
+
+`implementation.py` validates the deployment/enablement extension. `scripts/build_demo.py` only loads known fictional fixture files, writes their shared schema, and copies an explicit asset allowlist. It never serializes live sessions or environment variables.

@@ -25,3 +25,9 @@ Deferred as scoped: M2 live research and staged streaming; M3 editable fields, c
 Completed: Prepare/Pipeline/Partner navigation; intake-only home; computed pipeline counts and stage occupancy; searchable/filterable directory and status board; upcoming sessions and pending actions; compact partner overview; separate detail pages; validated, session-only task and tracking updates; persistent per-partner weights; fashion-technology and luxury-hotel fictional brands (10 total fixture files).
 
 Review the overall three-tab flow, the overview's decision hierarchy, and whether readiness/task/activation indicators are useful for your actual working process. Live research and durable storage remain outside this revision.
+
+## Deployment and editable demo revision
+
+Implemented: a global demo/private-environment notice; editable context, events, counts, targets, tasks, workflow steps, priorities and use cases; a fourth Deployment & enablement tab with dedicated SAs, six fictional named functional teams, milestone/dependency plans, blockers and training/activation indicators; an isolated static browser demo and complete-workspace export/import; a 45-second captioned walkthrough.
+
+Publication remains incomplete because desktop automatic approval review blocks the documented Sites helper's stdin submission. The registered Site is preserved with no live URL or saved version. The static ZIP and media are ready; see PUBLISH_STATUS.md. No owner environment or operational data was accessed.

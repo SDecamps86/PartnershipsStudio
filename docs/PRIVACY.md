@@ -15,3 +15,9 @@ Not yet implemented: public research, moderation, triage for private individuals
 The current session holds a small portfolio rather than a single partner. Checklist completion, lead stage/maturity, invitation status and manually entered metric counts stay in that same session. The seeded operational figures and event plans are fictional. No live calendar, email, CRM or product telemetry is connected.
 
 The workspace is limited to 12 partners and 3 MB, with at most 100 sessions in one server process. Clearing the workspace removes all its records; a new demo workspace is seeded from immutable fictional fixtures. Export/import preserves one selected partner at a time, including tracking. Switching partners does not erase earlier edits. Switching sample-context variants preserves tracking and weights.
+
+## Current static demo surface
+
+The current root UI and static publication candidate use browser-memory records, not the Python server session store. No entered or imported value is sent to the owner or another server. Reloading/closing the tab discards changes. Exported files persist on the user's device. Only the theme preference is stored in localStorage.
+
+The owner-environment statement is provided by the owner. No owner data, live app link, credentials, real customer record, guest data or production service is packaged. Team names and operating counts are fictional. Hosting request metadata is separate from application data; there is no analytics or telemetry collection.

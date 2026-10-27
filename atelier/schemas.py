@@ -7,6 +7,7 @@ from typing import Annotated, Literal, Self
 from pydantic import Field, model_validator
 
 from atelier.contracts import Model, Score, Text
+from atelier.implementation import Implementation
 from atelier.tracking import Tracking
 
 Confidence = Literal["low", "medium", "high"]
@@ -328,6 +329,7 @@ class Studio(Model):
     context: Context
     changes: list[Change] = Field(default_factory=list)
     tracking: Tracking | None = None
+    implementation: Implementation | None = None
 
     @model_validator(mode="after")
     def references(self) -> Self:
