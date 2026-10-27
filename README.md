@@ -33,7 +33,7 @@ Static output can be served by any static host. The build accepts only the known
 
 A 45-second silent, captioned interface walkthrough is included at `site/assets/mini-demo.mp4`, with a poster and WebVTT captions. It is available through Watch demo in the app. It is an annotated sequence of actual interface captures, not a real customer recording.
 
-The requested publication was attempted through Sites. Registration succeeded; source submission was blocked by the desktop execution approval policy before a version could be pushed/deployed. The Site is **not live**. See [publication status](docs/PUBLISH_STATUS.md) and [verification](evals/reports/DEPLOYMENT_DEMO.md).
+The requested publication was attempted through Sites. Registration succeeded; source submission was blocked by the desktop execution approval policy before a version could be pushed/deployed. See [publication status](docs/PUBLISH_STATUS.md) and [verification](evals/reports/DEPLOYMENT_DEMO.md).
 
 [Architecture](docs/ARCHITECTURE.md) · [Decisions](docs/DECISIONS.md) · [Privacy](docs/PRIVACY.md) · [Deployment](docs/DEPLOY.md)
 
